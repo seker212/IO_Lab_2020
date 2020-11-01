@@ -1,0 +1,10 @@
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\bin\Debug\TCPServer.exe.config
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\bin\Debug\TCPServer.exe
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\bin\Debug\TCPServer.pdb
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\obj\Debug\TCPServer.csprojAssemblyReference.cache
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\obj\Debug\TCPServer.exe
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\obj\Debug\TCPServer.pdb
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\bin\Debug\ServerClasses.dll
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\bin\Debug\ServerClasses.pdb
+D:\Users\seker\Code\IO\TCPServer_lab1\TCPServer_lab1\obj\Debug\TCPServer.csproj.CopyComplete

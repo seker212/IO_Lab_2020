@@ -1,0 +1,6 @@
+D:\Users\seker\Code\IO\TCPServer_lab1\ClassLibrary\bin\Debug\ServerClasses.dll
+D:\Users\seker\Code\IO\TCPServer_lab1\ClassLibrary\bin\Debug\ServerClasses.pdb
+D:\Users\seker\Code\IO\TCPServer_lab1\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\Users\seker\Code\IO\TCPServer_lab1\ClassLibrary\obj\Debug\ServerClasses.dll
+D:\Users\seker\Code\IO\TCPServer_lab1\ClassLibrary\obj\Debug\ServerClasses.pdb
+D:\Users\seker\Code\IO\TCPServer_lab1\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
