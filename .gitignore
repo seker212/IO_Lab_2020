@@ -13,3 +13,8 @@ obj/
 *.png
 *.jpg
 *.jpeg
+
+# sprawozdania
+*.doc
+*.docx
+*.pdf
