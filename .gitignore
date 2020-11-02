@@ -1,0 +1,15 @@
+# visual studio files
+.vs/
+
+# packages
+packages/
+
+# compiling
+bin/
+obj/
+
+# diagram files
+*.drawio
+*.png
+*.jpg
+*.jpeg
