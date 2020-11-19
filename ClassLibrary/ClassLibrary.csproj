@@ -150,7 +150,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractServer.cs" />
+    <Compile Include="DAL\BaseRepository.cs" />
+    <Compile Include="DAL\IRepository.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="Models\Joke.cs" />
+    <Compile Include="Models\ServerDatabaseContext.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="ServerAPM.cs" />
     <Compile Include="ServerSync.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
