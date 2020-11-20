@@ -12,9 +12,13 @@ namespace TCPServer.Models
     {
         //TODO: User Model by LW
         [Key]
+        [Column("ID")]
         public int ID { get; set; }
+        [Column("Login")]
         public string login { get; set; }
+        [Column("Password")]
         public string password { get; set; }
+        [Column("isAdmin")]
         public bool isAdmin { get; set; }
     }
 }
