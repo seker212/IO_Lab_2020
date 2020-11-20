@@ -12,7 +12,7 @@ namespace TCPServer.DAL
     class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         ServerDatabaseContext _context;
-        DbSet<TEntity> dbSet;
+        protected DbSet<TEntity> dbSet;
 
         public BaseRepository(ServerDatabaseContext context)
         {
