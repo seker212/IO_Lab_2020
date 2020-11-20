@@ -12,7 +12,10 @@ namespace TCPServer
     {
         public UserRepository ur { get; set; }
 
-        public UserManager() { }
+        public UserManager(ServerDatabaseContext context)
+        {
+            this.ur = new UserRepository(context);
+        }
 
         public bool addUser(string login, string password) 
         {
@@ -69,20 +72,20 @@ namespace TCPServer
                 return false;
             }
         }
-        public bool verifyUser(string login, string password)
+        public User verifyUser(string login, string password)
         {
             User u = this.ur.getUser(login);
             if(u == null)
             {
-                return false;
+                return null;
             }
             else if(u.password != password)
             {
-                return false;
+                return null;
             }
             else
             {
-                return true;
+                return u;
             }
         }
     }
