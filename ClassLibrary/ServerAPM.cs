@@ -30,7 +30,7 @@ namespace TCPServer
             var opBuilder = new DbContextOptionsBuilder<ServerDatabaseContext>();
             var conStringBuilder = new SqliteConnectionStringBuilder();
             //TODO: Add connection parameters
-            conStringBuilder.DataSource = "C:\\Users\\stempel\\Documents\\baza\\DBIO.db";
+            conStringBuilder.DataSource = "DBIO.db";
             opBuilder.UseSqlite(conStringBuilder.ConnectionString);
             this.context = new ServerDatabaseContext(opBuilder.Options);
             this.um = new UserManager(this.context);
