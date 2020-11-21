@@ -107,6 +107,93 @@ namespace TCPServer
             }
         }
 
+        protected void userHandler(string command, byte[] buffer, NetworkStream stream)
+        {
+            byte[] newLoginMsg = new ASCIIEncoding().GetBytes("Podaj nowy login: ");
+            byte[] newPassMsg = new ASCIIEncoding().GetBytes("Podaj nowe haslo: ");
+            char[] trim = { (char)0x0 };
+            if (command == "addUser")
+            {
+                stream.Write(msgLogin, 0, msgLogin.Length);
+                int dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string login = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+
+                stream.Write(msgPass, 0, msgPass.Length);
+                dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string password = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+                um.addUser(login, password);
+            }
+            else if(command == "deleteUser")
+            {
+                stream.Write(msgLogin, 0, msgLogin.Length);
+                int dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string login = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+
+                stream.Write(msgPass, 0, msgPass.Length);
+                dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string password = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+                um.deleteUser(login, password);
+            }
+            else if(command == "updateUser")
+            {
+                stream.Write(msgLogin, 0, msgLogin.Length);
+                int dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string login = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+
+                stream.Write(msgPass, 0, msgPass.Length);
+                dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string password = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+                stream.Write(newLoginMsg, 0, newLoginMsg.Length);
+                dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string newlogin = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+
+                stream.Write(newPassMsg, 0, newPassMsg.Length);
+                dlugosc = stream.Read(buffer, 0, buffer.Length);
+                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                {
+                    stream.Read(buffer, 0, buffer.Length);
+                }
+                string newpassword = Encoding.ASCII.GetString(buffer).Trim(trim);
+                Array.Clear(buffer, 0, buffer.Length);
+                um.updateUser(login, password, newlogin, newpassword);
+            }
+        }
+
         protected void HandlarzSucharow(NetworkStream stream, int UserType)
         {
             string negatyw = "Ja tylko serwuje suchary\n";
@@ -152,15 +239,15 @@ namespace TCPServer
                 }
                 else if (text == "addUser" && UserType == 1)
                 {
-                    //HANDLARZ UŻYTKOWNIKÓW
+                    userHandler(text, buffer, stream);
                 }
                 else if (text == "deleteUser" && UserType == 1)
                 {
-                    //HANDLARZ UŻYTKOWNIKÓW
+                    userHandler(text, buffer, stream);
                 }
                 else if (text == "updateUser" && UserType == 1)
                 {
-                    //HANDLARZ UŻYTKOWNIKÓW
+                    userHandler(text, buffer, stream);
                 }
                 else if (text == "nowy")
                 {
