@@ -197,18 +197,19 @@ namespace TCPServer
         protected void HandlarzSucharow(NetworkStream stream, int UserType)
         {
             string negatyw = "Ja tylko serwuje suchary\n";
-            string instrukcja = "\n\n\"suchar\" wysyla suchara, \"nowy\" pozwala dodac suchara, \"quit\" rozlacza klienta,\n\n FUNKCJE ADMINA \n\n  \"shutdown\" zamyka serwer, \"addUser\" dodaje uzytkownika, \"deleteUser\" usuwa uzytkownika, \"updateUser\" zmienia wlasnosci uzytkownika";
+            string instrukcja = "\r\n\"suchar\" wysyla suchara, \"nowy\" pozwala dodac suchara, \"quit\" rozlacza klienta,\r\nFUNKCJE ADMINA \r\n\"shutdown\" zamyka serwer, \"addUser\" dodaje uzytkownika, \"deleteUser\" usuwa uzytkownika, \"updateUser\" zmienia wlasnosci uzytkownika\r\n";
             string dodaj = "\nNapisz tutaj suchara, enter wysyla.\n";
             byte[] instr = Encoding.ASCII.GetBytes(instrukcja);
             byte[] bytes = Encoding.ASCII.GetBytes(negatyw);
             byte[] dod = Encoding.ASCII.GetBytes(dodaj);
 
+            bool quit = false;
 
             byte[] buffer = new byte[Buffer_size];
             char[] trim = { (char)0x0 };
             JokeSQL generator = new JokeSQL(context);
 
-            while (true)
+            while (quit == false)
             {
                 try
                 {
@@ -234,7 +235,7 @@ namespace TCPServer
                 {
                     Console.WriteLine("Zamykam serwer\n");
                     stream.Close();
-                    //shutdown = true;
+                    quit = true;
                     break;
                 }
                 else if (text == "addUser" && UserType == 1)
@@ -266,6 +267,7 @@ namespace TCPServer
                 else if (text == "quit")
                 {
                     Console.WriteLine("Rozłączam\n");
+                    quit = true;
                     stream.Close();
                     break;
                 }

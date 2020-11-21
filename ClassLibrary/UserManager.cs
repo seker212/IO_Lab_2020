@@ -60,7 +60,7 @@ namespace TCPServer
             User u = new User();
             User u2 = this.ur.getUser(login);
             User u3 = new User();
-            u.ID = u2.ID;
+            //u.ID = u2.ID;
             u.login = login;
             u.password = password;
             u.isAdmin = false;
@@ -71,13 +71,14 @@ namespace TCPServer
             }
             else
             {
-                u3.ID = u2.ID;
+                //u3.ID = u2.ID;
                 u3.login = newlogin;
                 u3.password = newpassword;
                 u3.isAdmin = false;
-                this.ur.Update(u3);
+                this.ur.Delete(u2);
+                this.ur.Insert(u3);
                 ur.Commit();
-                return false;
+                return true;
             }
         }
         public User verifyUser(string login, string password)
