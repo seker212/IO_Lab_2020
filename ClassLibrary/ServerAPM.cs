@@ -110,7 +110,7 @@ namespace TCPServer
         protected void HandlarzSucharow(NetworkStream stream, int UserType)
         {
             string negatyw = "Ja tylko serwuje suchary\n";
-            string instrukcja = "\n\n\"suchar\" wysyla suchara, \"add\" pozwala dodac suchara, \"quit\" rozlacza klienta,  \"shutdown\" zamyka serwer (Admin only)\n";
+            string instrukcja = "\n\n\"suchar\" wysyla suchara, \"nowy\" pozwala dodac suchara, \"quit\" rozlacza klienta,\n\n FUNKCJE ADMINA \n\n  \"shutdown\" zamyka serwer, \"addUser\" dodaje uzytkownika, \"deleteUser\" usuwa uzytkownika, \"updateUser\" zmienia wlasnosci uzytkownika";
             string dodaj = "\nNapisz tutaj suchara, enter wysyla.\n";
             byte[] instr = Encoding.ASCII.GetBytes(instrukcja);
             byte[] bytes = Encoding.ASCII.GetBytes(negatyw);
@@ -149,6 +149,18 @@ namespace TCPServer
                     stream.Close();
                     //shutdown = true;
                     break;
+                }
+                else if (text == "addUser" && UserType == 1)
+                {
+                    //HANDLARZ UŻYTKOWNIKÓW
+                }
+                else if (text == "deleteUser" && UserType == 1)
+                {
+                    //HANDLARZ UŻYTKOWNIKÓW
+                }
+                else if (text == "updateUser" && UserType == 1)
+                {
+                    //HANDLARZ UŻYTKOWNIKÓW
                 }
                 else if (text == "nowy")
                 {
