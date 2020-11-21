@@ -1,9 +1,8 @@
 CREATE TABLE Users(
-	ID int NOT NULL AUTOINCREMENT,
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
 	Login varchar(255),
 	Password varchar(255),
 	isAdmin BOOLEAN,
-	PRIMARY KEY(ID)
 )
 
 INSERT INTO Users (Login, Password, isAdmin)

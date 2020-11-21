@@ -152,7 +152,10 @@
     <Compile Include="AbstractServer.cs" />
     <Compile Include="DAL\BaseRepository.cs" />
     <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="DAL\JokeRepository.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="JokeManager.cs" />
+    <Compile Include="JokeSQL.cs" />
     <Compile Include="Models\Joke.cs" />
     <Compile Include="Models\ServerDatabaseContext.cs" />
     <Compile Include="Models\User.cs" />

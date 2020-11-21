@@ -10,7 +10,7 @@ namespace TCPServer.Models
 {
     class User
     {
-        //TODO: User Model by LW
+        
         [Key]
         [Column("ID")]
         public int ID { get; set; }
