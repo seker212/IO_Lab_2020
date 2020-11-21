@@ -22,7 +22,7 @@ namespace TCPServer
         public string GetJoke()
         {
             Random rnd = new Random();
-            int jokeID = rnd.Next(0, x.GetNum());
+            int jokeID = rnd.Next(1, x.GetNum()+1);
             Joke joke = x.GetByID(jokeID);
             return joke.Content;
         }
@@ -33,7 +33,8 @@ namespace TCPServer
             Joke nowy = new Joke();
             nowy.Content = txt;
             x.Insert(nowy);
-
+            x.Commit();
         }
+
     }
 }

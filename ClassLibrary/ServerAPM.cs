@@ -70,45 +70,121 @@ namespace TCPServer
         protected int signIn(NetworkStream stream, byte[] buffer)
         {
             char[] trim = { (char)0x0 };
-            while(true)
+            User u = new User();
+            stream.Write(msgLogin, 0, msgLogin.Length);
+            int dlugosc = stream.Read(buffer, 0, buffer.Length);
+            if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
             {
-                User u = new User();
-                stream.Write(msgLogin, 0, msgLogin.Length);
+                stream.Read(buffer, 0, buffer.Length);
+            }
+            string login = Encoding.ASCII.GetString(buffer).Trim(trim);
+            Array.Clear(buffer, 0, buffer.Length);
+
+            stream.Write(msgPass, 0, msgPass.Length);
+            dlugosc = stream.Read(buffer, 0, buffer.Length);
+            if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+            {
+                stream.Read(buffer, 0, buffer.Length);
+            }
+            string password = Encoding.ASCII.GetString(buffer).Trim(trim);
+            Array.Clear(buffer, 0, buffer.Length);
+
+            u = um.verifyUser(login, password);
+            if (u == null)
+            {
+                return 0;
+            }
+            else
+            {
+                if (u.isAdmin == true)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 2;
+                }
+            }
+        }
+
+        protected void HandlarzSucharow(NetworkStream stream, int UserType)
+        {
+            string negatyw = "Ja tylko serwuje suchary\n";
+            string instrukcja = "\n\n\"suchar\" wysyla suchara, \"add\" pozwala dodac suchara, \"quit\" rozlacza klienta,  \"shutdown\" zamyka serwer (Admin only)\n";
+            string dodaj = "\nNapisz tutaj suchara, enter wysyla.\n";
+            byte[] instr = Encoding.ASCII.GetBytes(instrukcja);
+            byte[] bytes = Encoding.ASCII.GetBytes(negatyw);
+            byte[] dod = Encoding.ASCII.GetBytes(dodaj);
+
+
+            byte[] buffer = new byte[Buffer_size];
+            char[] trim = { (char)0x0 };
+            JokeSQL generator = new JokeSQL(context);
+
+            while (true)
+            {
+                try
+                {
+                    stream.Write(instr, 0, instr.Length);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+                //Odbieranie wiadomości
+
                 int dlugosc = stream.Read(buffer, 0, buffer.Length);
                 if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
                 {
                     stream.Read(buffer, 0, buffer.Length);
                 }
-                string login = Encoding.ASCII.GetString(buffer).Trim(trim);
+                string text = Encoding.ASCII.GetString(buffer).Trim(trim);
                 Array.Clear(buffer, 0, buffer.Length);
+                Console.WriteLine(text);
 
-                stream.Write(msgPass, 0, msgPass.Length);
-                dlugosc = stream.Read(buffer, 0, buffer.Length);
-                if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                //Rozpoznawanie otrzymanego komunikatu i odpowiedzi
+                if (text == "shutdown" && UserType == 1)
                 {
-                    stream.Read(buffer, 0, buffer.Length);
+                    Console.WriteLine("Zamykam serwer\n");
+                    stream.Close();
+                    //shutdown = true;
+                    break;
                 }
-                string password = Encoding.ASCII.GetString(buffer).Trim(trim);
-                Array.Clear(buffer, 0, buffer.Length);
-
-                u = um.verifyUser(login, password);
-                if(u == null)
+                else if (text == "nowy")
                 {
-                    return 0;
+                    Console.WriteLine("Dodawanie suchara\n");
+                    stream.Write(dod, 0, dod.Length);
+                    dlugosc = stream.Read(buffer, 0, buffer.Length);
+                    if (Encoding.ASCII.GetString(buffer, 0, dlugosc) == "\r\n")
+                    {
+                        stream.Read(buffer, 0, buffer.Length);
+                    }
+                    string nowy = Encoding.ASCII.GetString(buffer).Trim(trim);
+                    Array.Clear(buffer, 0, buffer.Length);
+                    Console.WriteLine(nowy);
+                    generator.AddJoke(nowy);
+                }
+                else if (text == "quit")
+                {
+                    Console.WriteLine("Rozłączam\n");
+                    stream.Close();
+                    break;
+                }
+                else if (text == "suchar")
+                {
+                    Console.WriteLine("Potwierdzam\n");
+                    String sucharek = generator.GetJoke();
+                    byte[] pozytyw = Encoding.ASCII.GetBytes(sucharek);
+                    stream.Write(pozytyw, 0, pozytyw.Length);
                 }
                 else
                 {
-                    if(u.isAdmin == true)
-                    {
-                        return 1;
-                    }
-                    else
-                    {
-                        return 2;
-                    }
+                    Console.WriteLine("Odrzucam\n");
+                    stream.Write(bytes, 0, bytes.Length);
                 }
             }
         }
+
         protected override void BeginDataTransmission(NetworkStream stream)
         {
             byte[] buffer = new byte[Buffer_size];
@@ -120,15 +196,18 @@ namespace TCPServer
                     if (userType == 0)
                     {
                         stream.Write(wrongPass, 0, wrongPass.Length);
+                        break;
                     }
                     else if (userType == 1)
                     {
                         //Admin works
+                        HandlarzSucharow(stream, userType);
                         //TODO: Admin query
                     }
                     else if (userType == 2)
                     {
                         //Normal user works
+                        HandlarzSucharow(stream, userType);
                         //TODO: Normal user query
                     }
                     else
