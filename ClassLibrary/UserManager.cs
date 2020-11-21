@@ -17,7 +17,7 @@ namespace TCPServer
             this.ur = new UserRepository(context);
         }
 
-        public bool addUser(string login, string password) 
+        public bool addUser(string login, string password)
         {
             User u = new User();
             User u2 = this.ur.getUser(login);
@@ -25,33 +25,37 @@ namespace TCPServer
             u.password = password;
             u.isAdmin = false;
 
-            if(u2 == null)
+            if (u2 == null)
             {
                 this.ur.Insert(u);
+                ur.Commit();
                 return true;
             }
             else
             {
                 return false;
             }
+            
         }
-        public bool deleteUser(string login, string password) 
+        public bool deleteUser(string login, string password)
         {
             User u = this.ur.getUser(login);
 
-            if(u == null)
+            if (u == null)
             {
                 return false;
             }
-            else if(u.password != password)
+            else if (u.password != password)
             {
                 return false;
             }
             else
             {
                 this.ur.Delete(u);
+                ur.Commit();
                 return true;
-            }   
+            }
+            
         }
         public bool updateUser(string login, string password)
         {
@@ -62,24 +66,26 @@ namespace TCPServer
             u.password = password;
             u.isAdmin = false;
 
-            if(u2 == null)
+            if (u2 == null)
             {
                 return false;
             }
             else
             {
                 this.ur.Update(u);
+                ur.Commit();
                 return false;
             }
+            
         }
         public User verifyUser(string login, string password)
         {
             User u = this.ur.getUser(login);
-            if(u == null)
+            if (u == null)
             {
                 return null;
             }
-            else if(u.password != password)
+            else if (u.password != password)
             {
                 return null;
             }
