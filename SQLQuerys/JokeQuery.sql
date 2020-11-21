@@ -1,7 +1,7 @@
 CREATE TABLE Joke(
 	ID INTEGER PRIMARY KEY AUTOINCREMENT,
-	Content varchar(255),
-)
+	Content varchar(255)
+);
 
 INSERT INTO Joke (Content)
 VALUES ('Gdzie podpisano traktat wersalski? \n- Na samym dole, pod tekstem.'),
