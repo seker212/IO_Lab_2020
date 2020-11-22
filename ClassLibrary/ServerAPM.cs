@@ -17,6 +17,7 @@ namespace TCPServer
         readonly byte[] msgLogin;
         readonly byte[] msgPass;
         readonly byte[] wrongPass;
+        static bool SHUTDOWN = false;
         ServerDatabaseContext context;
         UserManager um;
 
@@ -29,8 +30,7 @@ namespace TCPServer
             this.wrongPass = new ASCIIEncoding().GetBytes("Zly login lub haslo");
             var opBuilder = new DbContextOptionsBuilder<ServerDatabaseContext>();
             var conStringBuilder = new SqliteConnectionStringBuilder();
-            //TODO: Add connection parameters
-            conStringBuilder.DataSource = "DBIO.db";
+            conStringBuilder.DataSource = @"..\..\..\DBIO.db";
             opBuilder.UseSqlite(conStringBuilder.ConnectionString);
             this.context = new ServerDatabaseContext(opBuilder.Options);
             this.um = new UserManager(this.context);
@@ -55,6 +55,8 @@ namespace TCPServer
 
         private void TransmissionCallback(IAsyncResult ar)
         {
+            if (SHUTDOWN)
+                throw new Exception("SHUTDOWN");
             // sprzątanie
         }
 
@@ -236,7 +238,7 @@ namespace TCPServer
                     Console.WriteLine("Zamykam serwer\n");
                     stream.Close();
                     quit = true;
-                    break;
+                    SHUTDOWN = true;
                 }
                 else if (text == "addUser" && UserType == 1)
                 {
@@ -269,7 +271,7 @@ namespace TCPServer
                     Console.WriteLine("Rozłączam\n");
                     quit = true;
                     stream.Close();
-                    break;
+                    //throw new ObjectDisposedException("Disconnect");
                 }
                 else if (text == "suchar")
                 {
@@ -290,36 +292,31 @@ namespace TCPServer
         {
             byte[] buffer = new byte[Buffer_size];
             int userType = signIn(stream, buffer);
-            while (true)
-            {
-                try
-                { 
-                    if (userType == 0)
-                    {
-                        stream.Write(wrongPass, 0, wrongPass.Length);
-                        break;
-                    }
-                    else if (userType == 1)
-                    {
-                        //Admin works
-                        HandlarzSucharow(stream, userType);
-                        //TODO: Admin query
-                    }
-                    else if (userType == 2)
-                    {
-                        //Normal user works
-                        HandlarzSucharow(stream, userType);
-                        //TODO: Normal user query
-                    }
-                    else
-                    {
-                        throw new Exception("Cos poszlo nie tak");
-                    }
-                }
-                catch (IOException e)
+            try
+            { 
+                if (userType == 0)
                 {
-                    break;
+                    stream.Write(wrongPass, 0, wrongPass.Length);
                 }
+                else if (userType == 1)
+                {
+                    //Admin works
+                    HandlarzSucharow(stream, userType);
+                    //TODO: Admin query
+                }
+                else if (userType == 2)
+                {
+                    //Normal user works
+                    HandlarzSucharow(stream, userType);
+                    //TODO: Normal user query
+                }
+                else
+                {
+                    throw new Exception("Cos poszlo nie tak");
+                }
+            }
+            catch (IOException e)
+            {
             }
 
         }
