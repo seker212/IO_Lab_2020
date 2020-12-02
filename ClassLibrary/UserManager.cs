@@ -8,6 +8,12 @@ using TCPServer.Models;
 
 namespace TCPServer
 {
+    public enum UserType
+    {
+        NotValid,
+        Standard,
+        Admin
+    }
     class UserManager
     {
         public UserRepository ur { get; set; }
