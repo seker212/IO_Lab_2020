@@ -94,19 +94,20 @@ namespace TCPServer
                     return UserType.Standard;
             }
         }
+
         private string[] GetCridentials(byte[] buffer, NetworkStream stream, bool messagesForUpdating)
         {
             string[] result = new string[2];
 
             if (messagesForUpdating)
             {
-                result[0] = getText("Podaj nowy login: ", stream, buffer);
-                result[1] = getText("Podaj nowe haslo: ", stream, buffer);
+                result[0] = GetStringFromUser("Podaj nowy login: ", stream, buffer);
+                result[1] = GetStringFromUser("Podaj nowe haslo: ", stream, buffer);
             }
             else
             {
-                result[0] = getText("Podaj login: ", stream, buffer);
-                result[1] = getText("Podaj haslo: ", stream, buffer);
+                result[0] = GetStringFromUser("Podaj login: ", stream, buffer);
+                result[1] = GetStringFromUser("Podaj haslo: ", stream, buffer);
             }
 
             return result;
@@ -115,15 +116,18 @@ namespace TCPServer
         protected void CommandHandler(NetworkStream stream, byte[] buffer, UserType userType)
         {
             string negatyw = "Ja tylko serwuje suchary\r\n";
-            string helpString = "\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta,\r\nFUNKCJE ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika\r\n";
+            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta,\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
+            byte[] helpByte = new ASCIIEncoding().GetBytes(helpString);
             
             bool quit = false;
             JokeSQL generator = new JokeSQL(context);
-
+            
+            //Wypisanie help'a
+            stream.Write(helpByte, 0, helpByte.Length);
             while (quit == false)
             {
-                string command = getText(helpString, stream, buffer);
+                string command = GetStringFromUser(null, stream, buffer);
                 Console.WriteLine(command);
 
                 //Rozpoznawanie otrzymanego komunikatu i odpowiedzi
@@ -156,7 +160,7 @@ namespace TCPServer
                 else if (command == "nowy")
                 {
                     Console.WriteLine("Dodawanie suchara\n");
-                    string nowy = getText(addJokeString, stream, buffer);
+                    string nowy = GetStringFromUser(addJokeString, stream, buffer);
                     generator.AddJoke(nowy);
                 }
                 else if (command == "quit")
@@ -181,11 +185,11 @@ namespace TCPServer
             }
         }
 
-        string getText(string message, NetworkStream stream, byte[] buffer)
+        string GetStringFromUser(string message, NetworkStream stream, byte[] buffer)
         {
             char[] trim = { (char)0x0 };
 
-            if (string.IsNullOrWhiteSpace(message))
+            if (!string.IsNullOrWhiteSpace(message))
             {
                 byte[] byteMessage = new ASCIIEncoding().GetBytes(message);
                 stream.Write(byteMessage, 0, byteMessage.Length);
