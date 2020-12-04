@@ -46,6 +46,37 @@ namespace ClientFunctionsLibrary
             return rec;
         }
 
+        public void loginUser(NetworkStream stream, byte[] buffer)
+        {
+            System.Console.Write("===LOGOWANIE===\n");
+            System.Console.Write(reciveMessage(stream, buffer));
+            string login = System.Console.ReadLine();
+            sendMessage(stream, login);
+            System.Console.Write(reciveMessage(stream, buffer));
+            string password = System.Console.ReadLine();
+            sendMessage(stream, password);
+            string rec = reciveMessage(stream, buffer);
+            if (rec == "Zly login lub haslo")
+            {
+                System.Console.Write(rec);
+                System.Console.Write("\n===ROZLACZONO Z SERWEREM===");
+            }
+            else 
+            {
+                System.Console.Write("===ZALOGOWANO===\n");
+                System.Console.Write(rec);
+                string msg = System.Console.ReadLine();
+                sendMessage(stream, msg);
+            }
+        }
+
+        public void clientLoop(NetworkStream stream, byte[] buffer)
+        {
+            System.Console.Write(reciveMessage(stream, buffer));
+            string msg = System.Console.ReadLine();
+            sendMessage(stream, msg);
+        }
+
         public void closeClient(TcpClient client, NetworkStream stream)
         {
             stream.Close();
