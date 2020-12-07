@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TCPServer.Models
 {
-    class User
+    public class User
     {
         
         [Key]

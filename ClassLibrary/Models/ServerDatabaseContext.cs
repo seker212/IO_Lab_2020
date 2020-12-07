@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TCPServer.Models
 {
-    class ServerDatabaseContext : DbContext
+    public class ServerDatabaseContext : DbContext
     {
         public ServerDatabaseContext(DbContextOptions<ServerDatabaseContext> options) : base(options) { }
 

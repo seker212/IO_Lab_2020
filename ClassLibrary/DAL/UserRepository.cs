@@ -7,7 +7,7 @@ using TCPServer.Models;
 
 namespace TCPServer.DAL
 {
-    class UserRepository:BaseRepository<User>
+    public class UserRepository:BaseRepository<User>
     {
         public UserRepository(ServerDatabaseContext context) : base(context)
         {

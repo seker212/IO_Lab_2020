@@ -14,7 +14,7 @@ namespace TCPServer
         Standard,
         Admin
     }
-    class UserManager
+    public class UserManager
     {
         public UserRepository ur { get; set; }
 

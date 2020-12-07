@@ -8,7 +8,7 @@ using TCPServer.Models;
 
 namespace TCPServer
 {
-    class JokeSQL
+    public class JokeSQL
     {
 
         JokeRepository x;
