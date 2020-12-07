@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TCPServer.Models;
+using TCPServer.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.Sqlite;
 
@@ -40,6 +41,10 @@ namespace TCPServer.Tests
         {
             var result = _JokeSQL.AddJoke("ala ma kota");
             Assert.IsTrue(result);
+            var repo = new JokeRepository(_context);
+            int id = repo.GetNum();
+            var obj = repo.GetByID(id);
+            repo.Delete(obj);
         }
 
         [TestMethod()]

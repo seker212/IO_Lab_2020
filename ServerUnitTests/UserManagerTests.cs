@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TCPServer.Models;
+using TCPServer.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.Sqlite;
 
@@ -55,6 +56,7 @@ namespace TCPServer.Tests
         {
             _userManager.addUser("test1", "test2");
             var result = _userManager.deleteUser("test1", "incorrect");
+            _userManager.deleteUser("test1", "test2");
             Assert.IsFalse(result);
         }
 
@@ -69,8 +71,9 @@ namespace TCPServer.Tests
         [TestMethod()]
         public void updateUserTest_correctUser()
         {
-            _userManager.addUser("test8", "test9");
-            var result = _userManager.updateUser("test8", "test9", "8test", "9test");
+            _userManager.addUser("testowy", "testowe");
+            var result = _userManager.updateUser("testowy", "testowe", "testing", "tested");
+            _userManager.deleteUser("testing", "tested");
             Assert.IsTrue(result);
         }
 
@@ -79,6 +82,7 @@ namespace TCPServer.Tests
         {
             _userManager.addUser("test0", "test1");
             var result = _userManager.updateUser("test6", "test7", "2test", "1test");
+            _userManager.deleteUser("test0", "test1");
             Assert.IsFalse(result);
         }
 
