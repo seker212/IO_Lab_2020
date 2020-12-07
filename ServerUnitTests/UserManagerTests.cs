@@ -32,6 +32,7 @@ namespace TCPServer.Tests
         public void addUserTest_correctUser()
         {
             var result = _userManager.addUser("login", "pasy");
+            _userManager.deleteUser("login", "pasy");
             Assert.IsTrue(result);
         }
 

@@ -28,12 +28,20 @@ namespace TCPServer
         }
 
 
-        public void AddJoke(String txt)
+        public bool AddJoke(String txt)
         {
-            Joke nowy = new Joke();
-            nowy.Content = txt;
-            x.Insert(nowy);
-            x.Commit();
+            if (string.IsNullOrEmpty(txt))
+            {
+                return false;
+            }
+            else
+            {
+                Joke nowy = new Joke();
+                nowy.Content = txt;
+                x.Insert(nowy);
+                x.Commit();
+                return true;
+            }
         }
 
     }
