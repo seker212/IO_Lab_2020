@@ -9,7 +9,7 @@ using TCPServer.Models;
 
 namespace TCPServer.DAL
 {
-    class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         ServerDatabaseContext _context;
         protected DbSet<TEntity> dbSet;

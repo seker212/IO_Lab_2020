@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TCPServer.Models
 {
     [Table("Joke")]
-    class Joke
+    public class Joke
     {
         [Key]
         [Column("ID")]

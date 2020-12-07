@@ -7,7 +7,7 @@ using TCPServer.Models;
 
 namespace TCPServer.DAL
 {
-    class JokeRepository : BaseRepository<Joke>
+    public class JokeRepository : BaseRepository<Joke>
     {
        
         public JokeRepository(ServerDatabaseContext context) : base(context)
