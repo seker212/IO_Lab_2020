@@ -52,9 +52,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+    <ProjectReference Include="..\ServerFunctionsLibrary\ServerFunctionsLibrary.csproj">
       <Project>{3f83326d-5bbe-4905-9377-81aada828cc8}</Project>
-      <Name>ClassLibrary</Name>
+      <Name>ServerFunctionsLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

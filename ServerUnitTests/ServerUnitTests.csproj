@@ -48,12 +48,6 @@
     <Compile Include="UserManagerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
-      <Project>{3f83326d-5bbe-4905-9377-81aada828cc8}</Project>
-      <Name>ClassLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +69,12 @@
     <PackageReference Include="SQLitePCLRaw.bundle_green">
       <Version>2.0.4</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerFunctionsLibrary\ServerFunctionsLibrary.csproj">
+      <Project>{3f83326d-5bbe-4905-9377-81aada828cc8}</Project>
+      <Name>ServerFunctionsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
