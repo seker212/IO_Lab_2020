@@ -50,7 +50,6 @@ namespace TCPServer
         protected override void BeginDataTransmission(NetworkStream stream)
         {
             byte[] buffer = new byte[Buffer_size];
-            //UserType userType = SignIn(stream, buffer);
             try
             {
                 CommandHandler(stream, buffer);
@@ -105,7 +104,7 @@ namespace TCPServer
         {
             UserType userType = UserType.LoggedOut;
             string negatyw = "Ja tylko serwuje suchary\r\n";
-            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta,\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika\r\n";
+            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
             string response = "Zmiany zostaly wprowadzone pomyslnie\r\n";
             string logout = "Wylogowano\r\n";
@@ -160,7 +159,7 @@ namespace TCPServer
                     string nowy = GetStringFromUser(addJokeString, stream, buffer);
                     generator.AddJoke(nowy);
                 }
-                else if (command == "quit" && userType != UserType.LoggedOut)
+                else if (command == "quit")
                 {
                     Console.WriteLine("Rozłączam\n");
                     quit = true;

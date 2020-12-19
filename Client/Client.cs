@@ -17,7 +17,6 @@ namespace Client
             TcpClient client = cc.createClient();
             byte[] buffer = new byte[1024];
             NetworkStream stream = client.GetStream();
-            //cc.loginUser(stream, buffer);
             while(true)
             {
                 try
