@@ -11,6 +11,7 @@ namespace TCPServer
     public enum UserType
     {
         NotValid,
+        LoggedOut,
         Standard,
         Admin
     }
