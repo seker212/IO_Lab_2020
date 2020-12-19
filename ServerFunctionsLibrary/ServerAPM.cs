@@ -104,12 +104,14 @@ namespace TCPServer
         {
             UserType userType = UserType.LoggedOut;
             string negatyw = "Ja tylko serwuje suchary\r\n";
-            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika\r\n";
+            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych,\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
             string response = "Zmiany zostaly wprowadzone pomyslnie\r\n";
+            string backupResponse = "Utworzono backup\r\n";
             string logout = "Wylogowano\r\n";
             byte[] helpByte = new ASCIIEncoding().GetBytes(helpString);
             byte[] responseByte = new ASCIIEncoding().GetBytes(response);
+            byte[] backupResponseByte = new ASCIIEncoding().GetBytes(backupResponse);
             byte[] logoutByte = new ASCIIEncoding().GetBytes(logout);
 
             bool quit = false;
@@ -130,6 +132,13 @@ namespace TCPServer
                     stream.Close();
                     quit = true;
                     SHUTDOWN = true;
+                }
+                else if (command == "backup" && userType == UserType.Admin)
+                {
+                    Console.WriteLine("backup Invoked\r\n");
+                    DateTime localDate = DateTime.Now;
+                    System.IO.File.Copy(@"..\..\..\DBIO.db", @"..\..\..\DB_Backups\DBIOBackup_"+ DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss")+".db");
+                    stream.Write(backupResponseByte, 0, backupResponseByte.Length);
                 }
                 else if (command == "addUser" && userType == UserType.Admin)
                 {
