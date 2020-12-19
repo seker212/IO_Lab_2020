@@ -50,22 +50,10 @@ namespace TCPServer
         protected override void BeginDataTransmission(NetworkStream stream)
         {
             byte[] buffer = new byte[Buffer_size];
-            UserType userType = SignIn(stream, buffer);
+            //UserType userType = SignIn(stream, buffer);
             try
-            { 
-                if (userType == UserType.NotValid)
-                {
-                    var wrongPass = new ASCIIEncoding().GetBytes("Zly login lub haslo");
-                    stream.Write(wrongPass, 0, wrongPass.Length);
-                }
-                else if (userType == UserType.Standard || userType == UserType.Admin)
-                {
-                    CommandHandler(stream, buffer, userType);
-                }
-                else
-                {
-                    throw new Exception("Cos poszlo nie tak");
-                }
+            {
+                CommandHandler(stream, buffer);
             }
             catch (IOException e)
             {
@@ -113,25 +101,29 @@ namespace TCPServer
             return result;
         }
 
-        protected void CommandHandler(NetworkStream stream, byte[] buffer, UserType userType)
+        protected void CommandHandler(NetworkStream stream, byte[] buffer)
         {
+            UserType userType = UserType.LoggedOut;
             string negatyw = "Ja tylko serwuje suchary\r\n";
             string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta,\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
             string response = "Zmiany zostaly wprowadzone pomyslnie\r\n";
+            string logout = "Wylogowano\r\n";
             byte[] helpByte = new ASCIIEncoding().GetBytes(helpString);
             byte[] responseByte = new ASCIIEncoding().GetBytes(response);
+            byte[] logoutByte = new ASCIIEncoding().GetBytes(logout);
 
             bool quit = false;
             JokeSQL generator = new JokeSQL(context);
-            
+
             //Wypisanie help'a
             stream.Write(helpByte, 0, helpByte.Length);
+            
+            
             while (quit == false)
             {
                 string command = GetStringFromUser(null, stream, buffer);
                 Console.WriteLine(command);
-
                 //Rozpoznawanie otrzymanego komunikatu i odpowiedzi
                 if (command == "shutdown" && userType == UserType.Admin)
                 {
@@ -162,24 +154,45 @@ namespace TCPServer
                     um.updateUser(cridentials[0], cridentials[1], newCridentials[0], newCridentials[1]);
                     stream.Write(responseByte, 0, responseByte.Length);
                 }
-                else if (command == "nowy")
+                else if (command == "nowy" && userType != UserType.LoggedOut)
                 {
                     Console.WriteLine("Dodawanie suchara\n");
                     string nowy = GetStringFromUser(addJokeString, stream, buffer);
                     generator.AddJoke(nowy);
                 }
-                else if (command == "quit")
+                else if (command == "quit" && userType != UserType.LoggedOut)
                 {
                     Console.WriteLine("Rozłączam\n");
                     quit = true;
                     stream.Close();
                 }
-                else if (command == "suchar")
+                else if (command == "suchar" && userType != UserType.LoggedOut)
                 {
                     Console.WriteLine("Potwierdzam\n");
                     String sucharek = generator.GetJoke();
                     byte[] pozytyw = Encoding.ASCII.GetBytes(sucharek);
                     stream.Write(pozytyw, 0, pozytyw.Length);
+                }
+                else if (command == "login" && userType == UserType.LoggedOut)
+                {
+                    userType = SignIn(stream, buffer);
+                    if (userType == UserType.NotValid)
+                    {
+                        var wrongPass = new ASCIIEncoding().GetBytes("Zly login lub haslo\r\n");
+                        stream.Write(wrongPass, 0, wrongPass.Length);
+                        userType = UserType.LoggedOut;
+                    }
+                    else
+                    {
+                        var goodPass = new ASCIIEncoding().GetBytes("Poprawnie zalogowano\r\n");
+                        stream.Write(goodPass, 0, goodPass.Length);
+                    }
+                }
+                else if (command == "logout" && userType != UserType.LoggedOut)
+                {
+                    Console.WriteLine("Logout\n");
+                    userType = UserType.LoggedOut;
+                    stream.Write(logoutByte, 0, logoutByte.Length);
                 }
                 else
                 {
