@@ -1,0 +1,414 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Users/seker/Code/IO/TCPServer_lab1/Documentation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ClientFunctionsLibrary.ClientConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ClientFunctionsLibrary.ClientConnection.html",
+          "hash": "h2YOiiGo6ZgHyWekcnv7EQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ClientFunctionsLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ClientFunctionsLibrary.html",
+          "hash": "jsOMHhvh2HQsGRsWltnX4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Program.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Program.Test.html",
+          "hash": "pYzxWYUqN9JPzWpoCBnaZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Program.html",
+          "hash": "2Sa9miZ16v6F5mGX02hm1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.AbstractServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.AbstractServer.html",
+          "hash": "rwtTD7u5t4R81Nk9dm7xFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.DAL.BaseRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.DAL.BaseRepository-1.html",
+          "hash": "q4CnNpwPGN5zJV+kY+XG5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.DAL.IRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.DAL.IRepository-1.html",
+          "hash": "95IDjEYKoeBtxcEbYQxaQg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.DAL.JokeRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.DAL.JokeRepository.html",
+          "hash": "8z3fGHebZmbcRRB/mUV5jw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.DAL.UserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.DAL.UserRepository.html",
+          "hash": "4NhFYTK5zRShAhw+1AuNIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.DAL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.DAL.html",
+          "hash": "fnMEd0A9P78hTrIzNT0wRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.JokeSQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.JokeSQL.html",
+          "hash": "6sQTYbXz/TxgTyzgp+7ekg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Models.Joke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Models.Joke.html",
+          "hash": "DGn4KGUjzQu54Oy0b2L0dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Models.ServerDatabaseContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Models.ServerDatabaseContext.html",
+          "hash": "hjUWO3R8WMKa66R+Vj56aA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Models.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Models.User.html",
+          "hash": "2YCOIh1L57l8ybBOGcwCdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Models.html",
+          "hash": "xBTjt0aRE2RJWupXpgOW+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.ServerAPM.TransmissionDataDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.ServerAPM.TransmissionDataDelegate.html",
+          "hash": "2wwr61WYWbxt3YcxiNUS7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.ServerAPM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.ServerAPM.html",
+          "hash": "I+PiCwqVJUJflMed9OIHGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.ServerSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.ServerSync.html",
+          "hash": "E7JqMyb5mhRGftilDZgxdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Tests.JokeSQLTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Tests.JokeSQLTests.html",
+          "hash": "nbL71QzTXP6Kr3TU0aVeqw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Tests.UserManagerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Tests.UserManagerTests.html",
+          "hash": "XrOUUXCM7aWnJn/SeKzW8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.Tests.html",
+          "hash": "eBtfspaAU8fb/3ptmmJ4NQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.UserManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.UserManager.html",
+          "hash": "64j/OGCE03fERv2KgrErnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.UserType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.UserType.html",
+          "hash": "ruP+ztVyxaY9Z6GIf5oxng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.html",
+          "hash": "lLVV9wiwOfGqbg9SHDF89Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "RrbRXCkYm51hCvFhy5WNUA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "T3MGfjbwbyIyO9ck54D+dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "M6QnYfGRTmIbYj96dgBeng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "/g0RDg32yQ/ODbE5er8Vpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 24,
+          "skipped_file_count": 24
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
