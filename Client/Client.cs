@@ -19,7 +19,11 @@ namespace Client
             NetworkStream stream = client.GetStream();
             while(true)
             {
-                cc.clientLoop(ref stream, buffer, ref client);
+                try
+                {
+                    cc.clientLoop(ref stream, buffer, ref client);
+                }
+                catch (Exception e) { System.Console.Write(e.StackTrace); }
             }
         }
     }
