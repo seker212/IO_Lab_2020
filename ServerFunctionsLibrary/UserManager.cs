@@ -95,5 +95,18 @@ namespace TCPServer
                 return u;
             }
         }
+
+        public string GetUserPassword(string login)
+        {
+            User u = this.ur.getUser(login);
+            if(u == null)
+            {
+                return null;
+            }
+            else
+            {
+                return u.password;
+            }
+        }
     }
 }

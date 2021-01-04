@@ -21,9 +21,9 @@ namespace Client
             {
                 try
                 {
-                    cc.clientLoop(stream, buffer);
+                    cc.clientLoop(ref stream, buffer, ref client);
                 }
-                catch(Exception e) { System.Console.Write(e.StackTrace); }
+                catch (Exception e) { System.Console.Write(e.StackTrace); }
             }
         }
     }

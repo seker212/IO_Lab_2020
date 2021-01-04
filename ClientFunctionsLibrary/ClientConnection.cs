@@ -46,14 +46,29 @@ namespace ClientFunctionsLibrary
             return rec;
         }
 
-        public void clientLoop(NetworkStream stream, byte[] buffer)
+        public void clientLoop(ref NetworkStream stream, byte[] buffer, ref TcpClient client)
         {
-            System.Console.Write(reciveMessage(stream, buffer));
-            string msg = System.Console.ReadLine();
+            Console.Write(reciveMessage(stream, buffer));
+            string msg = Console.ReadLine();
             sendMessage(stream, msg);
+            if (msg == "quit")
+            {
+                closeClient(ref client, ref stream);
+                Console.WriteLine("Czy chcesz sie polaczyc ponownie? (y/n)");
+                string res = Console.ReadLine();
+                if (res == "y")
+                {
+                    client = createClient();
+                    stream = client.GetStream();
+                }
+                else
+                {
+                    Environment.Exit(0);
+                }
+            }
         }
 
-        public void closeClient(TcpClient client, NetworkStream stream)
+        public void closeClient(ref TcpClient client, ref NetworkStream stream)
         {
             stream.Close();
             client.Close();

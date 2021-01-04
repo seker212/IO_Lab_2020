@@ -104,7 +104,7 @@ namespace TCPServer
         {
             UserType userType = UserType.LoggedOut;
             string negatyw = "Ja tylko serwuje suchary\r\n";
-            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych,\r\n";
+            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"reset\" zmienia haslo wybranego uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych,\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
             string response = "Zmiany zostaly wprowadzone pomyslnie\r\n";
             string backupResponse = "Utworzono backup\r\n";
@@ -201,6 +201,25 @@ namespace TCPServer
                     Console.WriteLine("Logout\n");
                     userType = UserType.LoggedOut;
                     stream.Write(logoutByte, 0, logoutByte.Length);
+                }
+                else if (command == "reset" && userType == UserType.Admin)
+                {
+                    Console.WriteLine("Password reset\n");
+                    string login = GetStringFromUser("Podaj login uzytkownika: ", stream, buffer);
+                    string password = um.GetUserPassword(login);
+                    if(password == null)
+                    {
+                        var wrongPass = new ASCIIEncoding().GetBytes("Taki uzytkownik nie istnieje\r\n");
+                        stream.Write(wrongPass, 0, wrongPass.Length);
+                        Console.WriteLine("Wrong login\n");
+                    }
+                    else
+                    {
+                        string newPassword = GetStringFromUser("Podaj nowe haslo: ", stream, buffer);
+                        um.updateUser(login, password, login, newPassword);
+                        stream.Write(responseByte, 0, responseByte.Length);
+                        Console.WriteLine("Approved\n");
+                    }
                 }
                 else
                 {
