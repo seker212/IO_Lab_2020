@@ -84,7 +84,7 @@ namespace TCPServer
             bool admin = usr.isAdmin;
             Joke joke;
             suchar[] lista = new suchar[x.GetNum()+1];
-            String output = "";
+            String output = "\n\r";
 
             if (admin == true)
             {
