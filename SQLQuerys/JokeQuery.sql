@@ -4,7 +4,7 @@ CREATE TABLE Joke(
 	Content varchar(255)
 );
 
-INSERT INTO Joke (Content)
+INSERT INTO Joke (CreatorID, Content)
 VALUES (1, 'Gdzie podpisano traktat wersalski? \n- Na samym dole, pod tekstem.'),
 (1, 'Co sie po jednej stronie glaszcze a po drugiej lize?? - Nie wiem. -... znaczek pocztowy!'),
 (1, 'Co sie stanie jak walec drogowy przejedzie czlowieka? - Konwersja obrazu z 3D na 2D'),
