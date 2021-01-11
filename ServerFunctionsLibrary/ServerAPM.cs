@@ -67,9 +67,9 @@ namespace TCPServer
             AcceptClient();
         }
 
-        protected UserType SignIn(NetworkStream stream, byte[] buffer)
+        protected UserType SignIn(NetworkStream stream, byte[] buffer, ref string[] cridentials)
         {
-            var cridentials = GetCridentials(buffer, stream, false);
+            cridentials = GetCridentials(buffer, stream, false);
             var user = um.verifyUser(cridentials[0], cridentials[1]);
             if (user == null)
                 return UserType.NotValid;
@@ -104,15 +104,19 @@ namespace TCPServer
         {
             UserType userType = UserType.LoggedOut;
             string negatyw = "Ja tylko serwuje suchary\r\n";
-            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"reset\" zmienia haslo wybranego uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych,\r\n";
+            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika, \r\n\t\"view\" wypisuje wszystkie suchary dodane przez obecnego uzytkowika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"reset\" zmienia haslo wybranego uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych, \r\n\t\"view\" wypisuje wszystkie suchary w bazie danych\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
             string response = "Zmiany zostaly wprowadzone pomyslnie\r\n";
+            string odp = "Wyswietlono.\r\n";
             string backupResponse = "Utworzono backup\r\n";
             string logout = "Wylogowano\r\n";
             byte[] helpByte = new ASCIIEncoding().GetBytes(helpString);
             byte[] responseByte = new ASCIIEncoding().GetBytes(response);
             byte[] backupResponseByte = new ASCIIEncoding().GetBytes(backupResponse);
             byte[] logoutByte = new ASCIIEncoding().GetBytes(logout);
+            byte[] odpByte = new ASCIIEncoding().GetBytes(odp);
+
+            string[] actualUser = new string[2];
 
             bool quit = false;
             JokeSQL generator = new JokeSQL(context);
@@ -162,11 +166,19 @@ namespace TCPServer
                     um.updateUser(cridentials[0], cridentials[1], newCridentials[0], newCridentials[1]);
                     stream.Write(responseByte, 0, responseByte.Length);
                 }
+                else if (command == "view")
+                {
+                    Console.WriteLine("view Invoked\r\n");
+                    string sucharki = generator.listJokes(ref actualUser);
+                    byte[] sucharkiByte = new ASCIIEncoding().GetBytes(sucharki);
+                    stream.Write(sucharkiByte, 0, sucharkiByte.Length);
+                }
                 else if (command == "nowy" && userType != UserType.LoggedOut)
                 {
                     Console.WriteLine("Dodawanie suchara\n");
                     string nowy = GetStringFromUser(addJokeString, stream, buffer);
-                    generator.AddJoke(nowy);
+                    generator.AddJoke(nowy, ref actualUser);
+                    stream.Write(responseByte, 0, responseByte.Length);
                 }
                 else if (command == "quit")
                 {
@@ -183,7 +195,7 @@ namespace TCPServer
                 }
                 else if (command == "login" && userType == UserType.LoggedOut)
                 {
-                    userType = SignIn(stream, buffer);
+                    userType = SignIn(stream, buffer, ref actualUser);
                     if (userType == UserType.NotValid)
                     {
                         var wrongPass = new ASCIIEncoding().GetBytes("Zly login lub haslo\r\n");
