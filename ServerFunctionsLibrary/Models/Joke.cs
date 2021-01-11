@@ -14,6 +14,8 @@ namespace TCPServer.Models
         [Key]
         [Column("ID")]
         public int ID { get; set; }
+        [Column("CreatorID")]
+        public int CreatorID { get; set; }
         [Column("Content")]
         public string Content { get; set; }
         

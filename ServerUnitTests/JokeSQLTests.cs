@@ -39,7 +39,8 @@ namespace TCPServer.Tests
         [TestMethod()]
         public void AddJokeTest_correct()
         {
-            var result = _JokeSQL.AddJoke("ala ma kota");
+            string[] actualUser = { "admin", "admin" };
+            var result = _JokeSQL.AddJoke("ala ma kota", ref actualUser);
             Assert.IsTrue(result);
             var repo = new JokeRepository(_context);
             int id = repo.GetNum();
@@ -50,7 +51,8 @@ namespace TCPServer.Tests
         [TestMethod()]
         public void AddJokeTest_incorrect()
         {
-            var result = _JokeSQL.AddJoke("");
+            string[] actualUser = { "admin", "admin" };
+            var result = _JokeSQL.AddJoke("", ref actualUser);
             Assert.IsFalse(result);
         }
     }
