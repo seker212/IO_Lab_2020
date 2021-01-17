@@ -104,8 +104,9 @@ namespace TCPServer
         {
             UserType userType = UserType.LoggedOut;
             string negatyw = "Ja tylko serwuje suchary\r\n";
-            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika, \r\n\t\"view\" wypisuje wszystkie suchary dodane przez obecnego uzytkowika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"reset\" zmienia haslo wybranego uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych, \r\n\t\"view\" wypisuje wszystkie suchary w bazie danych\r\n";
+            string helpString = "POLECENIA\r\n\t\"suchar\" wysyla suchara, \r\n\t\"nowy\" pozwala dodac suchara, \r\n\t\"quit\" rozlacza klienta, \r\n\t\"login\" loguje uzytkownika, \r\n\t\"logout\" wylogowuje uzytkownika, \r\n\t\"view\" wypisuje wszystkie suchary dodane przez obecnego uzytkowika\r\nPOLECENIA ADMINA \r\n\t\"shutdown\" zamyka serwer, \r\n\t\"addUser\" dodaje uzytkownika, \r\n\t\"deleteUser\" usuwa uzytkownika, \r\n\t\"updateUser\" zmienia wlasnosci uzytkownika, \r\n\t\"reset\" zmienia haslo wybranego uzytkownika, \r\n\t\"backup\" tworzy backup obecnego stanu bazy danych, \r\n\t\"view\" wypisuje wszystkie suchary w bazie danych, \r\n\t\"delsuch\" rozpoczyna proces usuwania suchara\r\n";
             string addJokeString = "\r\nNapisz tutaj suchara, enter wysyla.\r\n";
+            string delJokeString = "\r\nPodaj nr ID suchara, enter wysyla.\r\n";
             string response = "Zmiany zostaly wprowadzone pomyslnie\r\n";
             string odp = "Wyswietlono.\r\n";
             string backupResponse = "Utworzono backup\r\n";
@@ -166,7 +167,7 @@ namespace TCPServer
                     um.updateUser(cridentials[0], cridentials[1], newCridentials[0], newCridentials[1]);
                     stream.Write(responseByte, 0, responseByte.Length);
                 }
-                else if (command == "view")
+                else if (command == "view" && userType != UserType.LoggedOut)
                 {
                     Console.WriteLine("view Invoked\r\n");
                     string sucharki = generator.listJokes(ref actualUser);
@@ -178,6 +179,13 @@ namespace TCPServer
                     Console.WriteLine("Dodawanie suchara\n");
                     string nowy = GetStringFromUser(addJokeString, stream, buffer);
                     generator.AddJoke(nowy, ref actualUser);
+                    stream.Write(responseByte, 0, responseByte.Length);
+                }
+                else if (command == "delsuch" && userType == UserType.Admin)
+                {
+                    Console.WriteLine("deleteSuchar Invoked\r\n");
+                    string usuw = GetStringFromUser(delJokeString, stream, buffer);
+                    generator.delJoke(usuw);
                     stream.Write(responseByte, 0, responseByte.Length);
                 }
                 else if (command == "quit")

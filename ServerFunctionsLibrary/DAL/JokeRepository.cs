@@ -20,5 +20,17 @@ namespace TCPServer.DAL
             return dbSet.Count();
         }
 
+        public List<int> getIDList()
+        {
+            var jokelist = dbSet.Select(x => x.ID).ToList();
+            return jokelist;
+        }
+
+        public List<Joke> getJokeList()
+        {
+            var jokelist = dbSet.ToList();
+            return jokelist;
+        }
+
     }
 }
