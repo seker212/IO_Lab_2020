@@ -45,9 +45,13 @@ namespace TCPServer
         public string GetJoke()
         {
             Random rnd = new Random();
-            int jokeID = rnd.Next(1, x.GetNum()+1);
-            Joke joke = x.GetByID(jokeID);
-            string jk = (string)joke.Content;
+            //int jokeID = rnd.Next(1, x.GetNum()+1);
+            //Joke joke = x.GetByID(jokeID);
+            var list = x.getIDList();
+            int index = rnd.Next(list.Count);
+            Joke choosen = x.GetByID(list[index]);
+
+            string jk = (string)choosen.Content;
             jk = jk.Replace("\\r\\n", "\r\n");
             return jk;
         }
@@ -76,25 +80,55 @@ namespace TCPServer
             }
         }
 
+        public bool delJoke(string usuw)
+        {
+            
+            if (usuw == null)
+            {
+                return false;
+            }
+            else
+            {
+                int usuwID = int.Parse(usuw);
+                Joke usuwany = this.x.GetByID(usuwID);
+                this.x.Delete(usuwany);
+                x.Commit();
+                return true;
+            }
+            
+        }
+
         public string listJokes(ref string[] actualUser)
         {
             string login = actualUser[0];
             User usr = y.getUser(login);
             int userID = usr.ID;
             bool admin = usr.isAdmin;
-            Joke joke;
-            suchar[] lista = new suchar[x.GetNum()+1];
+            //Joke joke;
+            var ilosc = x.getIDList();
+
+            suchar[] lista = new suchar[ilosc.Count()+1];
             String output = "\n\r";
+
+            /*int maxJokes = x.GetNum() + 1;
+            for (int i = 1; i < maxJokes; i++)
+            {
+                joke = x.GetByID(i);
+                suchar z = new suchar(i, joke.CreatorID, joke.Content);
+                lista[i] = z;
+            }*/
+
+            var list = x.getJokeList();
+            int l = 1;
+            foreach (Joke elem in list)
+            {
+                suchar z = new suchar(elem.ID, elem.CreatorID, elem.Content);
+                lista[l] = z;
+                l++;
+            }
 
             if (admin == true)
             {
-                int maxJokes = x.GetNum()+1;
-                for(int i = 1; i < maxJokes; i++)
-                {
-                    joke = x.GetByID(i);
-                    suchar z = new suchar(i, joke.CreatorID, joke.Content);
-                    lista[i] = z;
-                }
                 for(int i = 1; i < lista.Length; i++)
                 {
                     suchar y = lista[i];
@@ -104,13 +138,6 @@ namespace TCPServer
             }
             else
             {
-                int maxJokes = x.GetNum() + 1;
-                for (int i = 1; i < maxJokes; i++)
-                {
-                    joke = x.GetByID(i);
-                    suchar z = new suchar(i, joke.CreatorID, joke.Content);
-                    lista[i] = z;
-                }
                 for (int i = 1; i < lista.Length; i++)
                 {
                     suchar y = lista[i];
