@@ -8,14 +8,21 @@ items:
   - TCPServer.AbstractServer.#ctor(System.Net.IPAddress,System.Int32)
   - TCPServer.AbstractServer.AcceptClient
   - TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  - TCPServer.AbstractServer.buffer_size
   - TCPServer.AbstractServer.Buffer_size
   - TCPServer.AbstractServer.checkPort
+  - TCPServer.AbstractServer.iPAddress
   - TCPServer.AbstractServer.IPAddress
+  - TCPServer.AbstractServer.port
   - TCPServer.AbstractServer.Port
+  - TCPServer.AbstractServer.running
   - TCPServer.AbstractServer.Start
   - TCPServer.AbstractServer.StartListening
+  - TCPServer.AbstractServer.stream
   - TCPServer.AbstractServer.Stream
+  - TCPServer.AbstractServer.tcpClient
   - TCPServer.AbstractServer.TcpClient
+  - TCPServer.AbstractServer.tcpListener
   - TCPServer.AbstractServer.TcpListener
   langs:
   - csharp
@@ -53,6 +60,195 @@ items:
   - Public
   - MustInherit
   - Class
+- uid: TCPServer.AbstractServer.iPAddress
+  commentId: F:TCPServer.AbstractServer.iPAddress
+  id: iPAddress
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: iPAddress
+  nameWithType: AbstractServer.iPAddress
+  fullName: TCPServer.AbstractServer.iPAddress
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: iPAddress
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 16
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: IPAddress iPAddress
+    return:
+      type: System.Net.IPAddress
+    content.vb: iPAddress As IPAddress
+- uid: TCPServer.AbstractServer.port
+  commentId: F:TCPServer.AbstractServer.port
+  id: port
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: port
+  nameWithType: AbstractServer.port
+  fullName: TCPServer.AbstractServer.port
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: port
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 17
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: int port
+    return:
+      type: System.Int32
+    content.vb: port As Integer
+- uid: TCPServer.AbstractServer.buffer_size
+  commentId: F:TCPServer.AbstractServer.buffer_size
+  id: buffer_size
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: buffer_size
+  nameWithType: AbstractServer.buffer_size
+  fullName: TCPServer.AbstractServer.buffer_size
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: buffer_size
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 18
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: int buffer_size
+    return:
+      type: System.Int32
+    content.vb: buffer_size As Integer
+- uid: TCPServer.AbstractServer.running
+  commentId: F:TCPServer.AbstractServer.running
+  id: running
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: running
+  nameWithType: AbstractServer.running
+  fullName: TCPServer.AbstractServer.running
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: running
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 19
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: bool running
+    return:
+      type: System.Boolean
+    content.vb: running As Boolean
+- uid: TCPServer.AbstractServer.tcpListener
+  commentId: F:TCPServer.AbstractServer.tcpListener
+  id: tcpListener
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: tcpListener
+  nameWithType: AbstractServer.tcpListener
+  fullName: TCPServer.AbstractServer.tcpListener
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: tcpListener
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 20
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: TcpListener tcpListener
+    return:
+      type: System.Net.Sockets.TcpListener
+    content.vb: tcpListener As TcpListener
+- uid: TCPServer.AbstractServer.tcpClient
+  commentId: F:TCPServer.AbstractServer.tcpClient
+  id: tcpClient
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: tcpClient
+  nameWithType: AbstractServer.tcpClient
+  fullName: TCPServer.AbstractServer.tcpClient
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: tcpClient
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 21
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: TcpClient tcpClient
+    return:
+      type: System.Net.Sockets.TcpClient
+    content.vb: tcpClient As TcpClient
+- uid: TCPServer.AbstractServer.stream
+  commentId: F:TCPServer.AbstractServer.stream
+  id: stream
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: stream
+  nameWithType: AbstractServer.stream
+  fullName: TCPServer.AbstractServer.stream
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: stream
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 22
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: NetworkStream stream
+    return:
+      type: System.Net.Sockets.NetworkStream
+    content.vb: stream As NetworkStream
 - uid: TCPServer.AbstractServer.IPAddress
   commentId: P:TCPServer.AbstractServer.IPAddress
   id: IPAddress
@@ -499,11 +695,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TCPServer.AbstractServer.IPAddress*
-  commentId: Overload:TCPServer.AbstractServer.IPAddress
-  name: IPAddress
-  nameWithType: AbstractServer.IPAddress
-  fullName: TCPServer.AbstractServer.IPAddress
 - uid: System.Net.IPAddress
   commentId: T:System.Net.IPAddress
   parent: System.Net
@@ -517,11 +708,6 @@ references:
   name: System.Net
   nameWithType: System.Net
   fullName: System.Net
-- uid: TCPServer.AbstractServer.Port*
-  commentId: Overload:TCPServer.AbstractServer.Port
-  name: Port
-  nameWithType: AbstractServer.Port
-  fullName: TCPServer.AbstractServer.Port
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -529,16 +715,13 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: TCPServer.AbstractServer.Buffer_size*
-  commentId: Overload:TCPServer.AbstractServer.Buffer_size
-  name: Buffer_size
-  nameWithType: AbstractServer.Buffer_size
-  fullName: TCPServer.AbstractServer.Buffer_size
-- uid: TCPServer.AbstractServer.TcpListener*
-  commentId: Overload:TCPServer.AbstractServer.TcpListener
-  name: TcpListener
-  nameWithType: AbstractServer.TcpListener
-  fullName: TCPServer.AbstractServer.TcpListener
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System.Net.Sockets.TcpListener
   commentId: T:System.Net.Sockets.TcpListener
   parent: System.Net.Sockets
@@ -552,11 +735,6 @@ references:
   name: System.Net.Sockets
   nameWithType: System.Net.Sockets
   fullName: System.Net.Sockets
-- uid: TCPServer.AbstractServer.TcpClient*
-  commentId: Overload:TCPServer.AbstractServer.TcpClient
-  name: TcpClient
-  nameWithType: AbstractServer.TcpClient
-  fullName: TCPServer.AbstractServer.TcpClient
 - uid: System.Net.Sockets.TcpClient
   commentId: T:System.Net.Sockets.TcpClient
   parent: System.Net.Sockets
@@ -564,11 +742,6 @@ references:
   name: TcpClient
   nameWithType: TcpClient
   fullName: System.Net.Sockets.TcpClient
-- uid: TCPServer.AbstractServer.Stream*
-  commentId: Overload:TCPServer.AbstractServer.Stream
-  name: Stream
-  nameWithType: AbstractServer.Stream
-  fullName: TCPServer.AbstractServer.Stream
 - uid: System.Net.Sockets.NetworkStream
   commentId: T:System.Net.Sockets.NetworkStream
   parent: System.Net.Sockets
@@ -576,6 +749,36 @@ references:
   name: NetworkStream
   nameWithType: NetworkStream
   fullName: System.Net.Sockets.NetworkStream
+- uid: TCPServer.AbstractServer.IPAddress*
+  commentId: Overload:TCPServer.AbstractServer.IPAddress
+  name: IPAddress
+  nameWithType: AbstractServer.IPAddress
+  fullName: TCPServer.AbstractServer.IPAddress
+- uid: TCPServer.AbstractServer.Port*
+  commentId: Overload:TCPServer.AbstractServer.Port
+  name: Port
+  nameWithType: AbstractServer.Port
+  fullName: TCPServer.AbstractServer.Port
+- uid: TCPServer.AbstractServer.Buffer_size*
+  commentId: Overload:TCPServer.AbstractServer.Buffer_size
+  name: Buffer_size
+  nameWithType: AbstractServer.Buffer_size
+  fullName: TCPServer.AbstractServer.Buffer_size
+- uid: TCPServer.AbstractServer.TcpListener*
+  commentId: Overload:TCPServer.AbstractServer.TcpListener
+  name: TcpListener
+  nameWithType: AbstractServer.TcpListener
+  fullName: TCPServer.AbstractServer.TcpListener
+- uid: TCPServer.AbstractServer.TcpClient*
+  commentId: Overload:TCPServer.AbstractServer.TcpClient
+  name: TcpClient
+  nameWithType: AbstractServer.TcpClient
+  fullName: TCPServer.AbstractServer.TcpClient
+- uid: TCPServer.AbstractServer.Stream*
+  commentId: Overload:TCPServer.AbstractServer.Stream
+  name: Stream
+  nameWithType: AbstractServer.Stream
+  fullName: TCPServer.AbstractServer.Stream
 - uid: TCPServer.AbstractServer.#ctor*
   commentId: Overload:TCPServer.AbstractServer.#ctor
   name: AbstractServer
@@ -586,13 +789,6 @@ references:
   name: checkPort
   nameWithType: AbstractServer.checkPort
   fullName: TCPServer.AbstractServer.checkPort
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: TCPServer.AbstractServer.StartListening*
   commentId: Overload:TCPServer.AbstractServer.StartListening
   name: StartListening

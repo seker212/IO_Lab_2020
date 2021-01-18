@@ -6,6 +6,7 @@ items:
   parent: TCPServer.DAL
   children:
   - TCPServer.DAL.BaseRepository`1.#ctor(TCPServer.Models.ServerDatabaseContext)
+  - TCPServer.DAL.BaseRepository`1._context
   - TCPServer.DAL.BaseRepository`1.Commit
   - TCPServer.DAL.BaseRepository`1.dbSet
   - TCPServer.DAL.BaseRepository`1.Delete(`0)
@@ -55,6 +56,35 @@ items:
   - Class
   fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)
   name.vb: BaseRepository(Of TEntity)
+- uid: TCPServer.DAL.BaseRepository`1._context
+  commentId: F:TCPServer.DAL.BaseRepository`1._context
+  id: _context
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: _context
+  nameWithType: BaseRepository<TEntity>._context
+  fullName: TCPServer.DAL.BaseRepository<TEntity>._context
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: _context
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: ServerDatabaseContext _context
+    return:
+      type: TCPServer.Models.ServerDatabaseContext
+    content.vb: _context As ServerDatabaseContext
+  nameWithType.vb: BaseRepository(Of TEntity)._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)._context
 - uid: TCPServer.DAL.BaseRepository`1.dbSet
   commentId: F:TCPServer.DAL.BaseRepository`1.dbSet
   id: dbSet
@@ -495,6 +525,17 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TCPServer.Models.ServerDatabaseContext
+  commentId: T:TCPServer.Models.ServerDatabaseContext
+  parent: TCPServer.Models
+  name: ServerDatabaseContext
+  nameWithType: ServerDatabaseContext
+  fullName: TCPServer.Models.ServerDatabaseContext
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
 - uid: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
   commentId: T:Microsoft.EntityFrameworkCore.DbSet{`0}
   parent: Microsoft.EntityFrameworkCore
@@ -587,17 +628,6 @@ references:
   fullName: TCPServer.DAL.BaseRepository<TEntity>.BaseRepository
   nameWithType.vb: BaseRepository(Of TEntity).BaseRepository
   fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).BaseRepository
-- uid: TCPServer.Models.ServerDatabaseContext
-  commentId: T:TCPServer.Models.ServerDatabaseContext
-  parent: TCPServer.Models
-  name: ServerDatabaseContext
-  nameWithType: ServerDatabaseContext
-  fullName: TCPServer.Models.ServerDatabaseContext
-- uid: TCPServer.Models
-  commentId: N:TCPServer.Models
-  name: TCPServer.Models
-  nameWithType: TCPServer.Models
-  fullName: TCPServer.Models
 - uid: TCPServer.DAL.BaseRepository`1.Get*
   commentId: Overload:TCPServer.DAL.BaseRepository`1.Get
   name: Get

@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Program.Program
+  commentId: T:Program.Program
+  id: Program
+  parent: Program
+  children:
+  - Program.Program.Main(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: Program
+  nameWithType: Program
+  fullName: Program.Program
+  type: Class
+  source:
+    remote:
+      path: TCPServer/Program.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Program
+    path: ../../TCPServer/Program.cs
+    startLine: 6
+  assemblies:
+  - TCPServer
+  namespace: Program
+  syntax:
+    content: class Program
+    content.vb: Class Program
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: Program.Program.Main(System.String[])
+  commentId: M:Program.Program.Main(System.String[])
+  id: Main(System.String[])
+  parent: Program.Program
+  langs:
+  - csharp
+  - vb
+  name: Main(String[])
+  nameWithType: Program.Main(String[])
+  fullName: Program.Program.Main(System.String[])
+  type: Method
+  source:
+    remote:
+      path: TCPServer/Program.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Main
+    path: ../../TCPServer/Program.cs
+    startLine: 8
+  assemblies:
+  - TCPServer
+  namespace: Program
+  syntax:
+    content: static void Main(string[] args)
+    parameters:
+    - id: args
+      type: System.String[]
+    content.vb: Shared Sub Main(args As String())
+  overload: Program.Program.Main*
+  nameWithType.vb: Program.Main(String())
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+  fullName.vb: Program.Program.Main(System.String())
+  name.vb: Main(String())
+references:
+- uid: Program
+  commentId: N:Program
+  name: Program
+  nameWithType: Program
+  fullName: Program
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Program.Program.Main*
+  commentId: Overload:Program.Program.Main
+  name: Main
+  nameWithType: Program.Main
+  fullName: Program.Program.Main
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

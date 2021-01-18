@@ -37,6 +37,7 @@ items:
   implements:
   - TCPServer.DAL.IRepository{TCPServer.Models.User}
   inheritedMembers:
+  - TCPServer.DAL.BaseRepository{TCPServer.Models.User}._context
   - TCPServer.DAL.BaseRepository{TCPServer.Models.User}.dbSet
   - TCPServer.DAL.BaseRepository{TCPServer.Models.User}.Get(System.Linq.Expressions.Expression{System.Func{TCPServer.Models.User,System.Boolean}},System.Func{System.Linq.IQueryable{TCPServer.Models.User},System.Linq.IOrderedQueryable{TCPServer.Models.User}},System.String)
   - TCPServer.DAL.BaseRepository{TCPServer.Models.User}.GetByID(System.Object)
@@ -212,6 +213,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TCPServer.DAL.BaseRepository{TCPServer.Models.User}._context
+  commentId: F:TCPServer.DAL.BaseRepository{TCPServer.Models.User}._context
+  parent: TCPServer.DAL.BaseRepository{TCPServer.Models.User}
+  definition: TCPServer.DAL.BaseRepository`1._context
+  name: _context
+  nameWithType: BaseRepository<User>._context
+  fullName: TCPServer.DAL.BaseRepository<TCPServer.Models.User>._context
+  nameWithType.vb: BaseRepository(Of User)._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TCPServer.Models.User)._context
 - uid: TCPServer.DAL.BaseRepository{TCPServer.Models.User}.dbSet
   commentId: F:TCPServer.DAL.BaseRepository{TCPServer.Models.User}.dbSet
   parent: TCPServer.DAL.BaseRepository{TCPServer.Models.User}
@@ -739,6 +749,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TCPServer.DAL.BaseRepository`1._context
+  commentId: F:TCPServer.DAL.BaseRepository`1._context
+  name: _context
+  nameWithType: BaseRepository<TEntity>._context
+  fullName: TCPServer.DAL.BaseRepository<TEntity>._context
+  nameWithType.vb: BaseRepository(Of TEntity)._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)._context
 - uid: TCPServer.DAL.BaseRepository`1.dbSet
   commentId: F:TCPServer.DAL.BaseRepository`1.dbSet
   name: dbSet

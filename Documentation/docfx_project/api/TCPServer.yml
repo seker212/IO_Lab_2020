@@ -61,6 +61,7 @@ references:
   fullName: TCPServer.UserType
 - uid: TCPServer.UserManager
   commentId: T:TCPServer.UserManager
+  parent: TCPServer
   name: UserManager
   nameWithType: UserManager
   fullName: TCPServer.UserManager

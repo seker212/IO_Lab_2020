@@ -1,6 +1,34 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Client
+  name: Client
+  href: api/Client.html
+  commentId: N:Client
+  fullName: Client
+  nameWithType: Client
+- uid: Client.Client
+  name: Client
+  href: api/Client.Client.html
+  commentId: T:Client.Client
+  fullName: Client.Client
+  nameWithType: Client
+- uid: Client.Client.Main(System.String[])
+  name: Main(String[])
+  href: api/Client.Client.html#Client_Client_Main_System_String___
+  commentId: M:Client.Client.Main(System.String[])
+  name.vb: Main(String())
+  fullName: Client.Client.Main(System.String[])
+  fullName.vb: Client.Client.Main(System.String())
+  nameWithType: Client.Main(String[])
+  nameWithType.vb: Client.Main(String())
+- uid: Client.Client.Main*
+  name: Main
+  href: api/Client.Client.html#Client_Client_Main_
+  commentId: Overload:Client.Client.Main
+  isSpec: "True"
+  fullName: Client.Client.Main
+  nameWithType: Client.Main
 - uid: ClientFunctionsLibrary
   name: ClientFunctionsLibrary
   href: api/ClientFunctionsLibrary.html
@@ -118,6 +146,34 @@ references:
   isSpec: "True"
   fullName: ClientFunctionsLibrary.ClientConnection.sendMessage
   nameWithType: ClientConnection.sendMessage
+- uid: Program
+  name: Program
+  href: api/Program.html
+  commentId: N:Program
+  fullName: Program
+  nameWithType: Program
+- uid: Program.Program
+  name: Program
+  href: api/Program.Program.html
+  commentId: T:Program.Program
+  fullName: Program.Program
+  nameWithType: Program
+- uid: Program.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/Program.Program.html#Program_Program_Main_System_String___
+  commentId: M:Program.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: Program.Program.Main(System.String[])
+  fullName.vb: Program.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: Program.Program.Main*
+  name: Main
+  href: api/Program.Program.html#Program_Program_Main_
+  commentId: Overload:Program.Program.Main
+  isSpec: "True"
+  fullName: Program.Program.Main
+  nameWithType: Program.Main
 - uid: TCPServer
   name: TCPServer
   href: api/TCPServer.html
@@ -169,6 +225,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.BeginDataTransmission
   nameWithType: AbstractServer.BeginDataTransmission
+- uid: TCPServer.AbstractServer.buffer_size
+  name: buffer_size
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_buffer_size
+  commentId: F:TCPServer.AbstractServer.buffer_size
+  fullName: TCPServer.AbstractServer.buffer_size
+  nameWithType: AbstractServer.buffer_size
 - uid: TCPServer.AbstractServer.Buffer_size
   name: Buffer_size
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Buffer_size
@@ -195,6 +257,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.checkPort
   nameWithType: AbstractServer.checkPort
+- uid: TCPServer.AbstractServer.iPAddress
+  name: iPAddress
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_iPAddress
+  commentId: F:TCPServer.AbstractServer.iPAddress
+  fullName: TCPServer.AbstractServer.iPAddress
+  nameWithType: AbstractServer.iPAddress
 - uid: TCPServer.AbstractServer.IPAddress
   name: IPAddress
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_IPAddress
@@ -208,6 +276,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.IPAddress
   nameWithType: AbstractServer.IPAddress
+- uid: TCPServer.AbstractServer.port
+  name: port
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_port
+  commentId: F:TCPServer.AbstractServer.port
+  fullName: TCPServer.AbstractServer.port
+  nameWithType: AbstractServer.port
 - uid: TCPServer.AbstractServer.Port
   name: Port
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Port
@@ -221,6 +295,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.Port
   nameWithType: AbstractServer.Port
+- uid: TCPServer.AbstractServer.running
+  name: running
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_running
+  commentId: F:TCPServer.AbstractServer.running
+  fullName: TCPServer.AbstractServer.running
+  nameWithType: AbstractServer.running
 - uid: TCPServer.AbstractServer.Start
   name: Start()
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Start
@@ -247,6 +327,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.StartListening
   nameWithType: AbstractServer.StartListening
+- uid: TCPServer.AbstractServer.stream
+  name: stream
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_stream
+  commentId: F:TCPServer.AbstractServer.stream
+  fullName: TCPServer.AbstractServer.stream
+  nameWithType: AbstractServer.stream
 - uid: TCPServer.AbstractServer.Stream
   name: Stream
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Stream
@@ -260,6 +346,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.Stream
   nameWithType: AbstractServer.Stream
+- uid: TCPServer.AbstractServer.tcpClient
+  name: tcpClient
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_tcpClient
+  commentId: F:TCPServer.AbstractServer.tcpClient
+  fullName: TCPServer.AbstractServer.tcpClient
+  nameWithType: AbstractServer.tcpClient
 - uid: TCPServer.AbstractServer.TcpClient
   name: TcpClient
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_TcpClient
@@ -273,6 +365,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.TcpClient
   nameWithType: AbstractServer.TcpClient
+- uid: TCPServer.AbstractServer.tcpListener
+  name: tcpListener
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_tcpListener
+  commentId: F:TCPServer.AbstractServer.tcpListener
+  fullName: TCPServer.AbstractServer.tcpListener
+  nameWithType: AbstractServer.tcpListener
 - uid: TCPServer.AbstractServer.TcpListener
   name: TcpListener
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_TcpListener
@@ -318,6 +416,14 @@ references:
   fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).BaseRepository
   nameWithType: BaseRepository<TEntity>.BaseRepository
   nameWithType.vb: BaseRepository(Of TEntity).BaseRepository
+- uid: TCPServer.DAL.BaseRepository`1._context
+  name: _context
+  href: api/TCPServer.DAL.BaseRepository-1.html#TCPServer_DAL_BaseRepository_1__context
+  commentId: F:TCPServer.DAL.BaseRepository`1._context
+  fullName: TCPServer.DAL.BaseRepository<TEntity>._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)._context
+  nameWithType: BaseRepository<TEntity>._context
+  nameWithType.vb: BaseRepository(Of TEntity)._context
 - uid: TCPServer.DAL.BaseRepository`1.Commit
   name: Commit()
   href: api/TCPServer.DAL.BaseRepository-1.html#TCPServer_DAL_BaseRepository_1_Commit
@@ -777,6 +883,18 @@ references:
   isSpec: "True"
   fullName: TCPServer.JokeSQL.suchar.Stringify
   nameWithType: JokeSQL.suchar.Stringify
+- uid: TCPServer.JokeSQL.x
+  name: x
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_x
+  commentId: F:TCPServer.JokeSQL.x
+  fullName: TCPServer.JokeSQL.x
+  nameWithType: JokeSQL.x
+- uid: TCPServer.JokeSQL.y
+  name: y
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_y
+  commentId: F:TCPServer.JokeSQL.y
+  fullName: TCPServer.JokeSQL.y
+  nameWithType: JokeSQL.y
 - uid: TCPServer.Models
   name: TCPServer.Models
   href: api/TCPServer.Models.html
@@ -995,6 +1113,50 @@ references:
   isSpec: "True"
   fullName: TCPServer.ServerAPM.CommandHandler
   nameWithType: ServerAPM.CommandHandler
+- uid: TCPServer.ServerAPM.context
+  name: context
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_context
+  commentId: F:TCPServer.ServerAPM.context
+  fullName: TCPServer.ServerAPM.context
+  nameWithType: ServerAPM.context
+- uid: TCPServer.ServerAPM.GetCridentials(System.Byte[],System.Net.Sockets.NetworkStream,System.Boolean)
+  name: GetCridentials(Byte[], NetworkStream, Boolean)
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetCridentials_System_Byte___System_Net_Sockets_NetworkStream_System_Boolean_
+  commentId: M:TCPServer.ServerAPM.GetCridentials(System.Byte[],System.Net.Sockets.NetworkStream,System.Boolean)
+  name.vb: GetCridentials(Byte(), NetworkStream, Boolean)
+  fullName: TCPServer.ServerAPM.GetCridentials(System.Byte[], System.Net.Sockets.NetworkStream, System.Boolean)
+  fullName.vb: TCPServer.ServerAPM.GetCridentials(System.Byte(), System.Net.Sockets.NetworkStream, System.Boolean)
+  nameWithType: ServerAPM.GetCridentials(Byte[], NetworkStream, Boolean)
+  nameWithType.vb: ServerAPM.GetCridentials(Byte(), NetworkStream, Boolean)
+- uid: TCPServer.ServerAPM.GetCridentials*
+  name: GetCridentials
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetCridentials_
+  commentId: Overload:TCPServer.ServerAPM.GetCridentials
+  isSpec: "True"
+  fullName: TCPServer.ServerAPM.GetCridentials
+  nameWithType: ServerAPM.GetCridentials
+- uid: TCPServer.ServerAPM.GetStringFromUser(System.String,System.Net.Sockets.NetworkStream,System.Byte[])
+  name: GetStringFromUser(String, NetworkStream, Byte[])
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetStringFromUser_System_String_System_Net_Sockets_NetworkStream_System_Byte___
+  commentId: M:TCPServer.ServerAPM.GetStringFromUser(System.String,System.Net.Sockets.NetworkStream,System.Byte[])
+  name.vb: GetStringFromUser(String, NetworkStream, Byte())
+  fullName: TCPServer.ServerAPM.GetStringFromUser(System.String, System.Net.Sockets.NetworkStream, System.Byte[])
+  fullName.vb: TCPServer.ServerAPM.GetStringFromUser(System.String, System.Net.Sockets.NetworkStream, System.Byte())
+  nameWithType: ServerAPM.GetStringFromUser(String, NetworkStream, Byte[])
+  nameWithType.vb: ServerAPM.GetStringFromUser(String, NetworkStream, Byte())
+- uid: TCPServer.ServerAPM.GetStringFromUser*
+  name: GetStringFromUser
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetStringFromUser_
+  commentId: Overload:TCPServer.ServerAPM.GetStringFromUser
+  isSpec: "True"
+  fullName: TCPServer.ServerAPM.GetStringFromUser
+  nameWithType: ServerAPM.GetStringFromUser
+- uid: TCPServer.ServerAPM.SHUTDOWN
+  name: SHUTDOWN
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_SHUTDOWN
+  commentId: F:TCPServer.ServerAPM.SHUTDOWN
+  fullName: TCPServer.ServerAPM.SHUTDOWN
+  nameWithType: ServerAPM.SHUTDOWN
 - uid: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
   name: SignIn(NetworkStream, Byte[], ref String[])
   href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___System_String____
@@ -1024,12 +1186,31 @@ references:
   isSpec: "True"
   fullName: TCPServer.ServerAPM.Start
   nameWithType: ServerAPM.Start
+- uid: TCPServer.ServerAPM.TransmissionCallback(System.IAsyncResult)
+  name: TransmissionCallback(IAsyncResult)
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_TransmissionCallback_System_IAsyncResult_
+  commentId: M:TCPServer.ServerAPM.TransmissionCallback(System.IAsyncResult)
+  fullName: TCPServer.ServerAPM.TransmissionCallback(System.IAsyncResult)
+  nameWithType: ServerAPM.TransmissionCallback(IAsyncResult)
+- uid: TCPServer.ServerAPM.TransmissionCallback*
+  name: TransmissionCallback
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_TransmissionCallback_
+  commentId: Overload:TCPServer.ServerAPM.TransmissionCallback
+  isSpec: "True"
+  fullName: TCPServer.ServerAPM.TransmissionCallback
+  nameWithType: ServerAPM.TransmissionCallback
 - uid: TCPServer.ServerAPM.TransmissionDataDelegate
   name: ServerAPM.TransmissionDataDelegate
   href: api/TCPServer.ServerAPM.TransmissionDataDelegate.html
   commentId: T:TCPServer.ServerAPM.TransmissionDataDelegate
   fullName: TCPServer.ServerAPM.TransmissionDataDelegate
   nameWithType: ServerAPM.TransmissionDataDelegate
+- uid: TCPServer.ServerAPM.um
+  name: um
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_um
+  commentId: F:TCPServer.ServerAPM.um
+  fullName: TCPServer.ServerAPM.um
+  nameWithType: ServerAPM.um
 - uid: TCPServer.ServerSync
   name: ServerSync
   href: api/TCPServer.ServerSync.html
@@ -1088,6 +1269,22 @@ references:
   isSpec: "True"
   fullName: TCPServer.ServerSync.Start
   nameWithType: ServerSync.Start
+- uid: TCPServer.ServerSync.ToNumber(System.Byte[])
+  name: ToNumber(Byte[])
+  href: api/TCPServer.ServerSync.html#TCPServer_ServerSync_ToNumber_System_Byte___
+  commentId: M:TCPServer.ServerSync.ToNumber(System.Byte[])
+  name.vb: ToNumber(Byte())
+  fullName: TCPServer.ServerSync.ToNumber(System.Byte[])
+  fullName.vb: TCPServer.ServerSync.ToNumber(System.Byte())
+  nameWithType: ServerSync.ToNumber(Byte[])
+  nameWithType.vb: ServerSync.ToNumber(Byte())
+- uid: TCPServer.ServerSync.ToNumber*
+  name: ToNumber
+  href: api/TCPServer.ServerSync.html#TCPServer_ServerSync_ToNumber_
+  commentId: Overload:TCPServer.ServerSync.ToNumber
+  isSpec: "True"
+  fullName: TCPServer.ServerSync.ToNumber
+  nameWithType: ServerSync.ToNumber
 - uid: TCPServer.UserManager
   name: UserManager
   href: api/TCPServer.UserManager.html

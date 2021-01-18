@@ -10,6 +10,8 @@ items:
   - TCPServer.JokeSQL.delJoke(System.String)
   - TCPServer.JokeSQL.GetJoke
   - TCPServer.JokeSQL.listJokes(System.String[]@)
+  - TCPServer.JokeSQL.x
+  - TCPServer.JokeSQL.y
   langs:
   - csharp
   - vb
@@ -39,6 +41,60 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: TCPServer.JokeSQL.x
+  commentId: F:TCPServer.JokeSQL.x
+  id: x
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: JokeSQL.x
+  fullName: TCPServer.JokeSQL.x
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: x
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 34
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: JokeRepository x
+    return:
+      type: TCPServer.DAL.JokeRepository
+    content.vb: x As JokeRepository
+- uid: TCPServer.JokeSQL.y
+  commentId: F:TCPServer.JokeSQL.y
+  id: y
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: JokeSQL.y
+  fullName: TCPServer.JokeSQL.y
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: y
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 35
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: UserRepository y
+    return:
+      type: TCPServer.DAL.UserRepository
+    content.vb: y As UserRepository
 - uid: TCPServer.JokeSQL.#ctor(TCPServer.Models.ServerDatabaseContext)
   commentId: M:TCPServer.JokeSQL.#ctor(TCPServer.Models.ServerDatabaseContext)
   id: '#ctor(TCPServer.Models.ServerDatabaseContext)'
@@ -236,6 +292,23 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: TCPServer.DAL.JokeRepository
+  commentId: T:TCPServer.DAL.JokeRepository
+  parent: TCPServer.DAL
+  name: JokeRepository
+  nameWithType: JokeRepository
+  fullName: TCPServer.DAL.JokeRepository
+- uid: TCPServer.DAL
+  commentId: N:TCPServer.DAL
+  name: TCPServer.DAL
+  nameWithType: TCPServer.DAL
+  fullName: TCPServer.DAL
+- uid: TCPServer.DAL.UserRepository
+  commentId: T:TCPServer.DAL.UserRepository
+  parent: TCPServer.DAL
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: TCPServer.DAL.UserRepository
 - uid: TCPServer.JokeSQL.#ctor*
   commentId: Overload:TCPServer.JokeSQL.#ctor
   name: JokeSQL

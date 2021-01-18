@@ -1,9 +1,19 @@
 ### YamlMime:TableOfContent
+- uid: Client
+  name: Client
+  items:
+  - uid: Client.Client
+    name: Client
 - uid: ClientFunctionsLibrary
   name: ClientFunctionsLibrary
   items:
   - uid: ClientFunctionsLibrary.ClientConnection
     name: ClientConnection
+- uid: Program
+  name: Program
+  items:
+  - uid: Program.Program
+    name: Program
 - uid: TCPServer
   name: TCPServer
   items:

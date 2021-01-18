@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Client.Client
+  commentId: T:Client.Client
+  id: Client
+  parent: Client
+  children:
+  - Client.Client.Main(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: Client
+  fullName: Client.Client
+  type: Class
+  source:
+    remote:
+      path: Client/Client.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Client
+    path: ../../Client/Client.cs
+    startLine: 11
+  assemblies:
+  - Client
+  namespace: Client
+  syntax:
+    content: class Client
+    content.vb: Class Client
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: Client.Client.Main(System.String[])
+  commentId: M:Client.Client.Main(System.String[])
+  id: Main(System.String[])
+  parent: Client.Client
+  langs:
+  - csharp
+  - vb
+  name: Main(String[])
+  nameWithType: Client.Main(String[])
+  fullName: Client.Client.Main(System.String[])
+  type: Method
+  source:
+    remote:
+      path: Client/Client.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Main
+    path: ../../Client/Client.cs
+    startLine: 13
+  assemblies:
+  - Client
+  namespace: Client
+  syntax:
+    content: static void Main(string[] args)
+    parameters:
+    - id: args
+      type: System.String[]
+    content.vb: Shared Sub Main(args As String())
+  overload: Client.Client.Main*
+  nameWithType.vb: Client.Main(String())
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+  fullName.vb: Client.Client.Main(System.String())
+  name.vb: Main(String())
+references:
+- uid: Client
+  commentId: N:Client
+  name: Client
+  nameWithType: Client
+  fullName: Client
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Client.Client.Main*
+  commentId: Overload:Client.Client.Main
+  name: Main
+  nameWithType: Client.Main
+  fullName: Client.Client.Main
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

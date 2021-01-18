@@ -92,6 +92,7 @@ references:
     fullName: )
 - uid: TCPServer.DAL.JokeRepository
   commentId: T:TCPServer.DAL.JokeRepository
+  parent: TCPServer.DAL
   name: JokeRepository
   nameWithType: JokeRepository
   fullName: TCPServer.DAL.JokeRepository

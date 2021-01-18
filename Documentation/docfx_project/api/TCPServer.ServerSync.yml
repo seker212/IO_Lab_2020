@@ -9,6 +9,7 @@ items:
   - TCPServer.ServerSync.AcceptClient
   - TCPServer.ServerSync.BeginDataTransmission(System.Net.Sockets.NetworkStream)
   - TCPServer.ServerSync.Start
+  - TCPServer.ServerSync.ToNumber(System.Byte[])
   langs:
   - csharp
   - vb
@@ -36,6 +37,13 @@ items:
   - System.Object
   - TCPServer.AbstractServer
   inheritedMembers:
+  - TCPServer.AbstractServer.iPAddress
+  - TCPServer.AbstractServer.port
+  - TCPServer.AbstractServer.buffer_size
+  - TCPServer.AbstractServer.running
+  - TCPServer.AbstractServer.tcpListener
+  - TCPServer.AbstractServer.tcpClient
+  - TCPServer.AbstractServer.stream
   - TCPServer.AbstractServer.IPAddress
   - TCPServer.AbstractServer.Port
   - TCPServer.AbstractServer.Buffer_size
@@ -191,6 +199,40 @@ items:
   modifiers.vb:
   - Public
   - Overrides
+- uid: TCPServer.ServerSync.ToNumber(System.Byte[])
+  commentId: M:TCPServer.ServerSync.ToNumber(System.Byte[])
+  id: ToNumber(System.Byte[])
+  parent: TCPServer.ServerSync
+  langs:
+  - csharp
+  - vb
+  name: ToNumber(Byte[])
+  nameWithType: ServerSync.ToNumber(Byte[])
+  fullName: TCPServer.ServerSync.ToNumber(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerSync.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ToNumber
+    path: ../../ServerFunctionsLibrary/ServerSync.cs
+    startLine: 64
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: byte[] ToNumber(byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Function ToNumber(buffer As Byte()) As Byte()
+  overload: TCPServer.ServerSync.ToNumber*
+  nameWithType.vb: ServerSync.ToNumber(Byte())
+  fullName.vb: TCPServer.ServerSync.ToNumber(System.Byte())
+  name.vb: ToNumber(Byte())
 references:
 - uid: TCPServer
   commentId: N:TCPServer
@@ -210,6 +252,48 @@ references:
   name: AbstractServer
   nameWithType: AbstractServer
   fullName: TCPServer.AbstractServer
+- uid: TCPServer.AbstractServer.iPAddress
+  commentId: F:TCPServer.AbstractServer.iPAddress
+  parent: TCPServer.AbstractServer
+  name: iPAddress
+  nameWithType: AbstractServer.iPAddress
+  fullName: TCPServer.AbstractServer.iPAddress
+- uid: TCPServer.AbstractServer.port
+  commentId: F:TCPServer.AbstractServer.port
+  parent: TCPServer.AbstractServer
+  name: port
+  nameWithType: AbstractServer.port
+  fullName: TCPServer.AbstractServer.port
+- uid: TCPServer.AbstractServer.buffer_size
+  commentId: F:TCPServer.AbstractServer.buffer_size
+  parent: TCPServer.AbstractServer
+  name: buffer_size
+  nameWithType: AbstractServer.buffer_size
+  fullName: TCPServer.AbstractServer.buffer_size
+- uid: TCPServer.AbstractServer.running
+  commentId: F:TCPServer.AbstractServer.running
+  parent: TCPServer.AbstractServer
+  name: running
+  nameWithType: AbstractServer.running
+  fullName: TCPServer.AbstractServer.running
+- uid: TCPServer.AbstractServer.tcpListener
+  commentId: F:TCPServer.AbstractServer.tcpListener
+  parent: TCPServer.AbstractServer
+  name: tcpListener
+  nameWithType: AbstractServer.tcpListener
+  fullName: TCPServer.AbstractServer.tcpListener
+- uid: TCPServer.AbstractServer.tcpClient
+  commentId: F:TCPServer.AbstractServer.tcpClient
+  parent: TCPServer.AbstractServer
+  name: tcpClient
+  nameWithType: AbstractServer.tcpClient
+  fullName: TCPServer.AbstractServer.tcpClient
+- uid: TCPServer.AbstractServer.stream
+  commentId: F:TCPServer.AbstractServer.stream
+  parent: TCPServer.AbstractServer
+  name: stream
+  nameWithType: AbstractServer.stream
+  fullName: TCPServer.AbstractServer.stream
 - uid: TCPServer.AbstractServer.IPAddress
   commentId: P:TCPServer.AbstractServer.IPAddress
   parent: TCPServer.AbstractServer
@@ -450,3 +534,34 @@ references:
   name: Start
   nameWithType: ServerSync.Start
   fullName: TCPServer.ServerSync.Start
+- uid: TCPServer.ServerSync.ToNumber*
+  commentId: Overload:TCPServer.ServerSync.ToNumber
+  name: ToNumber
+  nameWithType: ServerSync.ToNumber
+  fullName: TCPServer.ServerSync.ToNumber
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

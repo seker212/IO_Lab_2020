@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Program
+  commentId: N:Program
+  id: Program
+  children:
+  - Program.Program
+  langs:
+  - csharp
+  - vb
+  name: Program
+  nameWithType: Program
+  fullName: Program
+  type: Namespace
+  assemblies:
+  - TCPServer
+references:
+- uid: Program.Program
+  commentId: T:Program.Program
+  name: Program
+  nameWithType: Program
+  fullName: Program.Program

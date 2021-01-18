@@ -5,6 +5,30 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Client.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Client.Client.html",
+          "hash": "0nHgZ+rZVNnGom7WWoB6LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Client.html",
+          "hash": "+puQ9A7i5ajIPalekPoccA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ClientFunctionsLibrary.ClientConnection.yml",
       "output": {
         ".html": {
@@ -12,7 +36,7 @@
           "hash": "yuWLvD4RKciQ7iUpEcqwdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,7 +48,31 @@
           "hash": "jsOMHhvh2HQsGRsWltnX4A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Program.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Program.Program.html",
+          "hash": "oH2xDJX9lC3M8DmQnlrhXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Program.html",
+          "hash": "KNvdXddlCiAtq/sSCgb0Pg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.AbstractServer.html",
-          "hash": "B65gyhHqucgSNX32udh4Mw=="
+          "hash": "XyOc/diMDceVtKJFpQw+7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.BaseRepository-1.html",
-          "hash": "iAq6RUJ8h9uo0/Kn8pLamg=="
+          "hash": "iKKMRvLePUD9FPs/n6bgng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +108,7 @@
           "hash": "kv07EyiT49uwo+YV4BwyVw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.JokeRepository.html",
-          "hash": "aG9sbyBzoSrEN6N+RqkbKg=="
+          "hash": "gSW1/uo9GCoxa6JBjJN6Hg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.UserRepository.html",
-          "hash": "8G7UfcdO2oME1K/8rRMG5w=="
+          "hash": "geseS2Q9UGrDadLSBk7xbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +144,7 @@
           "hash": "fnMEd0A9P78hTrIzNT0wRQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +156,7 @@
           "hash": "KogonY6AY9LBPr5TaU9Y1Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.JokeSQL.html",
-          "hash": "ZdXC83FqTQXqOhlvJwq0fw=="
+          "hash": "C/LPMgviUqse0vV5OG5Jmw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +180,7 @@
           "hash": "PXRp0PQcrg/uBIUgZM8vWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -144,7 +192,7 @@
           "hash": "tJ2Y9bDLgPocsOgHcfRiFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,7 +204,7 @@
           "hash": "ObaWwTMGA9BZGyk3ZrzA1g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -168,7 +216,7 @@
           "hash": "xBTjt0aRE2RJWupXpgOW+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,7 +228,7 @@
           "hash": "2wwr61WYWbxt3YcxiNUS7A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.ServerAPM.html",
-          "hash": "ZUbsosLP+PSer7TZh6TGzA=="
+          "hash": "A8wMIhG3ISE6EcecQ1kA+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.ServerSync.html",
-          "hash": "JUCm7ysKJ81zd/oUyBot4g=="
+          "hash": "3nVOUzHjefT0+HCsJRbg1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +264,7 @@
           "hash": "1hthZm7CEpFZYStLfr7EJQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -228,7 +276,7 @@
           "hash": "ruP+ztVyxaY9Z6GIf5oxng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -240,7 +288,7 @@
           "hash": "LoTnJd6Pr7xhrhTzYHcbwg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "szAeKx3kh6QURJbqi2EVYA=="
+          "hash": "y0AR0qnjGcfgdWOzv4RefA=="
         }
       },
       "is_incremental": false,
@@ -276,7 +324,7 @@
           "hash": "M6QnYfGRTmIbYj96dgBeng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,7 +348,7 @@
           "hash": "/g0RDg32yQ/ODbE5er8Vpw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -319,23 +367,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 20,
-          "skipped_file_count": 20
+          "total_file_count": 24,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -348,8 +398,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

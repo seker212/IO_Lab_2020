@@ -39,6 +39,7 @@ items:
   implements:
   - TCPServer.DAL.IRepository{TCPServer.Models.Joke}
   inheritedMembers:
+  - TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}._context
   - TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}.dbSet
   - TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}.Get(System.Linq.Expressions.Expression{System.Func{TCPServer.Models.Joke,System.Boolean}},System.Func{System.Linq.IQueryable{TCPServer.Models.Joke},System.Linq.IOrderedQueryable{TCPServer.Models.Joke}},System.String)
   - TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}.GetByID(System.Object)
@@ -275,6 +276,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}._context
+  commentId: F:TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}._context
+  parent: TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}
+  definition: TCPServer.DAL.BaseRepository`1._context
+  name: _context
+  nameWithType: BaseRepository<Joke>._context
+  fullName: TCPServer.DAL.BaseRepository<TCPServer.Models.Joke>._context
+  nameWithType.vb: BaseRepository(Of Joke)._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TCPServer.Models.Joke)._context
 - uid: TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}.dbSet
   commentId: F:TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}.dbSet
   parent: TCPServer.DAL.BaseRepository{TCPServer.Models.Joke}
@@ -802,6 +812,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: TCPServer.DAL.BaseRepository`1._context
+  commentId: F:TCPServer.DAL.BaseRepository`1._context
+  name: _context
+  nameWithType: BaseRepository<TEntity>._context
+  fullName: TCPServer.DAL.BaseRepository<TEntity>._context
+  nameWithType.vb: BaseRepository(Of TEntity)._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)._context
 - uid: TCPServer.DAL.BaseRepository`1.dbSet
   commentId: F:TCPServer.DAL.BaseRepository`1.dbSet
   name: dbSet
