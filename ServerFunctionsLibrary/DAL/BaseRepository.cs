@@ -56,9 +56,10 @@ namespace TCPServer.DAL
             return dbSet.Find(id);
         }
 
-        public virtual void Insert(TEntity entity)
+        public virtual TEntity Insert(TEntity entity)
         {
             dbSet.Add(entity);
+            return entity;
         }
 
         public virtual void Delete(object id)
