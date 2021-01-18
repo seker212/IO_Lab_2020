@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientFunctionsLibrary
+  commentId: N:ClientFunctionsLibrary
+  id: ClientFunctionsLibrary
+  children:
+  - ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: ClientFunctionsLibrary
+  nameWithType: ClientFunctionsLibrary
+  fullName: ClientFunctionsLibrary
+  type: Namespace
+  assemblies:
+  - ClientFunctionsLibrary
+references:
+- uid: ClientFunctionsLibrary.ClientConnection
+  commentId: T:ClientFunctionsLibrary.ClientConnection
+  name: ClientConnection
+  nameWithType: ClientConnection
+  fullName: ClientFunctionsLibrary.ClientConnection

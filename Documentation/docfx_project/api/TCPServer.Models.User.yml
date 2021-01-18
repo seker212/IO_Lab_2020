@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.Models.User
+  commentId: T:TCPServer.Models.User
+  id: User
+  parent: TCPServer.Models
+  children:
+  - TCPServer.Models.User.ID
+  - TCPServer.Models.User.isAdmin
+  - TCPServer.Models.User.login
+  - TCPServer.Models.User.password
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: TCPServer.Models.User
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/User.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: User
+    path: ../../ServerFunctionsLibrary/Models/User.cs
+    startLine: 10
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: public class User
+    content.vb: Public Class User
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TCPServer.Models.User.ID
+  commentId: P:TCPServer.Models.User.ID
+  id: ID
+  parent: TCPServer.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: User.ID
+  fullName: TCPServer.Models.User.ID
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/User.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ID
+    path: ../../ServerFunctionsLibrary/Models/User.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Key]
+
+      [Column("ID")]
+
+      public int ID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Key>
+
+      <Column("ID")>
+
+      Public Property ID As Integer
+  overload: TCPServer.Models.User.ID*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ID
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.Models.User.login
+  commentId: P:TCPServer.Models.User.login
+  id: login
+  parent: TCPServer.Models.User
+  langs:
+  - csharp
+  - vb
+  name: login
+  nameWithType: User.login
+  fullName: TCPServer.Models.User.login
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/User.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: login
+    path: ../../ServerFunctionsLibrary/Models/User.cs
+    startLine: 16
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Column("Login")]
+
+      public string login { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Column("Login")>
+
+      Public Property login As String
+  overload: TCPServer.Models.User.login*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Login
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.Models.User.password
+  commentId: P:TCPServer.Models.User.password
+  id: password
+  parent: TCPServer.Models.User
+  langs:
+  - csharp
+  - vb
+  name: password
+  nameWithType: User.password
+  fullName: TCPServer.Models.User.password
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/User.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: password
+    path: ../../ServerFunctionsLibrary/Models/User.cs
+    startLine: 18
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Column("Password")]
+
+      public string password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Column("Password")>
+
+      Public Property password As String
+  overload: TCPServer.Models.User.password*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Password
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.Models.User.isAdmin
+  commentId: P:TCPServer.Models.User.isAdmin
+  id: isAdmin
+  parent: TCPServer.Models.User
+  langs:
+  - csharp
+  - vb
+  name: isAdmin
+  nameWithType: User.isAdmin
+  fullName: TCPServer.Models.User.isAdmin
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/User.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: isAdmin
+    path: ../../ServerFunctionsLibrary/Models/User.cs
+    startLine: 20
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Column("isAdmin")]
+
+      public bool isAdmin { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Column("isAdmin")>
+
+      Public Property isAdmin As Boolean
+  overload: TCPServer.Models.User.isAdmin*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: isAdmin
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.Models.User.ID*
+  commentId: Overload:TCPServer.Models.User.ID
+  name: ID
+  nameWithType: User.ID
+  fullName: TCPServer.Models.User.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TCPServer.Models.User.login*
+  commentId: Overload:TCPServer.Models.User.login
+  name: login
+  nameWithType: User.login
+  fullName: TCPServer.Models.User.login
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TCPServer.Models.User.password*
+  commentId: Overload:TCPServer.Models.User.password
+  name: password
+  nameWithType: User.password
+  fullName: TCPServer.Models.User.password
+- uid: TCPServer.Models.User.isAdmin*
+  commentId: Overload:TCPServer.Models.User.isAdmin
+  name: isAdmin
+  nameWithType: User.isAdmin
+  fullName: TCPServer.Models.User.isAdmin
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

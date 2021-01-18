@@ -107,27 +107,6 @@
     <div>
       <a class="xref" href="TCPServer.AbstractServer.html#TCPServer_AbstractServer_StartListening">AbstractServer.StartListening()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="TCPServer.html">TCPServer</a></h6>
   <h6><strong>Assembly</strong>: ServerClasses.dll</h6>
@@ -271,18 +250,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___.md&amp;value=---%0Auid%3A%20TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___System_String____.md&amp;value=---%0Auid%3A%20TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream%2CSystem.Byte%5B%5D%2CSystem.String%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/ServerAPM.cs/#L70">View Source</a>
   </span>
   <a id="TCPServer_ServerAPM_SignIn_" data-uid="TCPServer.ServerAPM.SignIn*"></a>
-  <h4 id="TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___" data-uid="TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[])">SignIn(NetworkStream, Byte[])</h4>
+  <h4 id="TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___System_String____" data-uid="TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)">SignIn(NetworkStream, Byte[], ref String[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UserType SignIn(NetworkStream stream, byte[] buffer)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UserType SignIn(NetworkStream stream, byte[] buffer, ref string[] cridentials)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -302,6 +281,11 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">cridentials</span></td>
         <td></td>
       </tr>
     </tbody>

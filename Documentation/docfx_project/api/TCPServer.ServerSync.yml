@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.ServerSync
+  commentId: T:TCPServer.ServerSync
+  id: ServerSync
+  parent: TCPServer
+  children:
+  - TCPServer.ServerSync.#ctor(System.String,System.Int32,System.Int32)
+  - TCPServer.ServerSync.AcceptClient
+  - TCPServer.ServerSync.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  - TCPServer.ServerSync.Start
+  langs:
+  - csharp
+  - vb
+  name: ServerSync
+  nameWithType: ServerSync
+  fullName: TCPServer.ServerSync
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerSync.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ServerSync
+    path: ../../ServerFunctionsLibrary/ServerSync.cs
+    startLine: 6
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: 'public class ServerSync : AbstractServer'
+    content.vb: >-
+      Public Class ServerSync
+          Inherits AbstractServer
+  inheritance:
+  - System.Object
+  - TCPServer.AbstractServer
+  inheritedMembers:
+  - TCPServer.AbstractServer.IPAddress
+  - TCPServer.AbstractServer.Port
+  - TCPServer.AbstractServer.Buffer_size
+  - TCPServer.AbstractServer.TcpListener
+  - TCPServer.AbstractServer.TcpClient
+  - TCPServer.AbstractServer.Stream
+  - TCPServer.AbstractServer.checkPort
+  - TCPServer.AbstractServer.StartListening
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TCPServer.ServerSync.#ctor(System.String,System.Int32,System.Int32)
+  commentId: M:TCPServer.ServerSync.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: TCPServer.ServerSync
+  langs:
+  - csharp
+  - vb
+  name: ServerSync(String, Int32, Int32)
+  nameWithType: ServerSync.ServerSync(String, Int32, Int32)
+  fullName: TCPServer.ServerSync.ServerSync(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerSync.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/ServerSync.cs
+    startLine: 9
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public ServerSync(string IPAddress = "127.0.0.1", int port = 8001, int bufferSize = 1024)
+    parameters:
+    - id: IPAddress
+      type: System.String
+    - id: port
+      type: System.Int32
+    - id: bufferSize
+      type: System.Int32
+    content.vb: Public Sub New(IPAddress As String = "127.0.0.1", port As Integer = 8001, bufferSize As Integer = 1024)
+  overload: TCPServer.ServerSync.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.ServerSync.AcceptClient
+  commentId: M:TCPServer.ServerSync.AcceptClient
+  id: AcceptClient
+  parent: TCPServer.ServerSync
+  langs:
+  - csharp
+  - vb
+  name: AcceptClient()
+  nameWithType: ServerSync.AcceptClient()
+  fullName: TCPServer.ServerSync.AcceptClient()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerSync.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: AcceptClient
+    path: ../../ServerFunctionsLibrary/ServerSync.cs
+    startLine: 14
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected override void AcceptClient()
+    content.vb: Protected Overrides Sub AcceptClient
+  overridden: TCPServer.AbstractServer.AcceptClient
+  overload: TCPServer.ServerSync.AcceptClient*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: TCPServer.ServerSync.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  commentId: M:TCPServer.ServerSync.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  id: BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  parent: TCPServer.ServerSync
+  langs:
+  - csharp
+  - vb
+  name: BeginDataTransmission(NetworkStream)
+  nameWithType: ServerSync.BeginDataTransmission(NetworkStream)
+  fullName: TCPServer.ServerSync.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerSync.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: BeginDataTransmission
+    path: ../../ServerFunctionsLibrary/ServerSync.cs
+    startLine: 28
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected override void BeginDataTransmission(NetworkStream NStream)
+    parameters:
+    - id: NStream
+      type: System.Net.Sockets.NetworkStream
+    content.vb: Protected Overrides Sub BeginDataTransmission(NStream As NetworkStream)
+  overridden: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  overload: TCPServer.ServerSync.BeginDataTransmission*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: TCPServer.ServerSync.Start
+  commentId: M:TCPServer.ServerSync.Start
+  id: Start
+  parent: TCPServer.ServerSync
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ServerSync.Start()
+  fullName: TCPServer.ServerSync.Start()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerSync.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Start
+    path: ../../ServerFunctionsLibrary/ServerSync.cs
+    startLine: 57
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nOverrided comment.\n"
+  example: []
+  syntax:
+    content: public override void Start()
+    content.vb: Public Overrides Sub Start
+  overridden: TCPServer.AbstractServer.Start
+  overload: TCPServer.ServerSync.Start*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TCPServer.AbstractServer
+  commentId: T:TCPServer.AbstractServer
+  parent: TCPServer
+  name: AbstractServer
+  nameWithType: AbstractServer
+  fullName: TCPServer.AbstractServer
+- uid: TCPServer.AbstractServer.IPAddress
+  commentId: P:TCPServer.AbstractServer.IPAddress
+  parent: TCPServer.AbstractServer
+  name: IPAddress
+  nameWithType: AbstractServer.IPAddress
+  fullName: TCPServer.AbstractServer.IPAddress
+- uid: TCPServer.AbstractServer.Port
+  commentId: P:TCPServer.AbstractServer.Port
+  parent: TCPServer.AbstractServer
+  name: Port
+  nameWithType: AbstractServer.Port
+  fullName: TCPServer.AbstractServer.Port
+- uid: TCPServer.AbstractServer.Buffer_size
+  commentId: P:TCPServer.AbstractServer.Buffer_size
+  parent: TCPServer.AbstractServer
+  name: Buffer_size
+  nameWithType: AbstractServer.Buffer_size
+  fullName: TCPServer.AbstractServer.Buffer_size
+- uid: TCPServer.AbstractServer.TcpListener
+  commentId: P:TCPServer.AbstractServer.TcpListener
+  parent: TCPServer.AbstractServer
+  name: TcpListener
+  nameWithType: AbstractServer.TcpListener
+  fullName: TCPServer.AbstractServer.TcpListener
+- uid: TCPServer.AbstractServer.TcpClient
+  commentId: P:TCPServer.AbstractServer.TcpClient
+  parent: TCPServer.AbstractServer
+  name: TcpClient
+  nameWithType: AbstractServer.TcpClient
+  fullName: TCPServer.AbstractServer.TcpClient
+- uid: TCPServer.AbstractServer.Stream
+  commentId: P:TCPServer.AbstractServer.Stream
+  parent: TCPServer.AbstractServer
+  name: Stream
+  nameWithType: AbstractServer.Stream
+  fullName: TCPServer.AbstractServer.Stream
+- uid: TCPServer.AbstractServer.checkPort
+  commentId: M:TCPServer.AbstractServer.checkPort
+  parent: TCPServer.AbstractServer
+  name: checkPort()
+  nameWithType: AbstractServer.checkPort()
+  fullName: TCPServer.AbstractServer.checkPort()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.checkPort
+    name: checkPort
+    nameWithType: AbstractServer.checkPort
+    fullName: TCPServer.AbstractServer.checkPort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.checkPort
+    name: checkPort
+    nameWithType: AbstractServer.checkPort
+    fullName: TCPServer.AbstractServer.checkPort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.AbstractServer.StartListening
+  commentId: M:TCPServer.AbstractServer.StartListening
+  parent: TCPServer.AbstractServer
+  name: StartListening()
+  nameWithType: AbstractServer.StartListening()
+  fullName: TCPServer.AbstractServer.StartListening()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.StartListening
+    name: StartListening
+    nameWithType: AbstractServer.StartListening
+    fullName: TCPServer.AbstractServer.StartListening
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.StartListening
+    name: StartListening
+    nameWithType: AbstractServer.StartListening
+    fullName: TCPServer.AbstractServer.StartListening
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.ServerSync.#ctor*
+  commentId: Overload:TCPServer.ServerSync.#ctor
+  name: ServerSync
+  nameWithType: ServerSync.ServerSync
+  fullName: TCPServer.ServerSync.ServerSync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TCPServer.AbstractServer.AcceptClient
+  commentId: M:TCPServer.AbstractServer.AcceptClient
+  parent: TCPServer.AbstractServer
+  name: AcceptClient()
+  nameWithType: AbstractServer.AcceptClient()
+  fullName: TCPServer.AbstractServer.AcceptClient()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.AcceptClient
+    name: AcceptClient
+    nameWithType: AbstractServer.AcceptClient
+    fullName: TCPServer.AbstractServer.AcceptClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.AcceptClient
+    name: AcceptClient
+    nameWithType: AbstractServer.AcceptClient
+    fullName: TCPServer.AbstractServer.AcceptClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.ServerSync.AcceptClient*
+  commentId: Overload:TCPServer.ServerSync.AcceptClient
+  name: AcceptClient
+  nameWithType: ServerSync.AcceptClient
+  fullName: TCPServer.ServerSync.AcceptClient
+- uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  commentId: M:TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  parent: TCPServer.AbstractServer
+  isExternal: true
+  name: BeginDataTransmission(NetworkStream)
+  nameWithType: AbstractServer.BeginDataTransmission(NetworkStream)
+  fullName: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+    name: BeginDataTransmission
+    nameWithType: AbstractServer.BeginDataTransmission
+    fullName: TCPServer.AbstractServer.BeginDataTransmission
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Sockets.NetworkStream
+    name: NetworkStream
+    nameWithType: NetworkStream
+    fullName: System.Net.Sockets.NetworkStream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+    name: BeginDataTransmission
+    nameWithType: AbstractServer.BeginDataTransmission
+    fullName: TCPServer.AbstractServer.BeginDataTransmission
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Sockets.NetworkStream
+    name: NetworkStream
+    nameWithType: NetworkStream
+    fullName: System.Net.Sockets.NetworkStream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.ServerSync.BeginDataTransmission*
+  commentId: Overload:TCPServer.ServerSync.BeginDataTransmission
+  name: BeginDataTransmission
+  nameWithType: ServerSync.BeginDataTransmission
+  fullName: TCPServer.ServerSync.BeginDataTransmission
+- uid: System.Net.Sockets.NetworkStream
+  commentId: T:System.Net.Sockets.NetworkStream
+  parent: System.Net.Sockets
+  isExternal: true
+  name: NetworkStream
+  nameWithType: NetworkStream
+  fullName: System.Net.Sockets.NetworkStream
+- uid: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  isExternal: true
+  name: System.Net.Sockets
+  nameWithType: System.Net.Sockets
+  fullName: System.Net.Sockets
+- uid: TCPServer.AbstractServer.Start
+  commentId: M:TCPServer.AbstractServer.Start
+  parent: TCPServer.AbstractServer
+  name: Start()
+  nameWithType: AbstractServer.Start()
+  fullName: TCPServer.AbstractServer.Start()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.Start
+    name: Start
+    nameWithType: AbstractServer.Start
+    fullName: TCPServer.AbstractServer.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.Start
+    name: Start
+    nameWithType: AbstractServer.Start
+    fullName: TCPServer.AbstractServer.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.ServerSync.Start*
+  commentId: Overload:TCPServer.ServerSync.Start
+  name: Start
+  nameWithType: ServerSync.Start
+  fullName: TCPServer.ServerSync.Start

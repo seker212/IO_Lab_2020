@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.Models.Joke
+  commentId: T:TCPServer.Models.Joke
+  id: Joke
+  parent: TCPServer.Models
+  children:
+  - TCPServer.Models.Joke.Content
+  - TCPServer.Models.Joke.CreatorID
+  - TCPServer.Models.Joke.ID
+  langs:
+  - csharp
+  - vb
+  name: Joke
+  nameWithType: Joke
+  fullName: TCPServer.Models.Joke
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/Joke.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Joke
+    path: ../../ServerFunctionsLibrary/Models/Joke.cs
+    startLine: 10
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Table("Joke")]
+
+      public class Joke
+    content.vb: >-
+      <Table("Joke")>
+
+      Public Class Joke
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Joke
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TCPServer.Models.Joke.ID
+  commentId: P:TCPServer.Models.Joke.ID
+  id: ID
+  parent: TCPServer.Models.Joke
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: Joke.ID
+  fullName: TCPServer.Models.Joke.ID
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/Joke.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ID
+    path: ../../ServerFunctionsLibrary/Models/Joke.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Key]
+
+      [Column("ID")]
+
+      public int ID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Key>
+
+      <Column("ID")>
+
+      Public Property ID As Integer
+  overload: TCPServer.Models.Joke.ID*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ID
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.Models.Joke.CreatorID
+  commentId: P:TCPServer.Models.Joke.CreatorID
+  id: CreatorID
+  parent: TCPServer.Models.Joke
+  langs:
+  - csharp
+  - vb
+  name: CreatorID
+  nameWithType: Joke.CreatorID
+  fullName: TCPServer.Models.Joke.CreatorID
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/Joke.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: CreatorID
+    path: ../../ServerFunctionsLibrary/Models/Joke.cs
+    startLine: 16
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Column("CreatorID")]
+
+      public int CreatorID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Column("CreatorID")>
+
+      Public Property CreatorID As Integer
+  overload: TCPServer.Models.Joke.CreatorID*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CreatorID
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.Models.Joke.Content
+  commentId: P:TCPServer.Models.Joke.Content
+  id: Content
+  parent: TCPServer.Models.Joke
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: Joke.Content
+  fullName: TCPServer.Models.Joke.Content
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/Models/Joke.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Content
+    path: ../../ServerFunctionsLibrary/Models/Joke.cs
+    startLine: 18
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.Models
+  syntax:
+    content: >-
+      [Column("Content")]
+
+      public string Content { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Column("Content")>
+
+      Public Property Content As String
+  overload: TCPServer.Models.Joke.Content*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Content
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.Models.Joke.ID*
+  commentId: Overload:TCPServer.Models.Joke.ID
+  name: ID
+  nameWithType: Joke.ID
+  fullName: TCPServer.Models.Joke.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TCPServer.Models.Joke.CreatorID*
+  commentId: Overload:TCPServer.Models.Joke.CreatorID
+  name: CreatorID
+  nameWithType: Joke.CreatorID
+  fullName: TCPServer.Models.Joke.CreatorID
+- uid: TCPServer.Models.Joke.Content*
+  commentId: Overload:TCPServer.Models.Joke.Content
+  name: Content
+  nameWithType: Joke.Content
+  fullName: TCPServer.Models.Joke.Content
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,394 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.UserManager
+  commentId: T:TCPServer.UserManager
+  id: UserManager
+  parent: TCPServer
+  children:
+  - TCPServer.UserManager.#ctor(TCPServer.Models.ServerDatabaseContext)
+  - TCPServer.UserManager.addUser(System.String,System.String)
+  - TCPServer.UserManager.deleteUser(System.String,System.String)
+  - TCPServer.UserManager.GetUserPassword(System.String)
+  - TCPServer.UserManager.updateUser(System.String,System.String,System.String,System.String)
+  - TCPServer.UserManager.ur
+  - TCPServer.UserManager.verifyUser(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: UserManager
+  nameWithType: UserManager
+  fullName: TCPServer.UserManager
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: UserManager
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 17
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public class UserManager
+    content.vb: Public Class UserManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TCPServer.UserManager.ur
+  commentId: P:TCPServer.UserManager.ur
+  id: ur
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: ur
+  nameWithType: UserManager.ur
+  fullName: TCPServer.UserManager.ur
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ur
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 19
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public UserRepository ur { get; set; }
+    parameters: []
+    return:
+      type: TCPServer.DAL.UserRepository
+    content.vb: Public Property ur As UserRepository
+  overload: TCPServer.UserManager.ur*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.UserManager.#ctor(TCPServer.Models.ServerDatabaseContext)
+  commentId: M:TCPServer.UserManager.#ctor(TCPServer.Models.ServerDatabaseContext)
+  id: '#ctor(TCPServer.Models.ServerDatabaseContext)'
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: UserManager(ServerDatabaseContext)
+  nameWithType: UserManager.UserManager(ServerDatabaseContext)
+  fullName: TCPServer.UserManager.UserManager(TCPServer.Models.ServerDatabaseContext)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 21
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public UserManager(ServerDatabaseContext context)
+    parameters:
+    - id: context
+      type: TCPServer.Models.ServerDatabaseContext
+    content.vb: Public Sub New(context As ServerDatabaseContext)
+  overload: TCPServer.UserManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.UserManager.addUser(System.String,System.String)
+  commentId: M:TCPServer.UserManager.addUser(System.String,System.String)
+  id: addUser(System.String,System.String)
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: addUser(String, String)
+  nameWithType: UserManager.addUser(String, String)
+  fullName: TCPServer.UserManager.addUser(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: addUser
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 26
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public bool addUser(string login, string password)
+    parameters:
+    - id: login
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function addUser(login As String, password As String) As Boolean
+  overload: TCPServer.UserManager.addUser*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.UserManager.deleteUser(System.String,System.String)
+  commentId: M:TCPServer.UserManager.deleteUser(System.String,System.String)
+  id: deleteUser(System.String,System.String)
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: deleteUser(String, String)
+  nameWithType: UserManager.deleteUser(String, String)
+  fullName: TCPServer.UserManager.deleteUser(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: deleteUser
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 45
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public bool deleteUser(string login, string password)
+    parameters:
+    - id: login
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function deleteUser(login As String, password As String) As Boolean
+  overload: TCPServer.UserManager.deleteUser*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.UserManager.updateUser(System.String,System.String,System.String,System.String)
+  commentId: M:TCPServer.UserManager.updateUser(System.String,System.String,System.String,System.String)
+  id: updateUser(System.String,System.String,System.String,System.String)
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: updateUser(String, String, String, String)
+  nameWithType: UserManager.updateUser(String, String, String, String)
+  fullName: TCPServer.UserManager.updateUser(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: updateUser
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 64
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public bool updateUser(string login, string password, string newlogin, string newpassword)
+    parameters:
+    - id: login
+      type: System.String
+    - id: password
+      type: System.String
+    - id: newlogin
+      type: System.String
+    - id: newpassword
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function updateUser(login As String, password As String, newlogin As String, newpassword As String) As Boolean
+  overload: TCPServer.UserManager.updateUser*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.UserManager.verifyUser(System.String,System.String)
+  commentId: M:TCPServer.UserManager.verifyUser(System.String,System.String)
+  id: verifyUser(System.String,System.String)
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: verifyUser(String, String)
+  nameWithType: UserManager.verifyUser(String, String)
+  fullName: TCPServer.UserManager.verifyUser(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: verifyUser
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 81
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public User verifyUser(string login, string password)
+    parameters:
+    - id: login
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: TCPServer.Models.User
+    content.vb: Public Function verifyUser(login As String, password As String) As User
+  overload: TCPServer.UserManager.verifyUser*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.UserManager.GetUserPassword(System.String)
+  commentId: M:TCPServer.UserManager.GetUserPassword(System.String)
+  id: GetUserPassword(System.String)
+  parent: TCPServer.UserManager
+  langs:
+  - csharp
+  - vb
+  name: GetUserPassword(String)
+  nameWithType: UserManager.GetUserPassword(String)
+  fullName: TCPServer.UserManager.GetUserPassword(System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: GetUserPassword
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 98
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public string GetUserPassword(string login)
+    parameters:
+    - id: login
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetUserPassword(login As String) As String
+  overload: TCPServer.UserManager.GetUserPassword*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.UserManager.ur*
+  commentId: Overload:TCPServer.UserManager.ur
+  name: ur
+  nameWithType: UserManager.ur
+  fullName: TCPServer.UserManager.ur
+- uid: TCPServer.DAL.UserRepository
+  commentId: T:TCPServer.DAL.UserRepository
+  parent: TCPServer.DAL
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: TCPServer.DAL.UserRepository
+- uid: TCPServer.DAL
+  commentId: N:TCPServer.DAL
+  name: TCPServer.DAL
+  nameWithType: TCPServer.DAL
+  fullName: TCPServer.DAL
+- uid: TCPServer.UserManager.#ctor*
+  commentId: Overload:TCPServer.UserManager.#ctor
+  name: UserManager
+  nameWithType: UserManager.UserManager
+  fullName: TCPServer.UserManager.UserManager
+- uid: TCPServer.Models.ServerDatabaseContext
+  commentId: T:TCPServer.Models.ServerDatabaseContext
+  parent: TCPServer.Models
+  name: ServerDatabaseContext
+  nameWithType: ServerDatabaseContext
+  fullName: TCPServer.Models.ServerDatabaseContext
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
+- uid: TCPServer.UserManager.addUser*
+  commentId: Overload:TCPServer.UserManager.addUser
+  name: addUser
+  nameWithType: UserManager.addUser
+  fullName: TCPServer.UserManager.addUser
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: TCPServer.UserManager.deleteUser*
+  commentId: Overload:TCPServer.UserManager.deleteUser
+  name: deleteUser
+  nameWithType: UserManager.deleteUser
+  fullName: TCPServer.UserManager.deleteUser
+- uid: TCPServer.UserManager.updateUser*
+  commentId: Overload:TCPServer.UserManager.updateUser
+  name: updateUser
+  nameWithType: UserManager.updateUser
+  fullName: TCPServer.UserManager.updateUser
+- uid: TCPServer.UserManager.verifyUser*
+  commentId: Overload:TCPServer.UserManager.verifyUser
+  name: verifyUser
+  nameWithType: UserManager.verifyUser
+  fullName: TCPServer.UserManager.verifyUser
+- uid: TCPServer.Models.User
+  commentId: T:TCPServer.Models.User
+  parent: TCPServer.Models
+  name: User
+  nameWithType: User
+  fullName: TCPServer.Models.User
+- uid: TCPServer.UserManager.GetUserPassword*
+  commentId: Overload:TCPServer.UserManager.GetUserPassword
+  name: GetUserPassword
+  nameWithType: UserManager.GetUserPassword
+  fullName: TCPServer.UserManager.GetUserPassword

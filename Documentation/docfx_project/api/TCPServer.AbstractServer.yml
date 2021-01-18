@@ -1,0 +1,615 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.AbstractServer
+  commentId: T:TCPServer.AbstractServer
+  id: AbstractServer
+  parent: TCPServer
+  children:
+  - TCPServer.AbstractServer.#ctor(System.Net.IPAddress,System.Int32)
+  - TCPServer.AbstractServer.AcceptClient
+  - TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  - TCPServer.AbstractServer.Buffer_size
+  - TCPServer.AbstractServer.checkPort
+  - TCPServer.AbstractServer.IPAddress
+  - TCPServer.AbstractServer.Port
+  - TCPServer.AbstractServer.Start
+  - TCPServer.AbstractServer.StartListening
+  - TCPServer.AbstractServer.Stream
+  - TCPServer.AbstractServer.TcpClient
+  - TCPServer.AbstractServer.TcpListener
+  langs:
+  - csharp
+  - vb
+  name: AbstractServer
+  nameWithType: AbstractServer
+  fullName: TCPServer.AbstractServer
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: AbstractServer
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis is an abstract class for Servers of Echo type.\n"
+  example: []
+  syntax:
+    content: public abstract class AbstractServer
+    content.vb: Public MustInherit Class AbstractServer
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - TCPServer.ServerAPM
+  - TCPServer.ServerSync
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: TCPServer.AbstractServer.IPAddress
+  commentId: P:TCPServer.AbstractServer.IPAddress
+  id: IPAddress
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: IPAddress
+  nameWithType: AbstractServer.IPAddress
+  fullName: TCPServer.AbstractServer.IPAddress
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: IPAddress
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 29
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis property gives access to the IP address of a server instance. Property can&apos;t be changed when the Server is running. \n"
+  example: []
+  syntax:
+    content: public IPAddress IPAddress { get; set; }
+    parameters: []
+    return:
+      type: System.Net.IPAddress
+    content.vb: Public Property IPAddress As IPAddress
+  overload: TCPServer.AbstractServer.IPAddress*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.AbstractServer.Port
+  commentId: P:TCPServer.AbstractServer.Port
+  id: Port
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: AbstractServer.Port
+  fullName: TCPServer.AbstractServer.Port
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Port
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 34
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis property gives access to the port of a server instance. Property can&apos;t be changed when the Server is running. Setting invalid port numbers will cause an exception. \n"
+  example: []
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: TCPServer.AbstractServer.Port*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.AbstractServer.Buffer_size
+  commentId: P:TCPServer.AbstractServer.Buffer_size
+  id: Buffer_size
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: Buffer_size
+  nameWithType: AbstractServer.Buffer_size
+  fullName: TCPServer.AbstractServer.Buffer_size
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Buffer_size
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 51
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis property gives access to the buffer size of a server instance. Property can&apos;t be changed when the Server is running. Setting invalid size numbers will cause an exception. \n"
+  example: []
+  syntax:
+    content: public int Buffer_size { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Buffer_size As Integer
+  overload: TCPServer.AbstractServer.Buffer_size*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.AbstractServer.TcpListener
+  commentId: P:TCPServer.AbstractServer.TcpListener
+  id: TcpListener
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: TcpListener
+  nameWithType: AbstractServer.TcpListener
+  fullName: TCPServer.AbstractServer.TcpListener
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: TcpListener
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 60
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected TcpListener TcpListener { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Sockets.TcpListener
+    content.vb: Protected Property TcpListener As TcpListener
+  overload: TCPServer.AbstractServer.TcpListener*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: TCPServer.AbstractServer.TcpClient
+  commentId: P:TCPServer.AbstractServer.TcpClient
+  id: TcpClient
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: TcpClient
+  nameWithType: AbstractServer.TcpClient
+  fullName: TCPServer.AbstractServer.TcpClient
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: TcpClient
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 61
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected TcpClient TcpClient { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Sockets.TcpClient
+    content.vb: Protected Property TcpClient As TcpClient
+  overload: TCPServer.AbstractServer.TcpClient*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: TCPServer.AbstractServer.Stream
+  commentId: P:TCPServer.AbstractServer.Stream
+  id: Stream
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: AbstractServer.Stream
+  fullName: TCPServer.AbstractServer.Stream
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Stream
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 62
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected NetworkStream Stream { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Sockets.NetworkStream
+    content.vb: Protected Property Stream As NetworkStream
+  overload: TCPServer.AbstractServer.Stream*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: TCPServer.AbstractServer.#ctor(System.Net.IPAddress,System.Int32)
+  commentId: M:TCPServer.AbstractServer.#ctor(System.Net.IPAddress,System.Int32)
+  id: '#ctor(System.Net.IPAddress,System.Int32)'
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: AbstractServer(IPAddress, Int32)
+  nameWithType: AbstractServer.AbstractServer(IPAddress, Int32)
+  fullName: TCPServer.AbstractServer.AbstractServer(System.Net.IPAddress, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 71
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nA default constructor. It doesn&apos;t start the server. Invalid port numbers will thrown an exception.\n"
+  example: []
+  syntax:
+    content: public AbstractServer(IPAddress IP, int port)
+    parameters:
+    - id: IP
+      type: System.Net.IPAddress
+      description: IP address of the server instance.
+    - id: port
+      type: System.Int32
+      description: Port number of the server instance.
+    content.vb: Public Sub New(IP As IPAddress, port As Integer)
+  overload: TCPServer.AbstractServer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.AbstractServer.checkPort
+  commentId: M:TCPServer.AbstractServer.checkPort
+  id: checkPort
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: checkPort()
+  nameWithType: AbstractServer.checkPort()
+  fullName: TCPServer.AbstractServer.checkPort()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: checkPort
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 90
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis function will return false if Port is set to a value lower than 1024 or higher than 49151.\n"
+  example: []
+  syntax:
+    content: protected bool checkPort()
+    return:
+      type: System.Boolean
+      description: An information wether the set Port value is valid.
+    content.vb: Protected Function checkPort As Boolean
+  overload: TCPServer.AbstractServer.checkPort*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TCPServer.AbstractServer.StartListening
+  commentId: M:TCPServer.AbstractServer.StartListening
+  id: StartListening
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: StartListening()
+  nameWithType: AbstractServer.StartListening()
+  fullName: TCPServer.AbstractServer.StartListening()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: StartListening
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 99
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis function starts the listener.\n"
+  example: []
+  syntax:
+    content: protected void StartListening()
+    content.vb: Protected Sub StartListening
+  overload: TCPServer.AbstractServer.StartListening*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: TCPServer.AbstractServer.AcceptClient
+  commentId: M:TCPServer.AbstractServer.AcceptClient
+  id: AcceptClient
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: AcceptClient()
+  nameWithType: AbstractServer.AcceptClient()
+  fullName: TCPServer.AbstractServer.AcceptClient()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: AcceptClient
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 108
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis function waits for the Client connection.\n"
+  example: []
+  syntax:
+    content: protected abstract void AcceptClient()
+    content.vb: Protected MustOverride Sub AcceptClient
+  overload: TCPServer.AbstractServer.AcceptClient*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  commentId: M:TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  id: BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: BeginDataTransmission(NetworkStream)
+  nameWithType: AbstractServer.BeginDataTransmission(NetworkStream)
+  fullName: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: BeginDataTransmission
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 113
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis function implements Echo and transmits the data between server and client.\n"
+  example: []
+  syntax:
+    content: protected abstract void BeginDataTransmission(NetworkStream stream)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    content.vb: Protected MustOverride Sub BeginDataTransmission(stream As NetworkStream)
+  overload: TCPServer.AbstractServer.BeginDataTransmission*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: TCPServer.AbstractServer.Start
+  commentId: M:TCPServer.AbstractServer.Start
+  id: Start
+  parent: TCPServer.AbstractServer
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: AbstractServer.Start()
+  fullName: TCPServer.AbstractServer.Start()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/AbstractServer.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Start
+    path: ../../ServerFunctionsLibrary/AbstractServer.cs
+    startLine: 118
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  summary: "\nThis function fires off the default server behaviour. It interrupts the program.\n"
+  example: []
+  syntax:
+    content: public abstract void Start()
+    content.vb: Public MustOverride Sub Start
+  overload: TCPServer.AbstractServer.Start*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.AbstractServer.IPAddress*
+  commentId: Overload:TCPServer.AbstractServer.IPAddress
+  name: IPAddress
+  nameWithType: AbstractServer.IPAddress
+  fullName: TCPServer.AbstractServer.IPAddress
+- uid: System.Net.IPAddress
+  commentId: T:System.Net.IPAddress
+  parent: System.Net
+  isExternal: true
+  name: IPAddress
+  nameWithType: IPAddress
+  fullName: System.Net.IPAddress
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+- uid: TCPServer.AbstractServer.Port*
+  commentId: Overload:TCPServer.AbstractServer.Port
+  name: Port
+  nameWithType: AbstractServer.Port
+  fullName: TCPServer.AbstractServer.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TCPServer.AbstractServer.Buffer_size*
+  commentId: Overload:TCPServer.AbstractServer.Buffer_size
+  name: Buffer_size
+  nameWithType: AbstractServer.Buffer_size
+  fullName: TCPServer.AbstractServer.Buffer_size
+- uid: TCPServer.AbstractServer.TcpListener*
+  commentId: Overload:TCPServer.AbstractServer.TcpListener
+  name: TcpListener
+  nameWithType: AbstractServer.TcpListener
+  fullName: TCPServer.AbstractServer.TcpListener
+- uid: System.Net.Sockets.TcpListener
+  commentId: T:System.Net.Sockets.TcpListener
+  parent: System.Net.Sockets
+  isExternal: true
+  name: TcpListener
+  nameWithType: TcpListener
+  fullName: System.Net.Sockets.TcpListener
+- uid: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  isExternal: true
+  name: System.Net.Sockets
+  nameWithType: System.Net.Sockets
+  fullName: System.Net.Sockets
+- uid: TCPServer.AbstractServer.TcpClient*
+  commentId: Overload:TCPServer.AbstractServer.TcpClient
+  name: TcpClient
+  nameWithType: AbstractServer.TcpClient
+  fullName: TCPServer.AbstractServer.TcpClient
+- uid: System.Net.Sockets.TcpClient
+  commentId: T:System.Net.Sockets.TcpClient
+  parent: System.Net.Sockets
+  isExternal: true
+  name: TcpClient
+  nameWithType: TcpClient
+  fullName: System.Net.Sockets.TcpClient
+- uid: TCPServer.AbstractServer.Stream*
+  commentId: Overload:TCPServer.AbstractServer.Stream
+  name: Stream
+  nameWithType: AbstractServer.Stream
+  fullName: TCPServer.AbstractServer.Stream
+- uid: System.Net.Sockets.NetworkStream
+  commentId: T:System.Net.Sockets.NetworkStream
+  parent: System.Net.Sockets
+  isExternal: true
+  name: NetworkStream
+  nameWithType: NetworkStream
+  fullName: System.Net.Sockets.NetworkStream
+- uid: TCPServer.AbstractServer.#ctor*
+  commentId: Overload:TCPServer.AbstractServer.#ctor
+  name: AbstractServer
+  nameWithType: AbstractServer.AbstractServer
+  fullName: TCPServer.AbstractServer.AbstractServer
+- uid: TCPServer.AbstractServer.checkPort*
+  commentId: Overload:TCPServer.AbstractServer.checkPort
+  name: checkPort
+  nameWithType: AbstractServer.checkPort
+  fullName: TCPServer.AbstractServer.checkPort
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: TCPServer.AbstractServer.StartListening*
+  commentId: Overload:TCPServer.AbstractServer.StartListening
+  name: StartListening
+  nameWithType: AbstractServer.StartListening
+  fullName: TCPServer.AbstractServer.StartListening
+- uid: TCPServer.AbstractServer.AcceptClient*
+  commentId: Overload:TCPServer.AbstractServer.AcceptClient
+  name: AcceptClient
+  nameWithType: AbstractServer.AcceptClient
+  fullName: TCPServer.AbstractServer.AcceptClient
+- uid: TCPServer.AbstractServer.BeginDataTransmission*
+  commentId: Overload:TCPServer.AbstractServer.BeginDataTransmission
+  name: BeginDataTransmission
+  nameWithType: AbstractServer.BeginDataTransmission
+  fullName: TCPServer.AbstractServer.BeginDataTransmission
+- uid: TCPServer.AbstractServer.Start*
+  commentId: Overload:TCPServer.AbstractServer.Start
+  name: Start
+  nameWithType: AbstractServer.Start
+  fullName: TCPServer.AbstractServer.Start

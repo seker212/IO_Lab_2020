@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.UserType
+  commentId: T:TCPServer.UserType
+  id: UserType
+  parent: TCPServer
+  children:
+  - TCPServer.UserType.Admin
+  - TCPServer.UserType.LoggedOut
+  - TCPServer.UserType.NotValid
+  - TCPServer.UserType.Standard
+  langs:
+  - csharp
+  - vb
+  name: UserType
+  nameWithType: UserType
+  fullName: TCPServer.UserType
+  type: Enum
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: UserType
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 10
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public enum UserType
+    content.vb: Public Enum UserType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TCPServer.UserType.NotValid
+  commentId: F:TCPServer.UserType.NotValid
+  id: NotValid
+  parent: TCPServer.UserType
+  langs:
+  - csharp
+  - vb
+  name: NotValid
+  nameWithType: UserType.NotValid
+  fullName: TCPServer.UserType.NotValid
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: NotValid
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 12
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: NotValid = 0
+    return:
+      type: TCPServer.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TCPServer.UserType.LoggedOut
+  commentId: F:TCPServer.UserType.LoggedOut
+  id: LoggedOut
+  parent: TCPServer.UserType
+  langs:
+  - csharp
+  - vb
+  name: LoggedOut
+  nameWithType: UserType.LoggedOut
+  fullName: TCPServer.UserType.LoggedOut
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: LoggedOut
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: LoggedOut = 1
+    return:
+      type: TCPServer.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TCPServer.UserType.Standard
+  commentId: F:TCPServer.UserType.Standard
+  id: Standard
+  parent: TCPServer.UserType
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: UserType.Standard
+  fullName: TCPServer.UserType.Standard
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Standard
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 14
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: Standard = 2
+    return:
+      type: TCPServer.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TCPServer.UserType.Admin
+  commentId: F:TCPServer.UserType.Admin
+  id: Admin
+  parent: TCPServer.UserType
+  langs:
+  - csharp
+  - vb
+  name: Admin
+  nameWithType: UserType.Admin
+  fullName: TCPServer.UserType.Admin
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/UserManager.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Admin
+    path: ../../ServerFunctionsLibrary/UserManager.cs
+    startLine: 15
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: Admin = 3
+    return:
+      type: TCPServer.UserType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: TCPServer.UserType
+  commentId: T:TCPServer.UserType
+  parent: TCPServer
+  name: UserType
+  nameWithType: UserType
+  fullName: TCPServer.UserType

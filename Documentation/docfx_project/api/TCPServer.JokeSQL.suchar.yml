@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.JokeSQL.suchar
+  commentId: T:TCPServer.JokeSQL.suchar
+  id: JokeSQL.suchar
+  parent: TCPServer
+  children:
+  - TCPServer.JokeSQL.suchar.#ctor(System.Int32,System.Int32,System.String)
+  - TCPServer.JokeSQL.suchar.content
+  - TCPServer.JokeSQL.suchar.creatorID
+  - TCPServer.JokeSQL.suchar.id
+  - TCPServer.JokeSQL.suchar.Stringify
+  langs:
+  - csharp
+  - vb
+  name: JokeSQL.suchar
+  nameWithType: JokeSQL.suchar
+  fullName: TCPServer.JokeSQL.suchar
+  type: Struct
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: suchar
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public struct suchar
+    content.vb: Public Structure suchar
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: TCPServer.JokeSQL.suchar.#ctor(System.Int32,System.Int32,System.String)
+  commentId: M:TCPServer.JokeSQL.suchar.#ctor(System.Int32,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String)'
+  parent: TCPServer.JokeSQL.suchar
+  langs:
+  - csharp
+  - vb
+  name: suchar(Int32, Int32, String)
+  nameWithType: JokeSQL.suchar.suchar(Int32, Int32, String)
+  fullName: TCPServer.JokeSQL.suchar.suchar(System.Int32, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 16
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public suchar(int Id, int CreatorID, string Content)
+    parameters:
+    - id: Id
+      type: System.Int32
+    - id: CreatorID
+      type: System.Int32
+    - id: Content
+      type: System.String
+    content.vb: Public Sub New(Id As Integer, CreatorID As Integer, Content As String)
+  overload: TCPServer.JokeSQL.suchar.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.suchar.id
+  commentId: P:TCPServer.JokeSQL.suchar.id
+  id: id
+  parent: TCPServer.JokeSQL.suchar
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: JokeSQL.suchar.id
+  fullName: TCPServer.JokeSQL.suchar.id
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: id
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 23
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public int id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property id As Integer
+  overload: TCPServer.JokeSQL.suchar.id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.suchar.creatorID
+  commentId: P:TCPServer.JokeSQL.suchar.creatorID
+  id: creatorID
+  parent: TCPServer.JokeSQL.suchar
+  langs:
+  - csharp
+  - vb
+  name: creatorID
+  nameWithType: JokeSQL.suchar.creatorID
+  fullName: TCPServer.JokeSQL.suchar.creatorID
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: creatorID
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 24
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public int creatorID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property creatorID As Integer
+  overload: TCPServer.JokeSQL.suchar.creatorID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.suchar.content
+  commentId: P:TCPServer.JokeSQL.suchar.content
+  id: content
+  parent: TCPServer.JokeSQL.suchar
+  langs:
+  - csharp
+  - vb
+  name: content
+  nameWithType: JokeSQL.suchar.content
+  fullName: TCPServer.JokeSQL.suchar.content
+  type: Property
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: content
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 25
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public string content { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property content As String
+  overload: TCPServer.JokeSQL.suchar.content*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.suchar.Stringify
+  commentId: M:TCPServer.JokeSQL.suchar.Stringify
+  id: Stringify
+  parent: TCPServer.JokeSQL.suchar
+  langs:
+  - csharp
+  - vb
+  name: Stringify()
+  nameWithType: JokeSQL.suchar.Stringify()
+  fullName: TCPServer.JokeSQL.suchar.Stringify()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Stringify
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 27
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public string Stringify()
+    return:
+      type: System.String
+    content.vb: Public Function Stringify As String
+  overload: TCPServer.JokeSQL.suchar.Stringify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.JokeSQL.suchar.#ctor*
+  commentId: Overload:TCPServer.JokeSQL.suchar.#ctor
+  name: suchar
+  nameWithType: JokeSQL.suchar.suchar
+  fullName: TCPServer.JokeSQL.suchar.suchar
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TCPServer.JokeSQL.suchar.id*
+  commentId: Overload:TCPServer.JokeSQL.suchar.id
+  name: id
+  nameWithType: JokeSQL.suchar.id
+  fullName: TCPServer.JokeSQL.suchar.id
+- uid: TCPServer.JokeSQL.suchar.creatorID*
+  commentId: Overload:TCPServer.JokeSQL.suchar.creatorID
+  name: creatorID
+  nameWithType: JokeSQL.suchar.creatorID
+  fullName: TCPServer.JokeSQL.suchar.creatorID
+- uid: TCPServer.JokeSQL.suchar.content*
+  commentId: Overload:TCPServer.JokeSQL.suchar.content
+  name: content
+  nameWithType: JokeSQL.suchar.content
+  fullName: TCPServer.JokeSQL.suchar.content
+- uid: TCPServer.JokeSQL.suchar.Stringify*
+  commentId: Overload:TCPServer.JokeSQL.suchar.Stringify
+  name: Stringify
+  nameWithType: JokeSQL.suchar.Stringify
+  fullName: TCPServer.JokeSQL.suchar.Stringify

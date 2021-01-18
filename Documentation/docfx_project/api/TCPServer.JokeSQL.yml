@@ -1,0 +1,314 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.JokeSQL
+  commentId: T:TCPServer.JokeSQL
+  id: JokeSQL
+  parent: TCPServer
+  children:
+  - TCPServer.JokeSQL.#ctor(TCPServer.Models.ServerDatabaseContext)
+  - TCPServer.JokeSQL.AddJoke(System.String,System.String[]@)
+  - TCPServer.JokeSQL.delJoke(System.String)
+  - TCPServer.JokeSQL.GetJoke
+  - TCPServer.JokeSQL.listJokes(System.String[]@)
+  langs:
+  - csharp
+  - vb
+  name: JokeSQL
+  nameWithType: JokeSQL
+  fullName: TCPServer.JokeSQL
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: JokeSQL
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 10
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public class JokeSQL
+    content.vb: Public Class JokeSQL
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TCPServer.JokeSQL.#ctor(TCPServer.Models.ServerDatabaseContext)
+  commentId: M:TCPServer.JokeSQL.#ctor(TCPServer.Models.ServerDatabaseContext)
+  id: '#ctor(TCPServer.Models.ServerDatabaseContext)'
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: JokeSQL(ServerDatabaseContext)
+  nameWithType: JokeSQL.JokeSQL(ServerDatabaseContext)
+  fullName: TCPServer.JokeSQL.JokeSQL(TCPServer.Models.ServerDatabaseContext)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 37
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public JokeSQL(ServerDatabaseContext context)
+    parameters:
+    - id: context
+      type: TCPServer.Models.ServerDatabaseContext
+    content.vb: Public Sub New(context As ServerDatabaseContext)
+  overload: TCPServer.JokeSQL.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.GetJoke
+  commentId: M:TCPServer.JokeSQL.GetJoke
+  id: GetJoke
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: GetJoke()
+  nameWithType: JokeSQL.GetJoke()
+  fullName: TCPServer.JokeSQL.GetJoke()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: GetJoke
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 44
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public string GetJoke()
+    return:
+      type: System.String
+    content.vb: Public Function GetJoke As String
+  overload: TCPServer.JokeSQL.GetJoke*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.AddJoke(System.String,System.String[]@)
+  commentId: M:TCPServer.JokeSQL.AddJoke(System.String,System.String[]@)
+  id: AddJoke(System.String,System.String[]@)
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: AddJoke(String, ref String[])
+  nameWithType: JokeSQL.AddJoke(String, ref String[])
+  fullName: TCPServer.JokeSQL.AddJoke(System.String, ref System.String[])
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: AddJoke
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 59
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public bool AddJoke(string txt, ref string[] actualUser)
+    parameters:
+    - id: txt
+      type: System.String
+    - id: actualUser
+      type: System.String[]
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddJoke(txt As String, ByRef actualUser As String()) As Boolean
+  overload: TCPServer.JokeSQL.AddJoke*
+  nameWithType.vb: JokeSQL.AddJoke(String, ByRef String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: TCPServer.JokeSQL.AddJoke(System.String, ByRef System.String())
+  name.vb: AddJoke(String, ByRef String())
+- uid: TCPServer.JokeSQL.delJoke(System.String)
+  commentId: M:TCPServer.JokeSQL.delJoke(System.String)
+  id: delJoke(System.String)
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: delJoke(String)
+  nameWithType: JokeSQL.delJoke(String)
+  fullName: TCPServer.JokeSQL.delJoke(System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: delJoke
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 82
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public bool delJoke(string usuw)
+    parameters:
+    - id: usuw
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function delJoke(usuw As String) As Boolean
+  overload: TCPServer.JokeSQL.delJoke*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.JokeSQL.listJokes(System.String[]@)
+  commentId: M:TCPServer.JokeSQL.listJokes(System.String[]@)
+  id: listJokes(System.String[]@)
+  parent: TCPServer.JokeSQL
+  langs:
+  - csharp
+  - vb
+  name: listJokes(ref String[])
+  nameWithType: JokeSQL.listJokes(ref String[])
+  fullName: TCPServer.JokeSQL.listJokes(ref System.String[])
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/JokeSQL.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: listJokes
+    path: ../../ServerFunctionsLibrary/JokeSQL.cs
+    startLine: 100
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public string listJokes(ref string[] actualUser)
+    parameters:
+    - id: actualUser
+      type: System.String[]
+    return:
+      type: System.String
+    content.vb: Public Function listJokes(ByRef actualUser As String()) As String
+  overload: TCPServer.JokeSQL.listJokes*
+  nameWithType.vb: JokeSQL.listJokes(ByRef String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: TCPServer.JokeSQL.listJokes(ByRef System.String())
+  name.vb: listJokes(ByRef String())
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.JokeSQL.#ctor*
+  commentId: Overload:TCPServer.JokeSQL.#ctor
+  name: JokeSQL
+  nameWithType: JokeSQL.JokeSQL
+  fullName: TCPServer.JokeSQL.JokeSQL
+- uid: TCPServer.Models.ServerDatabaseContext
+  commentId: T:TCPServer.Models.ServerDatabaseContext
+  parent: TCPServer.Models
+  name: ServerDatabaseContext
+  nameWithType: ServerDatabaseContext
+  fullName: TCPServer.Models.ServerDatabaseContext
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
+- uid: TCPServer.JokeSQL.GetJoke*
+  commentId: Overload:TCPServer.JokeSQL.GetJoke
+  name: GetJoke
+  nameWithType: JokeSQL.GetJoke
+  fullName: TCPServer.JokeSQL.GetJoke
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TCPServer.JokeSQL.AddJoke*
+  commentId: Overload:TCPServer.JokeSQL.AddJoke
+  name: AddJoke
+  nameWithType: JokeSQL.AddJoke
+  fullName: TCPServer.JokeSQL.AddJoke
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: TCPServer.JokeSQL.delJoke*
+  commentId: Overload:TCPServer.JokeSQL.delJoke
+  name: delJoke
+  nameWithType: JokeSQL.delJoke
+  fullName: TCPServer.JokeSQL.delJoke
+- uid: TCPServer.JokeSQL.listJokes*
+  commentId: Overload:TCPServer.JokeSQL.listJokes
+  name: listJokes
+  nameWithType: JokeSQL.listJokes
+  fullName: TCPServer.JokeSQL.listJokes

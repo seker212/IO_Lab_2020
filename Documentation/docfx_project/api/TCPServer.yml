@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer
+  commentId: N:TCPServer
+  id: TCPServer
+  children:
+  - TCPServer.AbstractServer
+  - TCPServer.JokeSQL
+  - TCPServer.JokeSQL.suchar
+  - TCPServer.ServerAPM
+  - TCPServer.ServerAPM.TransmissionDataDelegate
+  - TCPServer.ServerSync
+  - TCPServer.UserManager
+  - TCPServer.UserType
+  langs:
+  - csharp
+  - vb
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+  type: Namespace
+  assemblies:
+  - ServerClasses
+references:
+- uid: TCPServer.AbstractServer
+  commentId: T:TCPServer.AbstractServer
+  parent: TCPServer
+  name: AbstractServer
+  nameWithType: AbstractServer
+  fullName: TCPServer.AbstractServer
+- uid: TCPServer.JokeSQL
+  commentId: T:TCPServer.JokeSQL
+  name: JokeSQL
+  nameWithType: JokeSQL
+  fullName: TCPServer.JokeSQL
+- uid: TCPServer.JokeSQL.suchar
+  commentId: T:TCPServer.JokeSQL.suchar
+  name: JokeSQL.suchar
+  nameWithType: JokeSQL.suchar
+  fullName: TCPServer.JokeSQL.suchar
+- uid: TCPServer.ServerAPM
+  commentId: T:TCPServer.ServerAPM
+  name: ServerAPM
+  nameWithType: ServerAPM
+  fullName: TCPServer.ServerAPM
+- uid: TCPServer.ServerAPM.TransmissionDataDelegate
+  commentId: T:TCPServer.ServerAPM.TransmissionDataDelegate
+  name: ServerAPM.TransmissionDataDelegate
+  nameWithType: ServerAPM.TransmissionDataDelegate
+  fullName: TCPServer.ServerAPM.TransmissionDataDelegate
+- uid: TCPServer.ServerSync
+  commentId: T:TCPServer.ServerSync
+  name: ServerSync
+  nameWithType: ServerSync
+  fullName: TCPServer.ServerSync
+- uid: TCPServer.UserType
+  commentId: T:TCPServer.UserType
+  parent: TCPServer
+  name: UserType
+  nameWithType: UserType
+  fullName: TCPServer.UserType
+- uid: TCPServer.UserManager
+  commentId: T:TCPServer.UserManager
+  name: UserManager
+  nameWithType: UserManager
+  fullName: TCPServer.UserManager
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer

@@ -1,0 +1,600 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.ServerAPM
+  commentId: T:TCPServer.ServerAPM
+  id: ServerAPM
+  parent: TCPServer
+  children:
+  - TCPServer.ServerAPM.#ctor(System.String,System.Int32,System.Int32)
+  - TCPServer.ServerAPM.AcceptClient
+  - TCPServer.ServerAPM.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  - TCPServer.ServerAPM.CommandHandler(System.Net.Sockets.NetworkStream,System.Byte[])
+  - TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
+  - TCPServer.ServerAPM.Start
+  langs:
+  - csharp
+  - vb
+  name: ServerAPM
+  nameWithType: ServerAPM
+  fullName: TCPServer.ServerAPM
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ServerAPM
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 14
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: 'public class ServerAPM : AbstractServer'
+    content.vb: >-
+      Public Class ServerAPM
+          Inherits AbstractServer
+  inheritance:
+  - System.Object
+  - TCPServer.AbstractServer
+  inheritedMembers:
+  - TCPServer.AbstractServer.IPAddress
+  - TCPServer.AbstractServer.Port
+  - TCPServer.AbstractServer.Buffer_size
+  - TCPServer.AbstractServer.TcpListener
+  - TCPServer.AbstractServer.TcpClient
+  - TCPServer.AbstractServer.Stream
+  - TCPServer.AbstractServer.checkPort
+  - TCPServer.AbstractServer.StartListening
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TCPServer.ServerAPM.#ctor(System.String,System.Int32,System.Int32)
+  commentId: M:TCPServer.ServerAPM.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: TCPServer.ServerAPM
+  langs:
+  - csharp
+  - vb
+  name: ServerAPM(String, Int32, Int32)
+  nameWithType: ServerAPM.ServerAPM(String, Int32, Int32)
+  fullName: TCPServer.ServerAPM.ServerAPM(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 21
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public ServerAPM(string IPAddress = "127.0.0.1", int port = 8001, int bufferSize = 1024)
+    parameters:
+    - id: IPAddress
+      type: System.String
+    - id: port
+      type: System.Int32
+    - id: bufferSize
+      type: System.Int32
+    content.vb: Public Sub New(IPAddress As String = "127.0.0.1", port As Integer = 8001, bufferSize As Integer = 1024)
+  overload: TCPServer.ServerAPM.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TCPServer.ServerAPM.AcceptClient
+  commentId: M:TCPServer.ServerAPM.AcceptClient
+  id: AcceptClient
+  parent: TCPServer.ServerAPM
+  langs:
+  - csharp
+  - vb
+  name: AcceptClient()
+  nameWithType: ServerAPM.AcceptClient()
+  fullName: TCPServer.ServerAPM.AcceptClient()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: AcceptClient
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 32
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected override void AcceptClient()
+    content.vb: Protected Overrides Sub AcceptClient
+  overridden: TCPServer.AbstractServer.AcceptClient
+  overload: TCPServer.ServerAPM.AcceptClient*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: TCPServer.ServerAPM.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  commentId: M:TCPServer.ServerAPM.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  id: BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  parent: TCPServer.ServerAPM
+  langs:
+  - csharp
+  - vb
+  name: BeginDataTransmission(NetworkStream)
+  nameWithType: ServerAPM.BeginDataTransmission(NetworkStream)
+  fullName: TCPServer.ServerAPM.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: BeginDataTransmission
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 49
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected override void BeginDataTransmission(NetworkStream stream)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    content.vb: Protected Overrides Sub BeginDataTransmission(stream As NetworkStream)
+  overridden: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  overload: TCPServer.ServerAPM.BeginDataTransmission*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: TCPServer.ServerAPM.Start
+  commentId: M:TCPServer.ServerAPM.Start
+  id: Start
+  parent: TCPServer.ServerAPM
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ServerAPM.Start()
+  fullName: TCPServer.ServerAPM.Start()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Start
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 62
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public override void Start()
+    content.vb: Public Overrides Sub Start
+  overridden: TCPServer.AbstractServer.Start
+  overload: TCPServer.ServerAPM.Start*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
+  commentId: M:TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
+  id: SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
+  parent: TCPServer.ServerAPM
+  langs:
+  - csharp
+  - vb
+  name: SignIn(NetworkStream, Byte[], ref String[])
+  nameWithType: ServerAPM.SignIn(NetworkStream, Byte[], ref String[])
+  fullName: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream, System.Byte[], ref System.String[])
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: SignIn
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 69
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected UserType SignIn(NetworkStream stream, byte[] buffer, ref string[] cridentials)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    - id: buffer
+      type: System.Byte[]
+    - id: cridentials
+      type: System.String[]
+    return:
+      type: TCPServer.UserType
+    content.vb: Protected Function SignIn(stream As NetworkStream, buffer As Byte(), ByRef cridentials As String()) As UserType
+  overload: TCPServer.ServerAPM.SignIn*
+  nameWithType.vb: ServerAPM.SignIn(NetworkStream, Byte(), ByRef String())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream, System.Byte(), ByRef System.String())
+  name.vb: SignIn(NetworkStream, Byte(), ByRef String())
+- uid: TCPServer.ServerAPM.CommandHandler(System.Net.Sockets.NetworkStream,System.Byte[])
+  commentId: M:TCPServer.ServerAPM.CommandHandler(System.Net.Sockets.NetworkStream,System.Byte[])
+  id: CommandHandler(System.Net.Sockets.NetworkStream,System.Byte[])
+  parent: TCPServer.ServerAPM
+  langs:
+  - csharp
+  - vb
+  name: CommandHandler(NetworkStream, Byte[])
+  nameWithType: ServerAPM.CommandHandler(NetworkStream, Byte[])
+  fullName: TCPServer.ServerAPM.CommandHandler(System.Net.Sockets.NetworkStream, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: CommandHandler
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 102
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: protected void CommandHandler(NetworkStream stream, byte[] buffer)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    - id: buffer
+      type: System.Byte[]
+    content.vb: Protected Sub CommandHandler(stream As NetworkStream, buffer As Byte())
+  overload: TCPServer.ServerAPM.CommandHandler*
+  nameWithType.vb: ServerAPM.CommandHandler(NetworkStream, Byte())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: TCPServer.ServerAPM.CommandHandler(System.Net.Sockets.NetworkStream, System.Byte())
+  name.vb: CommandHandler(NetworkStream, Byte())
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TCPServer.AbstractServer
+  commentId: T:TCPServer.AbstractServer
+  parent: TCPServer
+  name: AbstractServer
+  nameWithType: AbstractServer
+  fullName: TCPServer.AbstractServer
+- uid: TCPServer.AbstractServer.IPAddress
+  commentId: P:TCPServer.AbstractServer.IPAddress
+  parent: TCPServer.AbstractServer
+  name: IPAddress
+  nameWithType: AbstractServer.IPAddress
+  fullName: TCPServer.AbstractServer.IPAddress
+- uid: TCPServer.AbstractServer.Port
+  commentId: P:TCPServer.AbstractServer.Port
+  parent: TCPServer.AbstractServer
+  name: Port
+  nameWithType: AbstractServer.Port
+  fullName: TCPServer.AbstractServer.Port
+- uid: TCPServer.AbstractServer.Buffer_size
+  commentId: P:TCPServer.AbstractServer.Buffer_size
+  parent: TCPServer.AbstractServer
+  name: Buffer_size
+  nameWithType: AbstractServer.Buffer_size
+  fullName: TCPServer.AbstractServer.Buffer_size
+- uid: TCPServer.AbstractServer.TcpListener
+  commentId: P:TCPServer.AbstractServer.TcpListener
+  parent: TCPServer.AbstractServer
+  name: TcpListener
+  nameWithType: AbstractServer.TcpListener
+  fullName: TCPServer.AbstractServer.TcpListener
+- uid: TCPServer.AbstractServer.TcpClient
+  commentId: P:TCPServer.AbstractServer.TcpClient
+  parent: TCPServer.AbstractServer
+  name: TcpClient
+  nameWithType: AbstractServer.TcpClient
+  fullName: TCPServer.AbstractServer.TcpClient
+- uid: TCPServer.AbstractServer.Stream
+  commentId: P:TCPServer.AbstractServer.Stream
+  parent: TCPServer.AbstractServer
+  name: Stream
+  nameWithType: AbstractServer.Stream
+  fullName: TCPServer.AbstractServer.Stream
+- uid: TCPServer.AbstractServer.checkPort
+  commentId: M:TCPServer.AbstractServer.checkPort
+  parent: TCPServer.AbstractServer
+  name: checkPort()
+  nameWithType: AbstractServer.checkPort()
+  fullName: TCPServer.AbstractServer.checkPort()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.checkPort
+    name: checkPort
+    nameWithType: AbstractServer.checkPort
+    fullName: TCPServer.AbstractServer.checkPort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.checkPort
+    name: checkPort
+    nameWithType: AbstractServer.checkPort
+    fullName: TCPServer.AbstractServer.checkPort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.AbstractServer.StartListening
+  commentId: M:TCPServer.AbstractServer.StartListening
+  parent: TCPServer.AbstractServer
+  name: StartListening()
+  nameWithType: AbstractServer.StartListening()
+  fullName: TCPServer.AbstractServer.StartListening()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.StartListening
+    name: StartListening
+    nameWithType: AbstractServer.StartListening
+    fullName: TCPServer.AbstractServer.StartListening
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.StartListening
+    name: StartListening
+    nameWithType: AbstractServer.StartListening
+    fullName: TCPServer.AbstractServer.StartListening
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.ServerAPM.#ctor*
+  commentId: Overload:TCPServer.ServerAPM.#ctor
+  name: ServerAPM
+  nameWithType: ServerAPM.ServerAPM
+  fullName: TCPServer.ServerAPM.ServerAPM
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TCPServer.AbstractServer.AcceptClient
+  commentId: M:TCPServer.AbstractServer.AcceptClient
+  parent: TCPServer.AbstractServer
+  name: AcceptClient()
+  nameWithType: AbstractServer.AcceptClient()
+  fullName: TCPServer.AbstractServer.AcceptClient()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.AcceptClient
+    name: AcceptClient
+    nameWithType: AbstractServer.AcceptClient
+    fullName: TCPServer.AbstractServer.AcceptClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.AcceptClient
+    name: AcceptClient
+    nameWithType: AbstractServer.AcceptClient
+    fullName: TCPServer.AbstractServer.AcceptClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.ServerAPM.AcceptClient*
+  commentId: Overload:TCPServer.ServerAPM.AcceptClient
+  name: AcceptClient
+  nameWithType: ServerAPM.AcceptClient
+  fullName: TCPServer.ServerAPM.AcceptClient
+- uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  commentId: M:TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  parent: TCPServer.AbstractServer
+  isExternal: true
+  name: BeginDataTransmission(NetworkStream)
+  nameWithType: AbstractServer.BeginDataTransmission(NetworkStream)
+  fullName: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+    name: BeginDataTransmission
+    nameWithType: AbstractServer.BeginDataTransmission
+    fullName: TCPServer.AbstractServer.BeginDataTransmission
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Sockets.NetworkStream
+    name: NetworkStream
+    nameWithType: NetworkStream
+    fullName: System.Net.Sockets.NetworkStream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.BeginDataTransmission(System.Net.Sockets.NetworkStream)
+    name: BeginDataTransmission
+    nameWithType: AbstractServer.BeginDataTransmission
+    fullName: TCPServer.AbstractServer.BeginDataTransmission
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Sockets.NetworkStream
+    name: NetworkStream
+    nameWithType: NetworkStream
+    fullName: System.Net.Sockets.NetworkStream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.ServerAPM.BeginDataTransmission*
+  commentId: Overload:TCPServer.ServerAPM.BeginDataTransmission
+  name: BeginDataTransmission
+  nameWithType: ServerAPM.BeginDataTransmission
+  fullName: TCPServer.ServerAPM.BeginDataTransmission
+- uid: System.Net.Sockets.NetworkStream
+  commentId: T:System.Net.Sockets.NetworkStream
+  parent: System.Net.Sockets
+  isExternal: true
+  name: NetworkStream
+  nameWithType: NetworkStream
+  fullName: System.Net.Sockets.NetworkStream
+- uid: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  isExternal: true
+  name: System.Net.Sockets
+  nameWithType: System.Net.Sockets
+  fullName: System.Net.Sockets
+- uid: TCPServer.AbstractServer.Start
+  commentId: M:TCPServer.AbstractServer.Start
+  parent: TCPServer.AbstractServer
+  name: Start()
+  nameWithType: AbstractServer.Start()
+  fullName: TCPServer.AbstractServer.Start()
+  spec.csharp:
+  - uid: TCPServer.AbstractServer.Start
+    name: Start
+    nameWithType: AbstractServer.Start
+    fullName: TCPServer.AbstractServer.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.AbstractServer.Start
+    name: Start
+    nameWithType: AbstractServer.Start
+    fullName: TCPServer.AbstractServer.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.ServerAPM.Start*
+  commentId: Overload:TCPServer.ServerAPM.Start
+  name: Start
+  nameWithType: ServerAPM.Start
+  fullName: TCPServer.ServerAPM.Start
+- uid: TCPServer.ServerAPM.SignIn*
+  commentId: Overload:TCPServer.ServerAPM.SignIn
+  name: SignIn
+  nameWithType: ServerAPM.SignIn
+  fullName: TCPServer.ServerAPM.SignIn
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: TCPServer.UserType
+  commentId: T:TCPServer.UserType
+  parent: TCPServer
+  name: UserType
+  nameWithType: UserType
+  fullName: TCPServer.UserType
+- uid: TCPServer.ServerAPM.CommandHandler*
+  commentId: Overload:TCPServer.ServerAPM.CommandHandler
+  name: CommandHandler
+  nameWithType: ServerAPM.CommandHandler
+  fullName: TCPServer.ServerAPM.CommandHandler

@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  id: TCPServer.Models
+  children:
+  - TCPServer.Models.Joke
+  - TCPServer.Models.ServerDatabaseContext
+  - TCPServer.Models.User
+  langs:
+  - csharp
+  - vb
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
+  type: Namespace
+  assemblies:
+  - ServerClasses
+references:
+- uid: TCPServer.Models.Joke
+  commentId: T:TCPServer.Models.Joke
+  name: Joke
+  nameWithType: Joke
+  fullName: TCPServer.Models.Joke
+- uid: TCPServer.Models.ServerDatabaseContext
+  commentId: T:TCPServer.Models.ServerDatabaseContext
+  parent: TCPServer.Models
+  name: ServerDatabaseContext
+  nameWithType: ServerDatabaseContext
+  fullName: TCPServer.Models.ServerDatabaseContext
+- uid: TCPServer.Models.User
+  commentId: T:TCPServer.Models.User
+  parent: TCPServer.Models
+  name: User
+  nameWithType: User
+  fullName: TCPServer.Models.User
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models

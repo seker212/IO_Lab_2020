@@ -80,30 +80,6 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">JokeSQL</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="TCPServer.html">TCPServer</a></h6>
   <h6><strong>Assembly</strong>: ServerClasses.dll</h6>
   <h5 id="TCPServer_JokeSQL_syntax">Syntax</h5>
@@ -117,7 +93,7 @@
     <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_JokeSQL__ctor_TCPServer_Models_ServerDatabaseContext_.md&amp;value=---%0Auid%3A%20TCPServer.JokeSQL.%23ctor(TCPServer.Models.ServerDatabaseContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L16">View Source</a>
+    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L38">View Source</a>
   </span>
   <a id="TCPServer_JokeSQL__ctor_" data-uid="TCPServer.JokeSQL.#ctor*"></a>
   <h4 id="TCPServer_JokeSQL__ctor_TCPServer_Models_ServerDatabaseContext_" data-uid="TCPServer.JokeSQL.#ctor(TCPServer.Models.ServerDatabaseContext)">JokeSQL(ServerDatabaseContext)</h4>
@@ -148,18 +124,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_JokeSQL_AddJoke_System_String_.md&amp;value=---%0Auid%3A%20TCPServer.JokeSQL.AddJoke(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_JokeSQL_AddJoke_System_String_System_String____.md&amp;value=---%0Auid%3A%20TCPServer.JokeSQL.AddJoke(System.String%2CSystem.String%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L31">View Source</a>
+    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L60">View Source</a>
   </span>
   <a id="TCPServer_JokeSQL_AddJoke_" data-uid="TCPServer.JokeSQL.AddJoke*"></a>
-  <h4 id="TCPServer_JokeSQL_AddJoke_System_String_" data-uid="TCPServer.JokeSQL.AddJoke(System.String)">AddJoke(String)</h4>
+  <h4 id="TCPServer_JokeSQL_AddJoke_System_String_System_String____" data-uid="TCPServer.JokeSQL.AddJoke(System.String,System.String[]@)">AddJoke(String, ref String[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AddJoke(string txt)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool AddJoke(string txt, ref string[] actualUser)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,6 +150,58 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">actualUser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_JokeSQL_delJoke_System_String_.md&amp;value=---%0Auid%3A%20TCPServer.JokeSQL.delJoke(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L83">View Source</a>
+  </span>
+  <a id="TCPServer_JokeSQL_delJoke_" data-uid="TCPServer.JokeSQL.delJoke*"></a>
+  <h4 id="TCPServer_JokeSQL_delJoke_System_String_" data-uid="TCPServer.JokeSQL.delJoke(System.String)">delJoke(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool delJoke(string usuw)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">usuw</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -198,7 +226,7 @@
     <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_JokeSQL_GetJoke.md&amp;value=---%0Auid%3A%20TCPServer.JokeSQL.GetJoke%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L22">View Source</a>
+    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L45">View Source</a>
   </span>
   <a id="TCPServer_JokeSQL_GetJoke_" data-uid="TCPServer.JokeSQL.GetJoke*"></a>
   <h4 id="TCPServer_JokeSQL_GetJoke" data-uid="TCPServer.JokeSQL.GetJoke">GetJoke()</h4>
@@ -208,6 +236,53 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string GetJoke()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/seker212/IO_Lab_2020/new/Seba/apiSpec/new?filename=TCPServer_JokeSQL_listJokes_System_String____.md&amp;value=---%0Auid%3A%20TCPServer.JokeSQL.listJokes(System.String%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/seker212/IO_Lab_2020/blob/Seba/ServerFunctionsLibrary/JokeSQL.cs/#L101">View Source</a>
+  </span>
+  <a id="TCPServer_JokeSQL_listJokes_" data-uid="TCPServer.JokeSQL.listJokes*"></a>
+  <h4 id="TCPServer_JokeSQL_listJokes_System_String____" data-uid="TCPServer.JokeSQL.listJokes(System.String[]@)">listJokes(ref String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string listJokes(ref string[] actualUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">actualUser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
