@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.ServerAPM.TransmissionDataDelegate
+  commentId: T:TCPServer.ServerAPM.TransmissionDataDelegate
+  id: ServerAPM.TransmissionDataDelegate
+  parent: TCPServer
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ServerAPM.TransmissionDataDelegate
+  nameWithType: ServerAPM.TransmissionDataDelegate
+  fullName: TCPServer.ServerAPM.TransmissionDataDelegate
+  type: Delegate
+  source:
+    remote:
+      path: ServerFunctionsLibrary/ServerAPM.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: TransmissionDataDelegate
+    path: ../../ServerFunctionsLibrary/ServerAPM.cs
+    startLine: 20
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer
+  syntax:
+    content: public delegate void TransmissionDataDelegate(NetworkStream stream);
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    content.vb: Public Delegate Sub TransmissionDataDelegate(stream As NetworkStream)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: TCPServer
+  commentId: N:TCPServer
+  name: TCPServer
+  nameWithType: TCPServer
+  fullName: TCPServer
+- uid: System.Net.Sockets.NetworkStream
+  commentId: T:System.Net.Sockets.NetworkStream
+  parent: System.Net.Sockets
+  isExternal: true
+  name: NetworkStream
+  nameWithType: NetworkStream
+  fullName: System.Net.Sockets.NetworkStream
+- uid: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  isExternal: true
+  name: System.Net.Sockets
+  nameWithType: System.Net.Sockets
+  fullName: System.Net.Sockets

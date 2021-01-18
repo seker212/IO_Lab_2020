@@ -1,0 +1,1482 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.DAL.BaseRepository`1
+  commentId: T:TCPServer.DAL.BaseRepository`1
+  id: BaseRepository`1
+  parent: TCPServer.DAL
+  children:
+  - TCPServer.DAL.BaseRepository`1.#ctor(TCPServer.Models.ServerDatabaseContext)
+  - TCPServer.DAL.BaseRepository`1._context
+  - TCPServer.DAL.BaseRepository`1.Commit
+  - TCPServer.DAL.BaseRepository`1.dbSet
+  - TCPServer.DAL.BaseRepository`1.Delete(`0)
+  - TCPServer.DAL.BaseRepository`1.Delete(System.Object)
+  - TCPServer.DAL.BaseRepository`1.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String)
+  - TCPServer.DAL.BaseRepository`1.GetByID(System.Object)
+  - TCPServer.DAL.BaseRepository`1.Insert(`0)
+  - TCPServer.DAL.BaseRepository`1.Update(`0)
+  langs:
+  - csharp
+  - vb
+  name: BaseRepository<TEntity>
+  nameWithType: BaseRepository<TEntity>
+  fullName: TCPServer.DAL.BaseRepository<TEntity>
+  type: Class
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: BaseRepository
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 11
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: 'public class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class'
+    typeParameters:
+    - id: TEntity
+    content.vb: >-
+      Public Class BaseRepository(Of TEntity As Class)
+          Implements IRepository(Of TEntity)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - TCPServer.DAL.JokeRepository
+  - TCPServer.DAL.UserRepository
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}
+  nameWithType.vb: BaseRepository(Of TEntity)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)
+  name.vb: BaseRepository(Of TEntity)
+- uid: TCPServer.DAL.BaseRepository`1._context
+  commentId: F:TCPServer.DAL.BaseRepository`1._context
+  id: _context
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: _context
+  nameWithType: BaseRepository<TEntity>._context
+  fullName: TCPServer.DAL.BaseRepository<TEntity>._context
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: _context
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: ServerDatabaseContext _context
+    return:
+      type: TCPServer.Models.ServerDatabaseContext
+    content.vb: _context As ServerDatabaseContext
+  nameWithType.vb: BaseRepository(Of TEntity)._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)._context
+- uid: TCPServer.DAL.BaseRepository`1.dbSet
+  commentId: F:TCPServer.DAL.BaseRepository`1.dbSet
+  id: dbSet
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: dbSet
+  nameWithType: BaseRepository<TEntity>.dbSet
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.dbSet
+  type: Field
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: dbSet
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 14
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: protected DbSet<TEntity> dbSet
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+    content.vb: Protected dbSet As DbSet(Of TEntity)
+  nameWithType.vb: BaseRepository(Of TEntity).dbSet
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).dbSet
+- uid: TCPServer.DAL.BaseRepository`1.#ctor(TCPServer.Models.ServerDatabaseContext)
+  commentId: M:TCPServer.DAL.BaseRepository`1.#ctor(TCPServer.Models.ServerDatabaseContext)
+  id: '#ctor(TCPServer.Models.ServerDatabaseContext)'
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: BaseRepository(ServerDatabaseContext)
+  nameWithType: BaseRepository<TEntity>.BaseRepository(ServerDatabaseContext)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.BaseRepository(TCPServer.Models.ServerDatabaseContext)
+  type: Constructor
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 16
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public BaseRepository(ServerDatabaseContext context)
+    parameters:
+    - id: context
+      type: TCPServer.Models.ServerDatabaseContext
+    content.vb: Public Sub New(context As ServerDatabaseContext)
+  overload: TCPServer.DAL.BaseRepository`1.#ctor*
+  nameWithType.vb: BaseRepository(Of TEntity).BaseRepository(ServerDatabaseContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).BaseRepository(TCPServer.Models.ServerDatabaseContext)
+- uid: TCPServer.DAL.BaseRepository`1.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String)
+  commentId: M:TCPServer.DAL.BaseRepository`1.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String)
+  id: Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.String)
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Get(Expression<Func<TEntity, Boolean>>, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>>, String)
+  nameWithType: BaseRepository<TEntity>.Get(Expression<Func<TEntity, Boolean>>, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>>, String)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Get(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IOrderedQueryable<TEntity>>, System.String)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Get
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 21
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
+    parameters:
+    - id: filter
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    - id: orderBy
+      type: System.Func{System.Linq.IQueryable{{TEntity}},System.Linq.IOrderedQueryable{{TEntity}}}
+    - id: includeProperties
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{{TEntity}}
+    content.vb: Public Overridable Function Get(filter As Expression(Of Func(Of TEntity, Boolean)) = Nothing, orderBy As Func(Of IQueryable(Of TEntity), IOrderedQueryable(Of TEntity)) = Nothing, includeProperties As String = "") As IEnumerable(Of TEntity)
+  overload: TCPServer.DAL.BaseRepository`1.Get*
+  nameWithType.vb: BaseRepository(Of TEntity).Get(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IOrderedQueryable(Of TEntity)), String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Get(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IOrderedQueryable(Of TEntity)), System.String)
+  name.vb: Get(Expression(Of Func(Of TEntity, Boolean)), Func(Of IQueryable(Of TEntity), IOrderedQueryable(Of TEntity)), String)
+- uid: TCPServer.DAL.BaseRepository`1.GetByID(System.Object)
+  commentId: M:TCPServer.DAL.BaseRepository`1.GetByID(System.Object)
+  id: GetByID(System.Object)
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetByID(Object)
+  nameWithType: BaseRepository<TEntity>.GetByID(Object)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.GetByID(System.Object)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: GetByID
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 53
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual TEntity GetByID(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    return:
+      type: '{TEntity}'
+    content.vb: Public Overridable Function GetByID(id As Object) As TEntity
+  overload: TCPServer.DAL.BaseRepository`1.GetByID*
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}.GetByID(System.Object)
+  nameWithType.vb: BaseRepository(Of TEntity).GetByID(Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).GetByID(System.Object)
+- uid: TCPServer.DAL.BaseRepository`1.Insert(`0)
+  commentId: M:TCPServer.DAL.BaseRepository`1.Insert(`0)
+  id: Insert(`0)
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(TEntity)
+  nameWithType: BaseRepository<TEntity>.Insert(TEntity)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Insert(TEntity)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Insert
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 58
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual TEntity Insert(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    return:
+      type: '{TEntity}'
+    content.vb: Public Overridable Function Insert(entity As TEntity) As TEntity
+  overload: TCPServer.DAL.BaseRepository`1.Insert*
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}.Insert({TEntity})
+  nameWithType.vb: BaseRepository(Of TEntity).Insert(TEntity)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Insert(TEntity)
+- uid: TCPServer.DAL.BaseRepository`1.Delete(System.Object)
+  commentId: M:TCPServer.DAL.BaseRepository`1.Delete(System.Object)
+  id: Delete(System.Object)
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Delete(Object)
+  nameWithType: BaseRepository<TEntity>.Delete(Object)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Delete(System.Object)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Delete
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 64
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual void Delete(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    content.vb: Public Overridable Sub Delete(id As Object)
+  overload: TCPServer.DAL.BaseRepository`1.Delete*
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}.Delete(System.Object)
+  nameWithType.vb: BaseRepository(Of TEntity).Delete(Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Delete(System.Object)
+- uid: TCPServer.DAL.BaseRepository`1.Delete(`0)
+  commentId: M:TCPServer.DAL.BaseRepository`1.Delete(`0)
+  id: Delete(`0)
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Delete(TEntity)
+  nameWithType: BaseRepository<TEntity>.Delete(TEntity)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Delete(TEntity)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Delete
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 70
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual void Delete(TEntity entityToDelete)
+    parameters:
+    - id: entityToDelete
+      type: '{TEntity}'
+    content.vb: Public Overridable Sub Delete(entityToDelete As TEntity)
+  overload: TCPServer.DAL.BaseRepository`1.Delete*
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}.Delete({TEntity})
+  nameWithType.vb: BaseRepository(Of TEntity).Delete(TEntity)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Delete(TEntity)
+- uid: TCPServer.DAL.BaseRepository`1.Update(`0)
+  commentId: M:TCPServer.DAL.BaseRepository`1.Update(`0)
+  id: Update(`0)
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Update(TEntity)
+  nameWithType: BaseRepository<TEntity>.Update(TEntity)
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Update(TEntity)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Update
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 79
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual void Update(TEntity entityToUpdate)
+    parameters:
+    - id: entityToUpdate
+      type: '{TEntity}'
+    content.vb: Public Overridable Sub Update(entityToUpdate As TEntity)
+  overload: TCPServer.DAL.BaseRepository`1.Update*
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}.Update({TEntity})
+  nameWithType.vb: BaseRepository(Of TEntity).Update(TEntity)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Update(TEntity)
+- uid: TCPServer.DAL.BaseRepository`1.Commit
+  commentId: M:TCPServer.DAL.BaseRepository`1.Commit
+  id: Commit
+  parent: TCPServer.DAL.BaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Commit()
+  nameWithType: BaseRepository<TEntity>.Commit()
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Commit()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/BaseRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Commit
+    path: ../../ServerFunctionsLibrary/DAL/BaseRepository.cs
+    startLine: 85
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: public virtual void Commit()
+    content.vb: Public Overridable Sub Commit
+  overload: TCPServer.DAL.BaseRepository`1.Commit*
+  implements:
+  - TCPServer.DAL.IRepository{{TEntity}}.Commit
+  nameWithType.vb: BaseRepository(Of TEntity).Commit()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Commit()
+references:
+- uid: TCPServer.DAL
+  commentId: N:TCPServer.DAL
+  name: TCPServer.DAL
+  nameWithType: TCPServer.DAL
+  fullName: TCPServer.DAL
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: TCPServer.DAL.IRepository{{TEntity}}
+  commentId: T:TCPServer.DAL.IRepository{`0}
+  parent: TCPServer.DAL
+  definition: TCPServer.DAL.IRepository`1
+  name: IRepository<TEntity>
+  nameWithType: IRepository<TEntity>
+  fullName: TCPServer.DAL.IRepository<TEntity>
+  nameWithType.vb: IRepository(Of TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity)
+  name.vb: IRepository(Of TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TCPServer.DAL.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TCPServer.DAL.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.DAL.IRepository`1
+  commentId: T:TCPServer.DAL.IRepository`1
+  name: IRepository<TEntity>
+  nameWithType: IRepository<TEntity>
+  fullName: TCPServer.DAL.IRepository<TEntity>
+  nameWithType.vb: IRepository(Of TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity)
+  name.vb: IRepository(Of TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TCPServer.DAL.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TCPServer.DAL.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.Models.ServerDatabaseContext
+  commentId: T:TCPServer.Models.ServerDatabaseContext
+  parent: TCPServer.Models
+  name: ServerDatabaseContext
+  nameWithType: ServerDatabaseContext
+  fullName: TCPServer.Models.ServerDatabaseContext
+- uid: TCPServer.Models
+  commentId: N:TCPServer.Models
+  name: TCPServer.Models
+  nameWithType: TCPServer.Models
+  fullName: TCPServer.Models
+- uid: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{`0}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.DbSet`1
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet`1
+  isExternal: true
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+- uid: TCPServer.DAL.BaseRepository`1.#ctor*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.#ctor
+  name: BaseRepository
+  nameWithType: BaseRepository<TEntity>.BaseRepository
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.BaseRepository
+  nameWithType.vb: BaseRepository(Of TEntity).BaseRepository
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).BaseRepository
+- uid: TCPServer.DAL.BaseRepository`1.Get*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.Get
+  name: Get
+  nameWithType: BaseRepository<TEntity>.Get
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Get
+  nameWithType.vb: BaseRepository(Of TEntity).Get
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Get
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TEntity, Boolean>>
+  nameWithType: Expression<Func<TEntity, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Linq.IQueryable{{TEntity}},System.Linq.IOrderedQueryable{{TEntity}}}
+  commentId: T:System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}}
+  parent: System
+  definition: System.Func`2
+  name: Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>>
+  nameWithType: Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>>
+  fullName: System.Func<System.Linq.IQueryable<TEntity>, System.Linq.IOrderedQueryable<TEntity>>
+  nameWithType.vb: Func(Of IQueryable(Of TEntity), IOrderedQueryable(Of TEntity))
+  fullName.vb: System.Func(Of System.Linq.IQueryable(Of TEntity), System.Linq.IOrderedQueryable(Of TEntity))
+  name.vb: Func(Of IQueryable(Of TEntity), IOrderedQueryable(Of TEntity))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{{TEntity}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TEntity>
+  nameWithType: IEnumerable<TEntity>
+  fullName: System.Collections.Generic.IEnumerable<TEntity>
+  nameWithType.vb: IEnumerable(Of TEntity)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TEntity)
+  name.vb: IEnumerable(Of TEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: TCPServer.DAL.BaseRepository`1.GetByID*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.GetByID
+  name: GetByID
+  nameWithType: BaseRepository<TEntity>.GetByID
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.GetByID
+  nameWithType.vb: BaseRepository(Of TEntity).GetByID
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).GetByID
+- uid: TCPServer.DAL.IRepository{{TEntity}}.GetByID(System.Object)
+  commentId: M:TCPServer.DAL.IRepository{`0}.GetByID(System.Object)
+  parent: TCPServer.DAL.IRepository{{TEntity}}
+  definition: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+  name: GetByID(Object)
+  nameWithType: IRepository<TEntity>.GetByID(Object)
+  fullName: TCPServer.DAL.IRepository<TEntity>.GetByID(System.Object)
+  nameWithType.vb: IRepository(Of TEntity).GetByID(Object)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).GetByID(System.Object)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+    name: GetByID
+    nameWithType: IRepository<TEntity>.GetByID
+    fullName: TCPServer.DAL.IRepository<TEntity>.GetByID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+    name: GetByID
+    nameWithType: IRepository(Of TEntity).GetByID
+    fullName: TCPServer.DAL.IRepository(Of TEntity).GetByID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+  commentId: M:TCPServer.DAL.IRepository`1.GetByID(System.Object)
+  isExternal: true
+  name: GetByID(Object)
+  nameWithType: IRepository<TEntity>.GetByID(Object)
+  fullName: TCPServer.DAL.IRepository<TEntity>.GetByID(System.Object)
+  nameWithType.vb: IRepository(Of TEntity).GetByID(Object)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).GetByID(System.Object)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+    name: GetByID
+    nameWithType: IRepository<TEntity>.GetByID
+    fullName: TCPServer.DAL.IRepository<TEntity>.GetByID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+    name: GetByID
+    nameWithType: IRepository(Of TEntity).GetByID
+    fullName: TCPServer.DAL.IRepository(Of TEntity).GetByID
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TCPServer.DAL.BaseRepository`1.Insert*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.Insert
+  name: Insert
+  nameWithType: BaseRepository<TEntity>.Insert
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Insert
+  nameWithType.vb: BaseRepository(Of TEntity).Insert
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Insert
+- uid: TCPServer.DAL.IRepository{{TEntity}}.Insert({TEntity})
+  commentId: M:TCPServer.DAL.IRepository{`0}.Insert(`0)
+  parent: TCPServer.DAL.IRepository{{TEntity}}
+  definition: TCPServer.DAL.IRepository`1.Insert(`0)
+  name: Insert(TEntity)
+  nameWithType: IRepository<TEntity>.Insert(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Insert(TEntity)
+  nameWithType.vb: IRepository(Of TEntity).Insert(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Insert(TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Insert(`0)
+    name: Insert
+    nameWithType: IRepository<TEntity>.Insert
+    fullName: TCPServer.DAL.IRepository<TEntity>.Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Insert(`0)
+    name: Insert
+    nameWithType: IRepository(Of TEntity).Insert
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository`1.Insert(`0)
+  commentId: M:TCPServer.DAL.IRepository`1.Insert(`0)
+  name: Insert(TEntity)
+  nameWithType: IRepository<TEntity>.Insert(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Insert(TEntity)
+  nameWithType.vb: IRepository(Of TEntity).Insert(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Insert(TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Insert(`0)
+    name: Insert
+    nameWithType: IRepository<TEntity>.Insert
+    fullName: TCPServer.DAL.IRepository<TEntity>.Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Insert(`0)
+    name: Insert
+    nameWithType: IRepository(Of TEntity).Insert
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Insert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.BaseRepository`1.Delete*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.Delete
+  name: Delete
+  nameWithType: BaseRepository<TEntity>.Delete
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Delete
+  nameWithType.vb: BaseRepository(Of TEntity).Delete
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Delete
+- uid: TCPServer.DAL.IRepository{{TEntity}}.Delete(System.Object)
+  commentId: M:TCPServer.DAL.IRepository{`0}.Delete(System.Object)
+  parent: TCPServer.DAL.IRepository{{TEntity}}
+  definition: TCPServer.DAL.IRepository`1.Delete(System.Object)
+  name: Delete(Object)
+  nameWithType: IRepository<TEntity>.Delete(Object)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete(System.Object)
+  nameWithType.vb: IRepository(Of TEntity).Delete(Object)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete(System.Object)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Delete(System.Object)
+    name: Delete
+    nameWithType: IRepository<TEntity>.Delete
+    fullName: TCPServer.DAL.IRepository<TEntity>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Delete(System.Object)
+    name: Delete
+    nameWithType: IRepository(Of TEntity).Delete
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository`1.Delete(System.Object)
+  commentId: M:TCPServer.DAL.IRepository`1.Delete(System.Object)
+  isExternal: true
+  name: Delete(Object)
+  nameWithType: IRepository<TEntity>.Delete(Object)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete(System.Object)
+  nameWithType.vb: IRepository(Of TEntity).Delete(Object)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete(System.Object)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Delete(System.Object)
+    name: Delete
+    nameWithType: IRepository<TEntity>.Delete
+    fullName: TCPServer.DAL.IRepository<TEntity>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Delete(System.Object)
+    name: Delete
+    nameWithType: IRepository(Of TEntity).Delete
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository{{TEntity}}.Delete({TEntity})
+  commentId: M:TCPServer.DAL.IRepository{`0}.Delete(`0)
+  parent: TCPServer.DAL.IRepository{{TEntity}}
+  definition: TCPServer.DAL.IRepository`1.Delete(`0)
+  name: Delete(TEntity)
+  nameWithType: IRepository<TEntity>.Delete(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete(TEntity)
+  nameWithType.vb: IRepository(Of TEntity).Delete(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete(TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Delete(`0)
+    name: Delete
+    nameWithType: IRepository<TEntity>.Delete
+    fullName: TCPServer.DAL.IRepository<TEntity>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Delete(`0)
+    name: Delete
+    nameWithType: IRepository(Of TEntity).Delete
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository`1.Delete(`0)
+  commentId: M:TCPServer.DAL.IRepository`1.Delete(`0)
+  name: Delete(TEntity)
+  nameWithType: IRepository<TEntity>.Delete(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete(TEntity)
+  nameWithType.vb: IRepository(Of TEntity).Delete(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete(TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Delete(`0)
+    name: Delete
+    nameWithType: IRepository<TEntity>.Delete
+    fullName: TCPServer.DAL.IRepository<TEntity>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Delete(`0)
+    name: Delete
+    nameWithType: IRepository(Of TEntity).Delete
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.BaseRepository`1.Update*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.Update
+  name: Update
+  nameWithType: BaseRepository<TEntity>.Update
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Update
+  nameWithType.vb: BaseRepository(Of TEntity).Update
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Update
+- uid: TCPServer.DAL.IRepository{{TEntity}}.Update({TEntity})
+  commentId: M:TCPServer.DAL.IRepository{`0}.Update(`0)
+  parent: TCPServer.DAL.IRepository{{TEntity}}
+  definition: TCPServer.DAL.IRepository`1.Update(`0)
+  name: Update(TEntity)
+  nameWithType: IRepository<TEntity>.Update(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Update(TEntity)
+  nameWithType.vb: IRepository(Of TEntity).Update(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Update(TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Update(`0)
+    name: Update
+    nameWithType: IRepository<TEntity>.Update
+    fullName: TCPServer.DAL.IRepository<TEntity>.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Update(`0)
+    name: Update
+    nameWithType: IRepository(Of TEntity).Update
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository`1.Update(`0)
+  commentId: M:TCPServer.DAL.IRepository`1.Update(`0)
+  name: Update(TEntity)
+  nameWithType: IRepository<TEntity>.Update(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Update(TEntity)
+  nameWithType.vb: IRepository(Of TEntity).Update(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Update(TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Update(`0)
+    name: Update
+    nameWithType: IRepository<TEntity>.Update
+    fullName: TCPServer.DAL.IRepository<TEntity>.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Update(`0)
+    name: Update
+    nameWithType: IRepository(Of TEntity).Update
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.BaseRepository`1.Commit*
+  commentId: Overload:TCPServer.DAL.BaseRepository`1.Commit
+  name: Commit
+  nameWithType: BaseRepository<TEntity>.Commit
+  fullName: TCPServer.DAL.BaseRepository<TEntity>.Commit
+  nameWithType.vb: BaseRepository(Of TEntity).Commit
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).Commit
+- uid: TCPServer.DAL.IRepository{{TEntity}}.Commit
+  commentId: M:TCPServer.DAL.IRepository{`0}.Commit
+  parent: TCPServer.DAL.IRepository{{TEntity}}
+  definition: TCPServer.DAL.IRepository`1.Commit
+  name: Commit()
+  nameWithType: IRepository<TEntity>.Commit()
+  fullName: TCPServer.DAL.IRepository<TEntity>.Commit()
+  nameWithType.vb: IRepository(Of TEntity).Commit()
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Commit()
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Commit
+    name: Commit
+    nameWithType: IRepository<TEntity>.Commit
+    fullName: TCPServer.DAL.IRepository<TEntity>.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Commit
+    name: Commit
+    nameWithType: IRepository(Of TEntity).Commit
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository`1.Commit
+  commentId: M:TCPServer.DAL.IRepository`1.Commit
+  name: Commit()
+  nameWithType: IRepository<TEntity>.Commit()
+  fullName: TCPServer.DAL.IRepository<TEntity>.Commit()
+  nameWithType.vb: IRepository(Of TEntity).Commit()
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Commit()
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1.Commit
+    name: Commit
+    nameWithType: IRepository<TEntity>.Commit
+    fullName: TCPServer.DAL.IRepository<TEntity>.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1.Commit
+    name: Commit
+    nameWithType: IRepository(Of TEntity).Commit
+    fullName: TCPServer.DAL.IRepository(Of TEntity).Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

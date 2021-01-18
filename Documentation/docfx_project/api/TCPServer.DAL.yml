@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.DAL
+  commentId: N:TCPServer.DAL
+  id: TCPServer.DAL
+  children:
+  - TCPServer.DAL.BaseRepository`1
+  - TCPServer.DAL.IRepository`1
+  - TCPServer.DAL.JokeRepository
+  - TCPServer.DAL.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: TCPServer.DAL
+  nameWithType: TCPServer.DAL
+  fullName: TCPServer.DAL
+  type: Namespace
+  assemblies:
+  - ServerClasses
+references:
+- uid: TCPServer.DAL.BaseRepository`1
+  commentId: T:TCPServer.DAL.BaseRepository`1
+  name: BaseRepository<TEntity>
+  nameWithType: BaseRepository<TEntity>
+  fullName: TCPServer.DAL.BaseRepository<TEntity>
+  nameWithType.vb: BaseRepository(Of TEntity)
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)
+  name.vb: BaseRepository(Of TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.BaseRepository`1
+    name: BaseRepository
+    nameWithType: BaseRepository
+    fullName: TCPServer.DAL.BaseRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TCPServer.DAL.BaseRepository`1
+    name: BaseRepository
+    nameWithType: BaseRepository
+    fullName: TCPServer.DAL.BaseRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.IRepository`1
+  commentId: T:TCPServer.DAL.IRepository`1
+  name: IRepository<TEntity>
+  nameWithType: IRepository<TEntity>
+  fullName: TCPServer.DAL.IRepository<TEntity>
+  nameWithType.vb: IRepository(Of TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity)
+  name.vb: IRepository(Of TEntity)
+  spec.csharp:
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TCPServer.DAL.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository
+    nameWithType: IRepository
+    fullName: TCPServer.DAL.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TCPServer.DAL.JokeRepository
+  commentId: T:TCPServer.DAL.JokeRepository
+  parent: TCPServer.DAL
+  name: JokeRepository
+  nameWithType: JokeRepository
+  fullName: TCPServer.DAL.JokeRepository
+- uid: TCPServer.DAL.UserRepository
+  commentId: T:TCPServer.DAL.UserRepository
+  parent: TCPServer.DAL
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: TCPServer.DAL.UserRepository
+- uid: TCPServer.DAL
+  commentId: N:TCPServer.DAL
+  name: TCPServer.DAL
+  nameWithType: TCPServer.DAL
+  fullName: TCPServer.DAL

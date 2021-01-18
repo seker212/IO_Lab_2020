@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: TCPServer.DAL.IRepository`1
+  commentId: T:TCPServer.DAL.IRepository`1
+  id: IRepository`1
+  parent: TCPServer.DAL
+  children:
+  - TCPServer.DAL.IRepository`1.Commit
+  - TCPServer.DAL.IRepository`1.Delete(`0)
+  - TCPServer.DAL.IRepository`1.Delete(System.Object)
+  - TCPServer.DAL.IRepository`1.GetByID(System.Object)
+  - TCPServer.DAL.IRepository`1.Insert(`0)
+  - TCPServer.DAL.IRepository`1.Update(`0)
+  langs:
+  - csharp
+  - vb
+  name: IRepository<TEntity>
+  nameWithType: IRepository<TEntity>
+  fullName: TCPServer.DAL.IRepository<TEntity>
+  type: Interface
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: IRepository
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 9
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: >-
+      public interface IRepository<TEntity>
+          where TEntity : class
+    typeParameters:
+    - id: TEntity
+    content.vb: Public Interface IRepository(Of TEntity As Class)
+  nameWithType.vb: IRepository(Of TEntity)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity)
+  name.vb: IRepository(Of TEntity)
+- uid: TCPServer.DAL.IRepository`1.Delete(`0)
+  commentId: M:TCPServer.DAL.IRepository`1.Delete(`0)
+  id: Delete(`0)
+  parent: TCPServer.DAL.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Delete(TEntity)
+  nameWithType: IRepository<TEntity>.Delete(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete(TEntity)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Delete
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 11
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: void Delete(TEntity entityToDelete)
+    parameters:
+    - id: entityToDelete
+      type: '{TEntity}'
+    content.vb: Sub Delete(entityToDelete As TEntity)
+  overload: TCPServer.DAL.IRepository`1.Delete*
+  nameWithType.vb: IRepository(Of TEntity).Delete(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete(TEntity)
+- uid: TCPServer.DAL.IRepository`1.Delete(System.Object)
+  commentId: M:TCPServer.DAL.IRepository`1.Delete(System.Object)
+  id: Delete(System.Object)
+  parent: TCPServer.DAL.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Delete(Object)
+  nameWithType: IRepository<TEntity>.Delete(Object)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete(System.Object)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Delete
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 12
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: void Delete(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    content.vb: Sub Delete(id As Object)
+  overload: TCPServer.DAL.IRepository`1.Delete*
+  nameWithType.vb: IRepository(Of TEntity).Delete(Object)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete(System.Object)
+- uid: TCPServer.DAL.IRepository`1.GetByID(System.Object)
+  commentId: M:TCPServer.DAL.IRepository`1.GetByID(System.Object)
+  id: GetByID(System.Object)
+  parent: TCPServer.DAL.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetByID(Object)
+  nameWithType: IRepository<TEntity>.GetByID(Object)
+  fullName: TCPServer.DAL.IRepository<TEntity>.GetByID(System.Object)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: GetByID
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 13
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: TEntity GetByID(object id)
+    parameters:
+    - id: id
+      type: System.Object
+    return:
+      type: '{TEntity}'
+    content.vb: Function GetByID(id As Object) As TEntity
+  overload: TCPServer.DAL.IRepository`1.GetByID*
+  nameWithType.vb: IRepository(Of TEntity).GetByID(Object)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).GetByID(System.Object)
+- uid: TCPServer.DAL.IRepository`1.Insert(`0)
+  commentId: M:TCPServer.DAL.IRepository`1.Insert(`0)
+  id: Insert(`0)
+  parent: TCPServer.DAL.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(TEntity)
+  nameWithType: IRepository<TEntity>.Insert(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Insert(TEntity)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Insert
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 14
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: TEntity Insert(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    return:
+      type: '{TEntity}'
+    content.vb: Function Insert(entity As TEntity) As TEntity
+  overload: TCPServer.DAL.IRepository`1.Insert*
+  nameWithType.vb: IRepository(Of TEntity).Insert(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Insert(TEntity)
+- uid: TCPServer.DAL.IRepository`1.Update(`0)
+  commentId: M:TCPServer.DAL.IRepository`1.Update(`0)
+  id: Update(`0)
+  parent: TCPServer.DAL.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Update(TEntity)
+  nameWithType: IRepository<TEntity>.Update(TEntity)
+  fullName: TCPServer.DAL.IRepository<TEntity>.Update(TEntity)
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Update
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 15
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: void Update(TEntity entityToUpdate)
+    parameters:
+    - id: entityToUpdate
+      type: '{TEntity}'
+    content.vb: Sub Update(entityToUpdate As TEntity)
+  overload: TCPServer.DAL.IRepository`1.Update*
+  nameWithType.vb: IRepository(Of TEntity).Update(TEntity)
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Update(TEntity)
+- uid: TCPServer.DAL.IRepository`1.Commit
+  commentId: M:TCPServer.DAL.IRepository`1.Commit
+  id: Commit
+  parent: TCPServer.DAL.IRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Commit()
+  nameWithType: IRepository<TEntity>.Commit()
+  fullName: TCPServer.DAL.IRepository<TEntity>.Commit()
+  type: Method
+  source:
+    remote:
+      path: ServerFunctionsLibrary/DAL/IRepository.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Commit
+    path: ../../ServerFunctionsLibrary/DAL/IRepository.cs
+    startLine: 16
+  assemblies:
+  - ServerClasses
+  namespace: TCPServer.DAL
+  syntax:
+    content: void Commit()
+    content.vb: Sub Commit
+  overload: TCPServer.DAL.IRepository`1.Commit*
+  nameWithType.vb: IRepository(Of TEntity).Commit()
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Commit()
+references:
+- uid: TCPServer.DAL
+  commentId: N:TCPServer.DAL
+  name: TCPServer.DAL
+  nameWithType: TCPServer.DAL
+  fullName: TCPServer.DAL
+- uid: TCPServer.DAL.IRepository`1.Delete*
+  commentId: Overload:TCPServer.DAL.IRepository`1.Delete
+  name: Delete
+  nameWithType: IRepository<TEntity>.Delete
+  fullName: TCPServer.DAL.IRepository<TEntity>.Delete
+  nameWithType.vb: IRepository(Of TEntity).Delete
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Delete
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TCPServer.DAL.IRepository`1.GetByID*
+  commentId: Overload:TCPServer.DAL.IRepository`1.GetByID
+  name: GetByID
+  nameWithType: IRepository<TEntity>.GetByID
+  fullName: TCPServer.DAL.IRepository<TEntity>.GetByID
+  nameWithType.vb: IRepository(Of TEntity).GetByID
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).GetByID
+- uid: TCPServer.DAL.IRepository`1.Insert*
+  commentId: Overload:TCPServer.DAL.IRepository`1.Insert
+  name: Insert
+  nameWithType: IRepository<TEntity>.Insert
+  fullName: TCPServer.DAL.IRepository<TEntity>.Insert
+  nameWithType.vb: IRepository(Of TEntity).Insert
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Insert
+- uid: TCPServer.DAL.IRepository`1.Update*
+  commentId: Overload:TCPServer.DAL.IRepository`1.Update
+  name: Update
+  nameWithType: IRepository<TEntity>.Update
+  fullName: TCPServer.DAL.IRepository<TEntity>.Update
+  nameWithType.vb: IRepository(Of TEntity).Update
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Update
+- uid: TCPServer.DAL.IRepository`1.Commit*
+  commentId: Overload:TCPServer.DAL.IRepository`1.Commit
+  name: Commit
+  nameWithType: IRepository<TEntity>.Commit
+  fullName: TCPServer.DAL.IRepository<TEntity>.Commit
+  nameWithType.vb: IRepository(Of TEntity).Commit
+  fullName.vb: TCPServer.DAL.IRepository(Of TEntity).Commit

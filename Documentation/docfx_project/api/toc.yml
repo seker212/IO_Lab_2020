@@ -1,0 +1,57 @@
+### YamlMime:TableOfContent
+- uid: Client
+  name: Client
+  items:
+  - uid: Client.Client
+    name: Client
+- uid: ClientFunctionsLibrary
+  name: ClientFunctionsLibrary
+  items:
+  - uid: ClientFunctionsLibrary.ClientConnection
+    name: ClientConnection
+- uid: Program
+  name: Program
+  items:
+  - uid: Program.Program
+    name: Program
+- uid: TCPServer
+  name: TCPServer
+  items:
+  - uid: TCPServer.AbstractServer
+    name: AbstractServer
+  - uid: TCPServer.JokeSQL
+    name: JokeSQL
+  - uid: TCPServer.JokeSQL.suchar
+    name: JokeSQL.suchar
+  - uid: TCPServer.ServerAPM
+    name: ServerAPM
+  - uid: TCPServer.ServerAPM.TransmissionDataDelegate
+    name: ServerAPM.TransmissionDataDelegate
+  - uid: TCPServer.ServerSync
+    name: ServerSync
+  - uid: TCPServer.UserManager
+    name: UserManager
+  - uid: TCPServer.UserType
+    name: UserType
+- uid: TCPServer.DAL
+  name: TCPServer.DAL
+  items:
+  - uid: TCPServer.DAL.BaseRepository`1
+    name: BaseRepository<TEntity>
+    name.vb: BaseRepository(Of TEntity)
+  - uid: TCPServer.DAL.IRepository`1
+    name: IRepository<TEntity>
+    name.vb: IRepository(Of TEntity)
+  - uid: TCPServer.DAL.JokeRepository
+    name: JokeRepository
+  - uid: TCPServer.DAL.UserRepository
+    name: UserRepository
+- uid: TCPServer.Models
+  name: TCPServer.Models
+  items:
+  - uid: TCPServer.Models.Joke
+    name: Joke
+  - uid: TCPServer.Models.ServerDatabaseContext
+    name: ServerDatabaseContext
+  - uid: TCPServer.Models.User
+    name: User

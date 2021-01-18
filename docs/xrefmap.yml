@@ -1,6 +1,34 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Client
+  name: Client
+  href: api/Client.html
+  commentId: N:Client
+  fullName: Client
+  nameWithType: Client
+- uid: Client.Client
+  name: Client
+  href: api/Client.Client.html
+  commentId: T:Client.Client
+  fullName: Client.Client
+  nameWithType: Client
+- uid: Client.Client.Main(System.String[])
+  name: Main(String[])
+  href: api/Client.Client.html#Client_Client_Main_System_String___
+  commentId: M:Client.Client.Main(System.String[])
+  name.vb: Main(String())
+  fullName: Client.Client.Main(System.String[])
+  fullName.vb: Client.Client.Main(System.String())
+  nameWithType: Client.Main(String[])
+  nameWithType.vb: Client.Main(String())
+- uid: Client.Client.Main*
+  name: Main
+  href: api/Client.Client.html#Client_Client_Main_
+  commentId: Overload:Client.Client.Main
+  isSpec: "True"
+  fullName: Client.Client.Main
+  nameWithType: Client.Main
 - uid: ClientFunctionsLibrary
   name: ClientFunctionsLibrary
   href: api/ClientFunctionsLibrary.html
@@ -38,15 +66,15 @@ references:
   commentId: F:ClientFunctionsLibrary.ClientConnection.Buffer_size
   fullName: ClientFunctionsLibrary.ClientConnection.Buffer_size
   nameWithType: ClientConnection.Buffer_size
-- uid: ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream,System.Byte[])
-  name: clientLoop(NetworkStream, Byte[])
-  href: api/ClientFunctionsLibrary.ClientConnection.html#ClientFunctionsLibrary_ClientConnection_clientLoop_System_Net_Sockets_NetworkStream_System_Byte___
-  commentId: M:ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream,System.Byte[])
-  name.vb: clientLoop(NetworkStream, Byte())
-  fullName: ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream, System.Byte[])
-  fullName.vb: ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream, System.Byte())
-  nameWithType: ClientConnection.clientLoop(NetworkStream, Byte[])
-  nameWithType.vb: ClientConnection.clientLoop(NetworkStream, Byte())
+- uid: ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream@,System.Byte[],System.Net.Sockets.TcpClient@)
+  name: clientLoop(ref NetworkStream, Byte[], ref TcpClient)
+  href: api/ClientFunctionsLibrary.ClientConnection.html#ClientFunctionsLibrary_ClientConnection_clientLoop_System_Net_Sockets_NetworkStream__System_Byte___System_Net_Sockets_TcpClient__
+  commentId: M:ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream@,System.Byte[],System.Net.Sockets.TcpClient@)
+  name.vb: clientLoop(ByRef NetworkStream, Byte(), ByRef TcpClient)
+  fullName: ClientFunctionsLibrary.ClientConnection.clientLoop(ref System.Net.Sockets.NetworkStream, System.Byte[], ref System.Net.Sockets.TcpClient)
+  fullName.vb: ClientFunctionsLibrary.ClientConnection.clientLoop(ByRef System.Net.Sockets.NetworkStream, System.Byte(), ByRef System.Net.Sockets.TcpClient)
+  nameWithType: ClientConnection.clientLoop(ref NetworkStream, Byte[], ref TcpClient)
+  nameWithType.vb: ClientConnection.clientLoop(ByRef NetworkStream, Byte(), ByRef TcpClient)
 - uid: ClientFunctionsLibrary.ClientConnection.clientLoop*
   name: clientLoop
   href: api/ClientFunctionsLibrary.ClientConnection.html#ClientFunctionsLibrary_ClientConnection_clientLoop_
@@ -54,12 +82,15 @@ references:
   isSpec: "True"
   fullName: ClientFunctionsLibrary.ClientConnection.clientLoop
   nameWithType: ClientConnection.clientLoop
-- uid: ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient,System.Net.Sockets.NetworkStream)
-  name: closeClient(TcpClient, NetworkStream)
-  href: api/ClientFunctionsLibrary.ClientConnection.html#ClientFunctionsLibrary_ClientConnection_closeClient_System_Net_Sockets_TcpClient_System_Net_Sockets_NetworkStream_
-  commentId: M:ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient,System.Net.Sockets.NetworkStream)
-  fullName: ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient, System.Net.Sockets.NetworkStream)
-  nameWithType: ClientConnection.closeClient(TcpClient, NetworkStream)
+- uid: ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient@,System.Net.Sockets.NetworkStream@)
+  name: closeClient(ref TcpClient, ref NetworkStream)
+  href: api/ClientFunctionsLibrary.ClientConnection.html#ClientFunctionsLibrary_ClientConnection_closeClient_System_Net_Sockets_TcpClient__System_Net_Sockets_NetworkStream__
+  commentId: M:ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient@,System.Net.Sockets.NetworkStream@)
+  name.vb: closeClient(ByRef TcpClient, ByRef NetworkStream)
+  fullName: ClientFunctionsLibrary.ClientConnection.closeClient(ref System.Net.Sockets.TcpClient, ref System.Net.Sockets.NetworkStream)
+  fullName.vb: ClientFunctionsLibrary.ClientConnection.closeClient(ByRef System.Net.Sockets.TcpClient, ByRef System.Net.Sockets.NetworkStream)
+  nameWithType: ClientConnection.closeClient(ref TcpClient, ref NetworkStream)
+  nameWithType.vb: ClientConnection.closeClient(ByRef TcpClient, ByRef NetworkStream)
 - uid: ClientFunctionsLibrary.ClientConnection.closeClient*
   name: closeClient
   href: api/ClientFunctionsLibrary.ClientConnection.html#ClientFunctionsLibrary_ClientConnection_closeClient_
@@ -121,25 +152,28 @@ references:
   commentId: N:Program
   fullName: Program
   nameWithType: Program
-- uid: Program.Test
-  name: Test
-  href: api/Program.Test.html
-  commentId: T:Program.Test
-  fullName: Program.Test
-  nameWithType: Test
-- uid: Program.Test.test
-  name: test()
-  href: api/Program.Test.html#Program_Test_test
-  commentId: M:Program.Test.test
-  fullName: Program.Test.test()
-  nameWithType: Test.test()
-- uid: Program.Test.test*
-  name: test
-  href: api/Program.Test.html#Program_Test_test_
-  commentId: Overload:Program.Test.test
+- uid: Program.Program
+  name: Program
+  href: api/Program.Program.html
+  commentId: T:Program.Program
+  fullName: Program.Program
+  nameWithType: Program
+- uid: Program.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/Program.Program.html#Program_Program_Main_System_String___
+  commentId: M:Program.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: Program.Program.Main(System.String[])
+  fullName.vb: Program.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: Program.Program.Main*
+  name: Main
+  href: api/Program.Program.html#Program_Program_Main_
+  commentId: Overload:Program.Program.Main
   isSpec: "True"
-  fullName: Program.Test.test
-  nameWithType: Test.test
+  fullName: Program.Program.Main
+  nameWithType: Program.Main
 - uid: TCPServer
   name: TCPServer
   href: api/TCPServer.html
@@ -191,6 +225,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.BeginDataTransmission
   nameWithType: AbstractServer.BeginDataTransmission
+- uid: TCPServer.AbstractServer.buffer_size
+  name: buffer_size
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_buffer_size
+  commentId: F:TCPServer.AbstractServer.buffer_size
+  fullName: TCPServer.AbstractServer.buffer_size
+  nameWithType: AbstractServer.buffer_size
 - uid: TCPServer.AbstractServer.Buffer_size
   name: Buffer_size
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Buffer_size
@@ -217,6 +257,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.checkPort
   nameWithType: AbstractServer.checkPort
+- uid: TCPServer.AbstractServer.iPAddress
+  name: iPAddress
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_iPAddress
+  commentId: F:TCPServer.AbstractServer.iPAddress
+  fullName: TCPServer.AbstractServer.iPAddress
+  nameWithType: AbstractServer.iPAddress
 - uid: TCPServer.AbstractServer.IPAddress
   name: IPAddress
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_IPAddress
@@ -230,6 +276,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.IPAddress
   nameWithType: AbstractServer.IPAddress
+- uid: TCPServer.AbstractServer.port
+  name: port
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_port
+  commentId: F:TCPServer.AbstractServer.port
+  fullName: TCPServer.AbstractServer.port
+  nameWithType: AbstractServer.port
 - uid: TCPServer.AbstractServer.Port
   name: Port
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Port
@@ -243,6 +295,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.Port
   nameWithType: AbstractServer.Port
+- uid: TCPServer.AbstractServer.running
+  name: running
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_running
+  commentId: F:TCPServer.AbstractServer.running
+  fullName: TCPServer.AbstractServer.running
+  nameWithType: AbstractServer.running
 - uid: TCPServer.AbstractServer.Start
   name: Start()
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Start
@@ -269,6 +327,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.StartListening
   nameWithType: AbstractServer.StartListening
+- uid: TCPServer.AbstractServer.stream
+  name: stream
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_stream
+  commentId: F:TCPServer.AbstractServer.stream
+  fullName: TCPServer.AbstractServer.stream
+  nameWithType: AbstractServer.stream
 - uid: TCPServer.AbstractServer.Stream
   name: Stream
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_Stream
@@ -282,6 +346,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.Stream
   nameWithType: AbstractServer.Stream
+- uid: TCPServer.AbstractServer.tcpClient
+  name: tcpClient
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_tcpClient
+  commentId: F:TCPServer.AbstractServer.tcpClient
+  fullName: TCPServer.AbstractServer.tcpClient
+  nameWithType: AbstractServer.tcpClient
 - uid: TCPServer.AbstractServer.TcpClient
   name: TcpClient
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_TcpClient
@@ -295,6 +365,12 @@ references:
   isSpec: "True"
   fullName: TCPServer.AbstractServer.TcpClient
   nameWithType: AbstractServer.TcpClient
+- uid: TCPServer.AbstractServer.tcpListener
+  name: tcpListener
+  href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_tcpListener
+  commentId: F:TCPServer.AbstractServer.tcpListener
+  fullName: TCPServer.AbstractServer.tcpListener
+  nameWithType: AbstractServer.tcpListener
 - uid: TCPServer.AbstractServer.TcpListener
   name: TcpListener
   href: api/TCPServer.AbstractServer.html#TCPServer_AbstractServer_TcpListener
@@ -340,6 +416,14 @@ references:
   fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity).BaseRepository
   nameWithType: BaseRepository<TEntity>.BaseRepository
   nameWithType.vb: BaseRepository(Of TEntity).BaseRepository
+- uid: TCPServer.DAL.BaseRepository`1._context
+  name: _context
+  href: api/TCPServer.DAL.BaseRepository-1.html#TCPServer_DAL_BaseRepository_1__context
+  commentId: F:TCPServer.DAL.BaseRepository`1._context
+  fullName: TCPServer.DAL.BaseRepository<TEntity>._context
+  fullName.vb: TCPServer.DAL.BaseRepository(Of TEntity)._context
+  nameWithType: BaseRepository<TEntity>._context
+  nameWithType.vb: BaseRepository(Of TEntity)._context
 - uid: TCPServer.DAL.BaseRepository`1.Commit
   name: Commit()
   href: api/TCPServer.DAL.BaseRepository-1.html#TCPServer_DAL_BaseRepository_1_Commit
@@ -580,6 +664,32 @@ references:
   isSpec: "True"
   fullName: TCPServer.DAL.JokeRepository.JokeRepository
   nameWithType: JokeRepository.JokeRepository
+- uid: TCPServer.DAL.JokeRepository.getIDList
+  name: getIDList()
+  href: api/TCPServer.DAL.JokeRepository.html#TCPServer_DAL_JokeRepository_getIDList
+  commentId: M:TCPServer.DAL.JokeRepository.getIDList
+  fullName: TCPServer.DAL.JokeRepository.getIDList()
+  nameWithType: JokeRepository.getIDList()
+- uid: TCPServer.DAL.JokeRepository.getIDList*
+  name: getIDList
+  href: api/TCPServer.DAL.JokeRepository.html#TCPServer_DAL_JokeRepository_getIDList_
+  commentId: Overload:TCPServer.DAL.JokeRepository.getIDList
+  isSpec: "True"
+  fullName: TCPServer.DAL.JokeRepository.getIDList
+  nameWithType: JokeRepository.getIDList
+- uid: TCPServer.DAL.JokeRepository.getJokeList
+  name: getJokeList()
+  href: api/TCPServer.DAL.JokeRepository.html#TCPServer_DAL_JokeRepository_getJokeList
+  commentId: M:TCPServer.DAL.JokeRepository.getJokeList
+  fullName: TCPServer.DAL.JokeRepository.getJokeList()
+  nameWithType: JokeRepository.getJokeList()
+- uid: TCPServer.DAL.JokeRepository.getJokeList*
+  name: getJokeList
+  href: api/TCPServer.DAL.JokeRepository.html#TCPServer_DAL_JokeRepository_getJokeList_
+  commentId: Overload:TCPServer.DAL.JokeRepository.getJokeList
+  isSpec: "True"
+  fullName: TCPServer.DAL.JokeRepository.getJokeList
+  nameWithType: JokeRepository.getJokeList
 - uid: TCPServer.DAL.JokeRepository.GetNum
   name: GetNum()
   href: api/TCPServer.DAL.JokeRepository.html#TCPServer_DAL_JokeRepository_GetNum
@@ -644,12 +754,15 @@ references:
   isSpec: "True"
   fullName: TCPServer.JokeSQL.JokeSQL
   nameWithType: JokeSQL.JokeSQL
-- uid: TCPServer.JokeSQL.AddJoke(System.String)
-  name: AddJoke(String)
-  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_AddJoke_System_String_
-  commentId: M:TCPServer.JokeSQL.AddJoke(System.String)
-  fullName: TCPServer.JokeSQL.AddJoke(System.String)
-  nameWithType: JokeSQL.AddJoke(String)
+- uid: TCPServer.JokeSQL.AddJoke(System.String,System.String[]@)
+  name: AddJoke(String, ref String[])
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_AddJoke_System_String_System_String____
+  commentId: M:TCPServer.JokeSQL.AddJoke(System.String,System.String[]@)
+  name.vb: AddJoke(String, ByRef String())
+  fullName: TCPServer.JokeSQL.AddJoke(System.String, ref System.String[])
+  fullName.vb: TCPServer.JokeSQL.AddJoke(System.String, ByRef System.String())
+  nameWithType: JokeSQL.AddJoke(String, ref String[])
+  nameWithType.vb: JokeSQL.AddJoke(String, ByRef String())
 - uid: TCPServer.JokeSQL.AddJoke*
   name: AddJoke
   href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_AddJoke_
@@ -657,6 +770,19 @@ references:
   isSpec: "True"
   fullName: TCPServer.JokeSQL.AddJoke
   nameWithType: JokeSQL.AddJoke
+- uid: TCPServer.JokeSQL.delJoke(System.String)
+  name: delJoke(String)
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_delJoke_System_String_
+  commentId: M:TCPServer.JokeSQL.delJoke(System.String)
+  fullName: TCPServer.JokeSQL.delJoke(System.String)
+  nameWithType: JokeSQL.delJoke(String)
+- uid: TCPServer.JokeSQL.delJoke*
+  name: delJoke
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_delJoke_
+  commentId: Overload:TCPServer.JokeSQL.delJoke
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.delJoke
+  nameWithType: JokeSQL.delJoke
 - uid: TCPServer.JokeSQL.GetJoke
   name: GetJoke()
   href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_GetJoke
@@ -670,6 +796,105 @@ references:
   isSpec: "True"
   fullName: TCPServer.JokeSQL.GetJoke
   nameWithType: JokeSQL.GetJoke
+- uid: TCPServer.JokeSQL.listJokes(System.String[]@)
+  name: listJokes(ref String[])
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_listJokes_System_String____
+  commentId: M:TCPServer.JokeSQL.listJokes(System.String[]@)
+  name.vb: listJokes(ByRef String())
+  fullName: TCPServer.JokeSQL.listJokes(ref System.String[])
+  fullName.vb: TCPServer.JokeSQL.listJokes(ByRef System.String())
+  nameWithType: JokeSQL.listJokes(ref String[])
+  nameWithType.vb: JokeSQL.listJokes(ByRef String())
+- uid: TCPServer.JokeSQL.listJokes*
+  name: listJokes
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_listJokes_
+  commentId: Overload:TCPServer.JokeSQL.listJokes
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.listJokes
+  nameWithType: JokeSQL.listJokes
+- uid: TCPServer.JokeSQL.suchar
+  name: JokeSQL.suchar
+  href: api/TCPServer.JokeSQL.suchar.html
+  commentId: T:TCPServer.JokeSQL.suchar
+  fullName: TCPServer.JokeSQL.suchar
+  nameWithType: JokeSQL.suchar
+- uid: TCPServer.JokeSQL.suchar.#ctor(System.Int32,System.Int32,System.String)
+  name: suchar(Int32, Int32, String)
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar__ctor_System_Int32_System_Int32_System_String_
+  commentId: M:TCPServer.JokeSQL.suchar.#ctor(System.Int32,System.Int32,System.String)
+  fullName: TCPServer.JokeSQL.suchar.suchar(System.Int32, System.Int32, System.String)
+  nameWithType: JokeSQL.suchar.suchar(Int32, Int32, String)
+- uid: TCPServer.JokeSQL.suchar.#ctor*
+  name: suchar
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar__ctor_
+  commentId: Overload:TCPServer.JokeSQL.suchar.#ctor
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.suchar.suchar
+  nameWithType: JokeSQL.suchar.suchar
+- uid: TCPServer.JokeSQL.suchar.content
+  name: content
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_content
+  commentId: P:TCPServer.JokeSQL.suchar.content
+  fullName: TCPServer.JokeSQL.suchar.content
+  nameWithType: JokeSQL.suchar.content
+- uid: TCPServer.JokeSQL.suchar.content*
+  name: content
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_content_
+  commentId: Overload:TCPServer.JokeSQL.suchar.content
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.suchar.content
+  nameWithType: JokeSQL.suchar.content
+- uid: TCPServer.JokeSQL.suchar.creatorID
+  name: creatorID
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_creatorID
+  commentId: P:TCPServer.JokeSQL.suchar.creatorID
+  fullName: TCPServer.JokeSQL.suchar.creatorID
+  nameWithType: JokeSQL.suchar.creatorID
+- uid: TCPServer.JokeSQL.suchar.creatorID*
+  name: creatorID
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_creatorID_
+  commentId: Overload:TCPServer.JokeSQL.suchar.creatorID
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.suchar.creatorID
+  nameWithType: JokeSQL.suchar.creatorID
+- uid: TCPServer.JokeSQL.suchar.id
+  name: id
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_id
+  commentId: P:TCPServer.JokeSQL.suchar.id
+  fullName: TCPServer.JokeSQL.suchar.id
+  nameWithType: JokeSQL.suchar.id
+- uid: TCPServer.JokeSQL.suchar.id*
+  name: id
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_id_
+  commentId: Overload:TCPServer.JokeSQL.suchar.id
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.suchar.id
+  nameWithType: JokeSQL.suchar.id
+- uid: TCPServer.JokeSQL.suchar.Stringify
+  name: Stringify()
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_Stringify
+  commentId: M:TCPServer.JokeSQL.suchar.Stringify
+  fullName: TCPServer.JokeSQL.suchar.Stringify()
+  nameWithType: JokeSQL.suchar.Stringify()
+- uid: TCPServer.JokeSQL.suchar.Stringify*
+  name: Stringify
+  href: api/TCPServer.JokeSQL.suchar.html#TCPServer_JokeSQL_suchar_Stringify_
+  commentId: Overload:TCPServer.JokeSQL.suchar.Stringify
+  isSpec: "True"
+  fullName: TCPServer.JokeSQL.suchar.Stringify
+  nameWithType: JokeSQL.suchar.Stringify
+- uid: TCPServer.JokeSQL.x
+  name: x
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_x
+  commentId: F:TCPServer.JokeSQL.x
+  fullName: TCPServer.JokeSQL.x
+  nameWithType: JokeSQL.x
+- uid: TCPServer.JokeSQL.y
+  name: y
+  href: api/TCPServer.JokeSQL.html#TCPServer_JokeSQL_y
+  commentId: F:TCPServer.JokeSQL.y
+  fullName: TCPServer.JokeSQL.y
+  nameWithType: JokeSQL.y
 - uid: TCPServer.Models
   name: TCPServer.Models
   href: api/TCPServer.Models.html
@@ -695,6 +920,19 @@ references:
   isSpec: "True"
   fullName: TCPServer.Models.Joke.Content
   nameWithType: Joke.Content
+- uid: TCPServer.Models.Joke.CreatorID
+  name: CreatorID
+  href: api/TCPServer.Models.Joke.html#TCPServer_Models_Joke_CreatorID
+  commentId: P:TCPServer.Models.Joke.CreatorID
+  fullName: TCPServer.Models.Joke.CreatorID
+  nameWithType: Joke.CreatorID
+- uid: TCPServer.Models.Joke.CreatorID*
+  name: CreatorID
+  href: api/TCPServer.Models.Joke.html#TCPServer_Models_Joke_CreatorID_
+  commentId: Overload:TCPServer.Models.Joke.CreatorID
+  isSpec: "True"
+  fullName: TCPServer.Models.Joke.CreatorID
+  nameWithType: Joke.CreatorID
 - uid: TCPServer.Models.Joke.ID
   name: ID
   href: api/TCPServer.Models.Joke.html#TCPServer_Models_Joke_ID
@@ -875,15 +1113,59 @@ references:
   isSpec: "True"
   fullName: TCPServer.ServerAPM.CommandHandler
   nameWithType: ServerAPM.CommandHandler
-- uid: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[])
-  name: SignIn(NetworkStream, Byte[])
-  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___
-  commentId: M:TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[])
-  name.vb: SignIn(NetworkStream, Byte())
-  fullName: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream, System.Byte[])
-  fullName.vb: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream, System.Byte())
-  nameWithType: ServerAPM.SignIn(NetworkStream, Byte[])
-  nameWithType.vb: ServerAPM.SignIn(NetworkStream, Byte())
+- uid: TCPServer.ServerAPM.context
+  name: context
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_context
+  commentId: F:TCPServer.ServerAPM.context
+  fullName: TCPServer.ServerAPM.context
+  nameWithType: ServerAPM.context
+- uid: TCPServer.ServerAPM.GetCridentials(System.Byte[],System.Net.Sockets.NetworkStream,System.Boolean)
+  name: GetCridentials(Byte[], NetworkStream, Boolean)
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetCridentials_System_Byte___System_Net_Sockets_NetworkStream_System_Boolean_
+  commentId: M:TCPServer.ServerAPM.GetCridentials(System.Byte[],System.Net.Sockets.NetworkStream,System.Boolean)
+  name.vb: GetCridentials(Byte(), NetworkStream, Boolean)
+  fullName: TCPServer.ServerAPM.GetCridentials(System.Byte[], System.Net.Sockets.NetworkStream, System.Boolean)
+  fullName.vb: TCPServer.ServerAPM.GetCridentials(System.Byte(), System.Net.Sockets.NetworkStream, System.Boolean)
+  nameWithType: ServerAPM.GetCridentials(Byte[], NetworkStream, Boolean)
+  nameWithType.vb: ServerAPM.GetCridentials(Byte(), NetworkStream, Boolean)
+- uid: TCPServer.ServerAPM.GetCridentials*
+  name: GetCridentials
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetCridentials_
+  commentId: Overload:TCPServer.ServerAPM.GetCridentials
+  isSpec: "True"
+  fullName: TCPServer.ServerAPM.GetCridentials
+  nameWithType: ServerAPM.GetCridentials
+- uid: TCPServer.ServerAPM.GetStringFromUser(System.String,System.Net.Sockets.NetworkStream,System.Byte[])
+  name: GetStringFromUser(String, NetworkStream, Byte[])
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetStringFromUser_System_String_System_Net_Sockets_NetworkStream_System_Byte___
+  commentId: M:TCPServer.ServerAPM.GetStringFromUser(System.String,System.Net.Sockets.NetworkStream,System.Byte[])
+  name.vb: GetStringFromUser(String, NetworkStream, Byte())
+  fullName: TCPServer.ServerAPM.GetStringFromUser(System.String, System.Net.Sockets.NetworkStream, System.Byte[])
+  fullName.vb: TCPServer.ServerAPM.GetStringFromUser(System.String, System.Net.Sockets.NetworkStream, System.Byte())
+  nameWithType: ServerAPM.GetStringFromUser(String, NetworkStream, Byte[])
+  nameWithType.vb: ServerAPM.GetStringFromUser(String, NetworkStream, Byte())
+- uid: TCPServer.ServerAPM.GetStringFromUser*
+  name: GetStringFromUser
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_GetStringFromUser_
+  commentId: Overload:TCPServer.ServerAPM.GetStringFromUser
+  isSpec: "True"
+  fullName: TCPServer.ServerAPM.GetStringFromUser
+  nameWithType: ServerAPM.GetStringFromUser
+- uid: TCPServer.ServerAPM.SHUTDOWN
+  name: SHUTDOWN
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_SHUTDOWN
+  commentId: F:TCPServer.ServerAPM.SHUTDOWN
+  fullName: TCPServer.ServerAPM.SHUTDOWN
+  nameWithType: ServerAPM.SHUTDOWN
+- uid: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
+  name: SignIn(NetworkStream, Byte[], ref String[])
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_SignIn_System_Net_Sockets_NetworkStream_System_Byte___System_String____
+  commentId: M:TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream,System.Byte[],System.String[]@)
+  name.vb: SignIn(NetworkStream, Byte(), ByRef String())
+  fullName: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream, System.Byte[], ref System.String[])
+  fullName.vb: TCPServer.ServerAPM.SignIn(System.Net.Sockets.NetworkStream, System.Byte(), ByRef System.String())
+  nameWithType: ServerAPM.SignIn(NetworkStream, Byte[], ref String[])
+  nameWithType.vb: ServerAPM.SignIn(NetworkStream, Byte(), ByRef String())
 - uid: TCPServer.ServerAPM.SignIn*
   name: SignIn
   href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_SignIn_
@@ -904,12 +1186,31 @@ references:
   isSpec: "True"
   fullName: TCPServer.ServerAPM.Start
   nameWithType: ServerAPM.Start
+- uid: TCPServer.ServerAPM.TransmissionCallback(System.IAsyncResult)
+  name: TransmissionCallback(IAsyncResult)
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_TransmissionCallback_System_IAsyncResult_
+  commentId: M:TCPServer.ServerAPM.TransmissionCallback(System.IAsyncResult)
+  fullName: TCPServer.ServerAPM.TransmissionCallback(System.IAsyncResult)
+  nameWithType: ServerAPM.TransmissionCallback(IAsyncResult)
+- uid: TCPServer.ServerAPM.TransmissionCallback*
+  name: TransmissionCallback
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_TransmissionCallback_
+  commentId: Overload:TCPServer.ServerAPM.TransmissionCallback
+  isSpec: "True"
+  fullName: TCPServer.ServerAPM.TransmissionCallback
+  nameWithType: ServerAPM.TransmissionCallback
 - uid: TCPServer.ServerAPM.TransmissionDataDelegate
   name: ServerAPM.TransmissionDataDelegate
   href: api/TCPServer.ServerAPM.TransmissionDataDelegate.html
   commentId: T:TCPServer.ServerAPM.TransmissionDataDelegate
   fullName: TCPServer.ServerAPM.TransmissionDataDelegate
   nameWithType: ServerAPM.TransmissionDataDelegate
+- uid: TCPServer.ServerAPM.um
+  name: um
+  href: api/TCPServer.ServerAPM.html#TCPServer_ServerAPM_um
+  commentId: F:TCPServer.ServerAPM.um
+  fullName: TCPServer.ServerAPM.um
+  nameWithType: ServerAPM.um
 - uid: TCPServer.ServerSync
   name: ServerSync
   href: api/TCPServer.ServerSync.html
@@ -968,219 +1269,22 @@ references:
   isSpec: "True"
   fullName: TCPServer.ServerSync.Start
   nameWithType: ServerSync.Start
-- uid: TCPServer.Tests
-  name: TCPServer.Tests
-  href: api/TCPServer.Tests.html
-  commentId: N:TCPServer.Tests
-  fullName: TCPServer.Tests
-  nameWithType: TCPServer.Tests
-- uid: TCPServer.Tests.JokeSQLTests
-  name: JokeSQLTests
-  href: api/TCPServer.Tests.JokeSQLTests.html
-  commentId: T:TCPServer.Tests.JokeSQLTests
-  fullName: TCPServer.Tests.JokeSQLTests
-  nameWithType: JokeSQLTests
-- uid: TCPServer.Tests.JokeSQLTests.AddJokeTest_correct
-  name: AddJokeTest_correct()
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_AddJokeTest_correct
-  commentId: M:TCPServer.Tests.JokeSQLTests.AddJokeTest_correct
-  fullName: TCPServer.Tests.JokeSQLTests.AddJokeTest_correct()
-  nameWithType: JokeSQLTests.AddJokeTest_correct()
-- uid: TCPServer.Tests.JokeSQLTests.AddJokeTest_correct*
-  name: AddJokeTest_correct
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_AddJokeTest_correct_
-  commentId: Overload:TCPServer.Tests.JokeSQLTests.AddJokeTest_correct
+- uid: TCPServer.ServerSync.ToNumber(System.Byte[])
+  name: ToNumber(Byte[])
+  href: api/TCPServer.ServerSync.html#TCPServer_ServerSync_ToNumber_System_Byte___
+  commentId: M:TCPServer.ServerSync.ToNumber(System.Byte[])
+  name.vb: ToNumber(Byte())
+  fullName: TCPServer.ServerSync.ToNumber(System.Byte[])
+  fullName.vb: TCPServer.ServerSync.ToNumber(System.Byte())
+  nameWithType: ServerSync.ToNumber(Byte[])
+  nameWithType.vb: ServerSync.ToNumber(Byte())
+- uid: TCPServer.ServerSync.ToNumber*
+  name: ToNumber
+  href: api/TCPServer.ServerSync.html#TCPServer_ServerSync_ToNumber_
+  commentId: Overload:TCPServer.ServerSync.ToNumber
   isSpec: "True"
-  fullName: TCPServer.Tests.JokeSQLTests.AddJokeTest_correct
-  nameWithType: JokeSQLTests.AddJokeTest_correct
-- uid: TCPServer.Tests.JokeSQLTests.AddJokeTest_incorrect
-  name: AddJokeTest_incorrect()
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_AddJokeTest_incorrect
-  commentId: M:TCPServer.Tests.JokeSQLTests.AddJokeTest_incorrect
-  fullName: TCPServer.Tests.JokeSQLTests.AddJokeTest_incorrect()
-  nameWithType: JokeSQLTests.AddJokeTest_incorrect()
-- uid: TCPServer.Tests.JokeSQLTests.AddJokeTest_incorrect*
-  name: AddJokeTest_incorrect
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_AddJokeTest_incorrect_
-  commentId: Overload:TCPServer.Tests.JokeSQLTests.AddJokeTest_incorrect
-  isSpec: "True"
-  fullName: TCPServer.Tests.JokeSQLTests.AddJokeTest_incorrect
-  nameWithType: JokeSQLTests.AddJokeTest_incorrect
-- uid: TCPServer.Tests.JokeSQLTests.GetJokeTest_correct
-  name: GetJokeTest_correct()
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_GetJokeTest_correct
-  commentId: M:TCPServer.Tests.JokeSQLTests.GetJokeTest_correct
-  fullName: TCPServer.Tests.JokeSQLTests.GetJokeTest_correct()
-  nameWithType: JokeSQLTests.GetJokeTest_correct()
-- uid: TCPServer.Tests.JokeSQLTests.GetJokeTest_correct*
-  name: GetJokeTest_correct
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_GetJokeTest_correct_
-  commentId: Overload:TCPServer.Tests.JokeSQLTests.GetJokeTest_correct
-  isSpec: "True"
-  fullName: TCPServer.Tests.JokeSQLTests.GetJokeTest_correct
-  nameWithType: JokeSQLTests.GetJokeTest_correct
-- uid: TCPServer.Tests.JokeSQLTests.init
-  name: init()
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_init
-  commentId: M:TCPServer.Tests.JokeSQLTests.init
-  fullName: TCPServer.Tests.JokeSQLTests.init()
-  nameWithType: JokeSQLTests.init()
-- uid: TCPServer.Tests.JokeSQLTests.init*
-  name: init
-  href: api/TCPServer.Tests.JokeSQLTests.html#TCPServer_Tests_JokeSQLTests_init_
-  commentId: Overload:TCPServer.Tests.JokeSQLTests.init
-  isSpec: "True"
-  fullName: TCPServer.Tests.JokeSQLTests.init
-  nameWithType: JokeSQLTests.init
-- uid: TCPServer.Tests.UserManagerTests
-  name: UserManagerTests
-  href: api/TCPServer.Tests.UserManagerTests.html
-  commentId: T:TCPServer.Tests.UserManagerTests
-  fullName: TCPServer.Tests.UserManagerTests
-  nameWithType: UserManagerTests
-- uid: TCPServer.Tests.UserManagerTests.addUserTest_correctUser
-  name: addUserTest_correctUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_addUserTest_correctUser
-  commentId: M:TCPServer.Tests.UserManagerTests.addUserTest_correctUser
-  fullName: TCPServer.Tests.UserManagerTests.addUserTest_correctUser()
-  nameWithType: UserManagerTests.addUserTest_correctUser()
-- uid: TCPServer.Tests.UserManagerTests.addUserTest_correctUser*
-  name: addUserTest_correctUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_addUserTest_correctUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.addUserTest_correctUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.addUserTest_correctUser
-  nameWithType: UserManagerTests.addUserTest_correctUser
-- uid: TCPServer.Tests.UserManagerTests.addUserTest_incorrectUser
-  name: addUserTest_incorrectUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_addUserTest_incorrectUser
-  commentId: M:TCPServer.Tests.UserManagerTests.addUserTest_incorrectUser
-  fullName: TCPServer.Tests.UserManagerTests.addUserTest_incorrectUser()
-  nameWithType: UserManagerTests.addUserTest_incorrectUser()
-- uid: TCPServer.Tests.UserManagerTests.addUserTest_incorrectUser*
-  name: addUserTest_incorrectUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_addUserTest_incorrectUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.addUserTest_incorrectUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.addUserTest_incorrectUser
-  nameWithType: UserManagerTests.addUserTest_incorrectUser
-- uid: TCPServer.Tests.UserManagerTests.deleteUserTest_correctUser
-  name: deleteUserTest_correctUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_deleteUserTest_correctUser
-  commentId: M:TCPServer.Tests.UserManagerTests.deleteUserTest_correctUser
-  fullName: TCPServer.Tests.UserManagerTests.deleteUserTest_correctUser()
-  nameWithType: UserManagerTests.deleteUserTest_correctUser()
-- uid: TCPServer.Tests.UserManagerTests.deleteUserTest_correctUser*
-  name: deleteUserTest_correctUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_deleteUserTest_correctUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.deleteUserTest_correctUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.deleteUserTest_correctUser
-  nameWithType: UserManagerTests.deleteUserTest_correctUser
-- uid: TCPServer.Tests.UserManagerTests.deleteUserTest_incorrectPassword
-  name: deleteUserTest_incorrectPassword()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_deleteUserTest_incorrectPassword
-  commentId: M:TCPServer.Tests.UserManagerTests.deleteUserTest_incorrectPassword
-  fullName: TCPServer.Tests.UserManagerTests.deleteUserTest_incorrectPassword()
-  nameWithType: UserManagerTests.deleteUserTest_incorrectPassword()
-- uid: TCPServer.Tests.UserManagerTests.deleteUserTest_incorrectPassword*
-  name: deleteUserTest_incorrectPassword
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_deleteUserTest_incorrectPassword_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.deleteUserTest_incorrectPassword
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.deleteUserTest_incorrectPassword
-  nameWithType: UserManagerTests.deleteUserTest_incorrectPassword
-- uid: TCPServer.Tests.UserManagerTests.deleteUserTest_nonexistantUser
-  name: deleteUserTest_nonexistantUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_deleteUserTest_nonexistantUser
-  commentId: M:TCPServer.Tests.UserManagerTests.deleteUserTest_nonexistantUser
-  fullName: TCPServer.Tests.UserManagerTests.deleteUserTest_nonexistantUser()
-  nameWithType: UserManagerTests.deleteUserTest_nonexistantUser()
-- uid: TCPServer.Tests.UserManagerTests.deleteUserTest_nonexistantUser*
-  name: deleteUserTest_nonexistantUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_deleteUserTest_nonexistantUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.deleteUserTest_nonexistantUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.deleteUserTest_nonexistantUser
-  nameWithType: UserManagerTests.deleteUserTest_nonexistantUser
-- uid: TCPServer.Tests.UserManagerTests.init
-  name: init()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_init
-  commentId: M:TCPServer.Tests.UserManagerTests.init
-  fullName: TCPServer.Tests.UserManagerTests.init()
-  nameWithType: UserManagerTests.init()
-- uid: TCPServer.Tests.UserManagerTests.init*
-  name: init
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_init_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.init
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.init
-  nameWithType: UserManagerTests.init
-- uid: TCPServer.Tests.UserManagerTests.updateUserTest_correctUser
-  name: updateUserTest_correctUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_updateUserTest_correctUser
-  commentId: M:TCPServer.Tests.UserManagerTests.updateUserTest_correctUser
-  fullName: TCPServer.Tests.UserManagerTests.updateUserTest_correctUser()
-  nameWithType: UserManagerTests.updateUserTest_correctUser()
-- uid: TCPServer.Tests.UserManagerTests.updateUserTest_correctUser*
-  name: updateUserTest_correctUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_updateUserTest_correctUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.updateUserTest_correctUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.updateUserTest_correctUser
-  nameWithType: UserManagerTests.updateUserTest_correctUser
-- uid: TCPServer.Tests.UserManagerTests.updateUserTest_nonexistanttUser
-  name: updateUserTest_nonexistanttUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_updateUserTest_nonexistanttUser
-  commentId: M:TCPServer.Tests.UserManagerTests.updateUserTest_nonexistanttUser
-  fullName: TCPServer.Tests.UserManagerTests.updateUserTest_nonexistanttUser()
-  nameWithType: UserManagerTests.updateUserTest_nonexistanttUser()
-- uid: TCPServer.Tests.UserManagerTests.updateUserTest_nonexistanttUser*
-  name: updateUserTest_nonexistanttUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_updateUserTest_nonexistanttUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.updateUserTest_nonexistanttUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.updateUserTest_nonexistanttUser
-  nameWithType: UserManagerTests.updateUserTest_nonexistanttUser
-- uid: TCPServer.Tests.UserManagerTests.verifyUserTest_defaultAdmin
-  name: verifyUserTest_defaultAdmin()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_verifyUserTest_defaultAdmin
-  commentId: M:TCPServer.Tests.UserManagerTests.verifyUserTest_defaultAdmin
-  fullName: TCPServer.Tests.UserManagerTests.verifyUserTest_defaultAdmin()
-  nameWithType: UserManagerTests.verifyUserTest_defaultAdmin()
-- uid: TCPServer.Tests.UserManagerTests.verifyUserTest_defaultAdmin*
-  name: verifyUserTest_defaultAdmin
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_verifyUserTest_defaultAdmin_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.verifyUserTest_defaultAdmin
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.verifyUserTest_defaultAdmin
-  nameWithType: UserManagerTests.verifyUserTest_defaultAdmin
-- uid: TCPServer.Tests.UserManagerTests.verifyUserTest_noneExistantUser
-  name: verifyUserTest_noneExistantUser()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_verifyUserTest_noneExistantUser
-  commentId: M:TCPServer.Tests.UserManagerTests.verifyUserTest_noneExistantUser
-  fullName: TCPServer.Tests.UserManagerTests.verifyUserTest_noneExistantUser()
-  nameWithType: UserManagerTests.verifyUserTest_noneExistantUser()
-- uid: TCPServer.Tests.UserManagerTests.verifyUserTest_noneExistantUser*
-  name: verifyUserTest_noneExistantUser
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_verifyUserTest_noneExistantUser_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.verifyUserTest_noneExistantUser
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.verifyUserTest_noneExistantUser
-  nameWithType: UserManagerTests.verifyUserTest_noneExistantUser
-- uid: TCPServer.Tests.UserManagerTests.verifyUserTest_wrongAdminPassword
-  name: verifyUserTest_wrongAdminPassword()
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_verifyUserTest_wrongAdminPassword
-  commentId: M:TCPServer.Tests.UserManagerTests.verifyUserTest_wrongAdminPassword
-  fullName: TCPServer.Tests.UserManagerTests.verifyUserTest_wrongAdminPassword()
-  nameWithType: UserManagerTests.verifyUserTest_wrongAdminPassword()
-- uid: TCPServer.Tests.UserManagerTests.verifyUserTest_wrongAdminPassword*
-  name: verifyUserTest_wrongAdminPassword
-  href: api/TCPServer.Tests.UserManagerTests.html#TCPServer_Tests_UserManagerTests_verifyUserTest_wrongAdminPassword_
-  commentId: Overload:TCPServer.Tests.UserManagerTests.verifyUserTest_wrongAdminPassword
-  isSpec: "True"
-  fullName: TCPServer.Tests.UserManagerTests.verifyUserTest_wrongAdminPassword
-  nameWithType: UserManagerTests.verifyUserTest_wrongAdminPassword
+  fullName: TCPServer.ServerSync.ToNumber
+  nameWithType: ServerSync.ToNumber
 - uid: TCPServer.UserManager
   name: UserManager
   href: api/TCPServer.UserManager.html
@@ -1226,6 +1330,19 @@ references:
   isSpec: "True"
   fullName: TCPServer.UserManager.deleteUser
   nameWithType: UserManager.deleteUser
+- uid: TCPServer.UserManager.GetUserPassword(System.String)
+  name: GetUserPassword(String)
+  href: api/TCPServer.UserManager.html#TCPServer_UserManager_GetUserPassword_System_String_
+  commentId: M:TCPServer.UserManager.GetUserPassword(System.String)
+  fullName: TCPServer.UserManager.GetUserPassword(System.String)
+  nameWithType: UserManager.GetUserPassword(String)
+- uid: TCPServer.UserManager.GetUserPassword*
+  name: GetUserPassword
+  href: api/TCPServer.UserManager.html#TCPServer_UserManager_GetUserPassword_
+  commentId: Overload:TCPServer.UserManager.GetUserPassword
+  isSpec: "True"
+  fullName: TCPServer.UserManager.GetUserPassword
+  nameWithType: UserManager.GetUserPassword
 - uid: TCPServer.UserManager.updateUser(System.String,System.String,System.String,System.String)
   name: updateUser(String, String, String, String)
   href: api/TCPServer.UserManager.html#TCPServer_UserManager_updateUser_System_String_System_String_System_String_System_String_

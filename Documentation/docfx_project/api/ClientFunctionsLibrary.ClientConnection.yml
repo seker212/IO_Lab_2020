@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientFunctionsLibrary.ClientConnection
+  commentId: T:ClientFunctionsLibrary.ClientConnection
+  id: ClientConnection
+  parent: ClientFunctionsLibrary
+  children:
+  - ClientFunctionsLibrary.ClientConnection.#ctor(System.Net.IPAddress,System.Int32,System.Int32)
+  - ClientFunctionsLibrary.ClientConnection.address
+  - ClientFunctionsLibrary.ClientConnection.Buffer_size
+  - ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream@,System.Byte[],System.Net.Sockets.TcpClient@)
+  - ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient@,System.Net.Sockets.NetworkStream@)
+  - ClientFunctionsLibrary.ClientConnection.createClient
+  - ClientFunctionsLibrary.ClientConnection.port
+  - ClientFunctionsLibrary.ClientConnection.reciveMessage(System.Net.Sockets.NetworkStream,System.Byte[])
+  - ClientFunctionsLibrary.ClientConnection.sendMessage(System.Net.Sockets.NetworkStream,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ClientConnection
+  nameWithType: ClientConnection
+  fullName: ClientFunctionsLibrary.ClientConnection
+  type: Class
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: ClientConnection
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 10
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public class ClientConnection
+    content.vb: Public Class ClientConnection
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ClientFunctionsLibrary.ClientConnection.port
+  commentId: F:ClientFunctionsLibrary.ClientConnection.port
+  id: port
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: port
+  nameWithType: ClientConnection.port
+  fullName: ClientFunctionsLibrary.ClientConnection.port
+  type: Field
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: port
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 12
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: protected int port
+    return:
+      type: System.Int32
+    content.vb: Protected port As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: ClientFunctionsLibrary.ClientConnection.address
+  commentId: F:ClientFunctionsLibrary.ClientConnection.address
+  id: address
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: address
+  nameWithType: ClientConnection.address
+  fullName: ClientFunctionsLibrary.ClientConnection.address
+  type: Field
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: address
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 13
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: protected IPAddress address
+    return:
+      type: System.Net.IPAddress
+    content.vb: Protected address As IPAddress
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: ClientFunctionsLibrary.ClientConnection.Buffer_size
+  commentId: F:ClientFunctionsLibrary.ClientConnection.Buffer_size
+  id: Buffer_size
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: Buffer_size
+  nameWithType: ClientConnection.Buffer_size
+  fullName: ClientFunctionsLibrary.ClientConnection.Buffer_size
+  type: Field
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: Buffer_size
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 14
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: protected int Buffer_size
+    return:
+      type: System.Int32
+    content.vb: Protected Buffer_size As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: ClientFunctionsLibrary.ClientConnection.#ctor(System.Net.IPAddress,System.Int32,System.Int32)
+  commentId: M:ClientFunctionsLibrary.ClientConnection.#ctor(System.Net.IPAddress,System.Int32,System.Int32)
+  id: '#ctor(System.Net.IPAddress,System.Int32,System.Int32)'
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: ClientConnection(IPAddress, Int32, Int32)
+  nameWithType: ClientConnection.ClientConnection(IPAddress, Int32, Int32)
+  fullName: ClientFunctionsLibrary.ClientConnection.ClientConnection(System.Net.IPAddress, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: .ctor
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 15
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public ClientConnection(IPAddress address, int port, int bufferSize = 1024)
+    parameters:
+    - id: address
+      type: System.Net.IPAddress
+    - id: port
+      type: System.Int32
+    - id: bufferSize
+      type: System.Int32
+    content.vb: Public Sub New(address As IPAddress, port As Integer, bufferSize As Integer = 1024)
+  overload: ClientFunctionsLibrary.ClientConnection.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ClientFunctionsLibrary.ClientConnection.createClient
+  commentId: M:ClientFunctionsLibrary.ClientConnection.createClient
+  id: createClient
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: createClient()
+  nameWithType: ClientConnection.createClient()
+  fullName: ClientFunctionsLibrary.ClientConnection.createClient()
+  type: Method
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: createClient
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 22
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public TcpClient createClient()
+    return:
+      type: System.Net.Sockets.TcpClient
+    content.vb: Public Function createClient As TcpClient
+  overload: ClientFunctionsLibrary.ClientConnection.createClient*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ClientFunctionsLibrary.ClientConnection.sendMessage(System.Net.Sockets.NetworkStream,System.String)
+  commentId: M:ClientFunctionsLibrary.ClientConnection.sendMessage(System.Net.Sockets.NetworkStream,System.String)
+  id: sendMessage(System.Net.Sockets.NetworkStream,System.String)
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: sendMessage(NetworkStream, String)
+  nameWithType: ClientConnection.sendMessage(NetworkStream, String)
+  fullName: ClientFunctionsLibrary.ClientConnection.sendMessage(System.Net.Sockets.NetworkStream, System.String)
+  type: Method
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: sendMessage
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 29
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public void sendMessage(NetworkStream stream, string msg)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    - id: msg
+      type: System.String
+    content.vb: Public Sub sendMessage(stream As NetworkStream, msg As String)
+  overload: ClientFunctionsLibrary.ClientConnection.sendMessage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ClientFunctionsLibrary.ClientConnection.reciveMessage(System.Net.Sockets.NetworkStream,System.Byte[])
+  commentId: M:ClientFunctionsLibrary.ClientConnection.reciveMessage(System.Net.Sockets.NetworkStream,System.Byte[])
+  id: reciveMessage(System.Net.Sockets.NetworkStream,System.Byte[])
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: reciveMessage(NetworkStream, Byte[])
+  nameWithType: ClientConnection.reciveMessage(NetworkStream, Byte[])
+  fullName: ClientFunctionsLibrary.ClientConnection.reciveMessage(System.Net.Sockets.NetworkStream, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: reciveMessage
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 35
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public string reciveMessage(NetworkStream stream, byte[] buffer)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    - id: buffer
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: Public Function reciveMessage(stream As NetworkStream, buffer As Byte()) As String
+  overload: ClientFunctionsLibrary.ClientConnection.reciveMessage*
+  nameWithType.vb: ClientConnection.reciveMessage(NetworkStream, Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ClientFunctionsLibrary.ClientConnection.reciveMessage(System.Net.Sockets.NetworkStream, System.Byte())
+  name.vb: reciveMessage(NetworkStream, Byte())
+- uid: ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream@,System.Byte[],System.Net.Sockets.TcpClient@)
+  commentId: M:ClientFunctionsLibrary.ClientConnection.clientLoop(System.Net.Sockets.NetworkStream@,System.Byte[],System.Net.Sockets.TcpClient@)
+  id: clientLoop(System.Net.Sockets.NetworkStream@,System.Byte[],System.Net.Sockets.TcpClient@)
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: clientLoop(ref NetworkStream, Byte[], ref TcpClient)
+  nameWithType: ClientConnection.clientLoop(ref NetworkStream, Byte[], ref TcpClient)
+  fullName: ClientFunctionsLibrary.ClientConnection.clientLoop(ref System.Net.Sockets.NetworkStream, System.Byte[], ref System.Net.Sockets.TcpClient)
+  type: Method
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: clientLoop
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 48
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public void clientLoop(ref NetworkStream stream, byte[] buffer, ref TcpClient client)
+    parameters:
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    - id: buffer
+      type: System.Byte[]
+    - id: client
+      type: System.Net.Sockets.TcpClient
+    content.vb: Public Sub clientLoop(ByRef stream As NetworkStream, buffer As Byte(), ByRef client As TcpClient)
+  overload: ClientFunctionsLibrary.ClientConnection.clientLoop*
+  nameWithType.vb: ClientConnection.clientLoop(ByRef NetworkStream, Byte(), ByRef TcpClient)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ClientFunctionsLibrary.ClientConnection.clientLoop(ByRef System.Net.Sockets.NetworkStream, System.Byte(), ByRef System.Net.Sockets.TcpClient)
+  name.vb: clientLoop(ByRef NetworkStream, Byte(), ByRef TcpClient)
+- uid: ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient@,System.Net.Sockets.NetworkStream@)
+  commentId: M:ClientFunctionsLibrary.ClientConnection.closeClient(System.Net.Sockets.TcpClient@,System.Net.Sockets.NetworkStream@)
+  id: closeClient(System.Net.Sockets.TcpClient@,System.Net.Sockets.NetworkStream@)
+  parent: ClientFunctionsLibrary.ClientConnection
+  langs:
+  - csharp
+  - vb
+  name: closeClient(ref TcpClient, ref NetworkStream)
+  nameWithType: ClientConnection.closeClient(ref TcpClient, ref NetworkStream)
+  fullName: ClientFunctionsLibrary.ClientConnection.closeClient(ref System.Net.Sockets.TcpClient, ref System.Net.Sockets.NetworkStream)
+  type: Method
+  source:
+    remote:
+      path: ClientFunctionsLibrary/ClientConnection.cs
+      branch: Seba
+      repo: https://github.com/seker212/IO_Lab_2020.git
+    id: closeClient
+    path: ../../ClientFunctionsLibrary/ClientConnection.cs
+    startLine: 70
+  assemblies:
+  - ClientFunctionsLibrary
+  namespace: ClientFunctionsLibrary
+  syntax:
+    content: public void closeClient(ref TcpClient client, ref NetworkStream stream)
+    parameters:
+    - id: client
+      type: System.Net.Sockets.TcpClient
+    - id: stream
+      type: System.Net.Sockets.NetworkStream
+    content.vb: Public Sub closeClient(ByRef client As TcpClient, ByRef stream As NetworkStream)
+  overload: ClientFunctionsLibrary.ClientConnection.closeClient*
+  nameWithType.vb: ClientConnection.closeClient(ByRef TcpClient, ByRef NetworkStream)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ClientFunctionsLibrary.ClientConnection.closeClient(ByRef System.Net.Sockets.TcpClient, ByRef System.Net.Sockets.NetworkStream)
+  name.vb: closeClient(ByRef TcpClient, ByRef NetworkStream)
+references:
+- uid: ClientFunctionsLibrary
+  commentId: N:ClientFunctionsLibrary
+  name: ClientFunctionsLibrary
+  nameWithType: ClientFunctionsLibrary
+  fullName: ClientFunctionsLibrary
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Net.IPAddress
+  commentId: T:System.Net.IPAddress
+  parent: System.Net
+  isExternal: true
+  name: IPAddress
+  nameWithType: IPAddress
+  fullName: System.Net.IPAddress
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+- uid: ClientFunctionsLibrary.ClientConnection.#ctor*
+  commentId: Overload:ClientFunctionsLibrary.ClientConnection.#ctor
+  name: ClientConnection
+  nameWithType: ClientConnection.ClientConnection
+  fullName: ClientFunctionsLibrary.ClientConnection.ClientConnection
+- uid: ClientFunctionsLibrary.ClientConnection.createClient*
+  commentId: Overload:ClientFunctionsLibrary.ClientConnection.createClient
+  name: createClient
+  nameWithType: ClientConnection.createClient
+  fullName: ClientFunctionsLibrary.ClientConnection.createClient
+- uid: System.Net.Sockets.TcpClient
+  commentId: T:System.Net.Sockets.TcpClient
+  parent: System.Net.Sockets
+  isExternal: true
+  name: TcpClient
+  nameWithType: TcpClient
+  fullName: System.Net.Sockets.TcpClient
+- uid: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  isExternal: true
+  name: System.Net.Sockets
+  nameWithType: System.Net.Sockets
+  fullName: System.Net.Sockets
+- uid: ClientFunctionsLibrary.ClientConnection.sendMessage*
+  commentId: Overload:ClientFunctionsLibrary.ClientConnection.sendMessage
+  name: sendMessage
+  nameWithType: ClientConnection.sendMessage
+  fullName: ClientFunctionsLibrary.ClientConnection.sendMessage
+- uid: System.Net.Sockets.NetworkStream
+  commentId: T:System.Net.Sockets.NetworkStream
+  parent: System.Net.Sockets
+  isExternal: true
+  name: NetworkStream
+  nameWithType: NetworkStream
+  fullName: System.Net.Sockets.NetworkStream
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ClientFunctionsLibrary.ClientConnection.reciveMessage*
+  commentId: Overload:ClientFunctionsLibrary.ClientConnection.reciveMessage
+  name: reciveMessage
+  nameWithType: ClientConnection.reciveMessage
+  fullName: ClientFunctionsLibrary.ClientConnection.reciveMessage
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: ClientFunctionsLibrary.ClientConnection.clientLoop*
+  commentId: Overload:ClientFunctionsLibrary.ClientConnection.clientLoop
+  name: clientLoop
+  nameWithType: ClientConnection.clientLoop
+  fullName: ClientFunctionsLibrary.ClientConnection.clientLoop
+- uid: ClientFunctionsLibrary.ClientConnection.closeClient*
+  commentId: Overload:ClientFunctionsLibrary.ClientConnection.closeClient
+  name: closeClient
+  nameWithType: ClientConnection.closeClient
+  fullName: ClientFunctionsLibrary.ClientConnection.closeClient

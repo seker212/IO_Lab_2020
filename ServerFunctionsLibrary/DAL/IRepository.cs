@@ -12,7 +12,7 @@ namespace TCPServer.DAL
         void Delete(TEntity entityToDelete);
         void Delete(object id);
         TEntity GetByID(object id);
-        void Insert(TEntity entity);
+        TEntity Insert(TEntity entity);
         void Update(TEntity entityToUpdate);
         void Commit();
     }

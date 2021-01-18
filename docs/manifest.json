@@ -5,14 +5,38 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Client.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Client.Client.html",
+          "hash": "0nHgZ+rZVNnGom7WWoB6LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Client.html",
+          "hash": "+puQ9A7i5ajIPalekPoccA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ClientFunctionsLibrary.ClientConnection.yml",
       "output": {
         ".html": {
           "relative_path": "api/ClientFunctionsLibrary.ClientConnection.html",
-          "hash": "h2YOiiGo6ZgHyWekcnv7EQ=="
+          "hash": "yuWLvD4RKciQ7iUpEcqwdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,19 +48,19 @@
           "hash": "jsOMHhvh2HQsGRsWltnX4A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Program.Test.yml",
+      "source_relative_path": "api/Program.Program.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Program.Test.html",
-          "hash": "pYzxWYUqN9JPzWpoCBnaZg=="
+          "relative_path": "api/Program.Program.html",
+          "hash": "oH2xDJX9lC3M8DmQnlrhXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Program.html",
-          "hash": "2Sa9miZ16v6F5mGX02hm1w=="
+          "hash": "KNvdXddlCiAtq/sSCgb0Pg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.AbstractServer.html",
-          "hash": "rwtTD7u5t4R81Nk9dm7xFw=="
+          "hash": "XyOc/diMDceVtKJFpQw+7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.BaseRepository-1.html",
-          "hash": "q4CnNpwPGN5zJV+kY+XG5A=="
+          "hash": "iKKMRvLePUD9FPs/n6bgng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.IRepository-1.html",
-          "hash": "95IDjEYKoeBtxcEbYQxaQg=="
+          "hash": "kv07EyiT49uwo+YV4BwyVw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.JokeRepository.html",
-          "hash": "8z3fGHebZmbcRRB/mUV5jw=="
+          "hash": "gSW1/uo9GCoxa6JBjJN6Hg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.DAL.UserRepository.html",
-          "hash": "4NhFYTK5zRShAhw+1AuNIg=="
+          "hash": "geseS2Q9UGrDadLSBk7xbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -120,7 +144,19 @@
           "hash": "fnMEd0A9P78hTrIzNT0wRQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TCPServer.JokeSQL.suchar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TCPServer.JokeSQL.suchar.html",
+          "hash": "KogonY6AY9LBPr5TaU9Y1Q=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.JokeSQL.html",
-          "hash": "6sQTYbXz/TxgTyzgp+7ekg=="
+          "hash": "C/LPMgviUqse0vV5OG5Jmw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.Models.Joke.html",
-          "hash": "DGn4KGUjzQu54Oy0b2L0dA=="
+          "hash": "PXRp0PQcrg/uBIUgZM8vWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.Models.ServerDatabaseContext.html",
-          "hash": "hjUWO3R8WMKa66R+Vj56aA=="
+          "hash": "tJ2Y9bDLgPocsOgHcfRiFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.Models.User.html",
-          "hash": "2YCOIh1L57l8ybBOGcwCdA=="
+          "hash": "ObaWwTMGA9BZGyk3ZrzA1g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,7 +216,7 @@
           "hash": "xBTjt0aRE2RJWupXpgOW+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +228,7 @@
           "hash": "2wwr61WYWbxt3YcxiNUS7A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.ServerAPM.html",
-          "hash": "I+PiCwqVJUJflMed9OIHGg=="
+          "hash": "A8wMIhG3ISE6EcecQ1kA+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,46 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.ServerSync.html",
-          "hash": "E7JqMyb5mhRGftilDZgxdA=="
+          "hash": "3nVOUzHjefT0+HCsJRbg1w=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TCPServer.Tests.JokeSQLTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TCPServer.Tests.JokeSQLTests.html",
-          "hash": "nbL71QzTXP6Kr3TU0aVeqw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TCPServer.Tests.UserManagerTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TCPServer.Tests.UserManagerTests.html",
-          "hash": "XrOUUXCM7aWnJn/SeKzW8A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TCPServer.Tests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TCPServer.Tests.html",
-          "hash": "eBtfspaAU8fb/3ptmmJ4NQ=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.UserManager.html",
-          "hash": "64j/OGCE03fERv2KgrErnw=="
+          "hash": "1hthZm7CEpFZYStLfr7EJQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -276,7 +276,7 @@
           "hash": "ruP+ztVyxaY9Z6GIf5oxng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/TCPServer.html",
-          "hash": "lLVV9wiwOfGqbg9SHDF89Q=="
+          "hash": "LoTnJd6Pr7xhrhTzYHcbwg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "RrbRXCkYm51hCvFhy5WNUA=="
+          "hash": "Rj951pTYIIOuLd9rS8mGwA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "T3MGfjbwbyIyO9ck54D+dQ=="
+          "hash": "y0AR0qnjGcfgdWOzv4RefA=="
         }
       },
       "is_incremental": false,
@@ -324,7 +324,7 @@
           "hash": "M6QnYfGRTmIbYj96dgBeng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -348,7 +348,7 @@
           "hash": "/g0RDg32yQ/ODbE5er8Vpw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -367,23 +367,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 24,
-          "skipped_file_count": 24
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -396,8 +398,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
